@@ -1,0 +1,28 @@
+.card-header {
+  border-left: 8px rebeccapurple solid;
+  background: rgb(2,0,36);
+  background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(107,4,197,1) 69%, rgba(181,0,255,1) 100%);
+  width: 18rem;
+  max-height: 50px;
+  color: black;
+  font-size: smaller;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+}
+
+.card-body {
+  border-left: 8px solid rebeccapurple;
+  background-color: lightslategray;
+  width: 18rem;
+  max-height: 175px;
+  color: white;
+  font-size: smaller;
+  margin: 0 auto;
+  padding: 10px;
+}

@@ -680,8 +680,3 @@ pre tt:after {
 .gradientBackground {
   background-image: linear-gradient( 135deg, #81FBB8 10%, #81fb81 25%, rgb(10, 231, 243) 100%);
 }
-
-.pill-button-holder {
-  border: 1px solid black;
-  border-radius: 100%;
-}

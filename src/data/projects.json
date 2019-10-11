@@ -1,9 +1,20 @@
 [
   {
-    "project-name": "Legend of Brent",
-    "build-date": "whenever",
-    "img-source": "https://www.whatever.com",
-    "deployed-link": "https://www.whatever.com",
-    "github-link": "https://github.com/coderbrent/whatever"
+    "id": 1,
+    "name": "Legend of Brent",
+    "date": "whenever",
+    "desc": "What happens when three rookie developers attempt to make a React card game in the browser? Apparently this.",
+    "img": "https://www.whatever.com",
+    "site": "https://www.whatever.com",
+    "github": "https://github.com/coderbrent/whatever"
+  },
+  {
+    "id": 2,
+    "name": "The Burger Eater",
+    "date": "whenever",
+    "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker. I DID build a little custom ORM though to make it!",
+    "img": "https://www.whatever.com",
+    "site": "https://www.whatever.com",
+    "github": "https://github.com/coderbrent/whatever"
   }
 ]
