@@ -200,8 +200,8 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -234,7 +234,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   line-height: 1.1;
 }
 h2 {
@@ -619,4 +619,60 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.nav-links {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-name: fillIn;
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes fillIn {
+  from {
+    color: aqua;
+  }
+
+  to {
+    color: rebeccapurple;
+  }
+}
+
+.nav-links:hover {
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+  animation-name: slider;
+}
+
+@keyframes slider {
+  from {
+    border-bottom-color: rebeccapurple;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+  }
+
+  to {
+    border-bottom-color: rebeccapurple;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-column-gap: .5em;
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.gradientBackground {
+  background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+}
+
+.siteTitle {
+  font-size: 3rem;
 }
