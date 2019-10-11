@@ -5,4 +5,4 @@ title: "Keep Calm, Code On"
 author: "Brent Abruzese"
 ---
 
-This is my very **first blog** post in Gatsby.
+"My, what a tangled web we weave!!"

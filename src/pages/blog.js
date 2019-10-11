@@ -11,6 +11,7 @@ const BlogPage = ({ data }) => (
           <h1>Latest Posts</h1>
           { data.allMarkdownRemark.edges.map(post => {
             return <div key={post.node.id}>
+            <div className="blog">
               <h3 className="blog-title nav-links">{post.node.frontmatter.title}</h3>
                 <div className="entry-body">
                   <small style={{ fontWeight: 'bold'}}>
@@ -19,10 +20,7 @@ const BlogPage = ({ data }) => (
                   </small>
                     <p style={{ textDecoration: 'none' }}><Link to={post.node.frontmatter.path}>Read More...</Link></p>
                 </div>
-                
-                <br/>
-                <br/>
-                <hr/>
+                </div>
             </div>
             })}
         </div>
