@@ -1,5 +1,7 @@
 .card {
   margin: 1rem;
+  display: 'inherit';
+  width: 18rem;
 }
 
 .card-header {
@@ -27,6 +29,10 @@
   max-height: 175px;
   color: white;
   font-size: smaller;
-  margin: 0 auto;
   padding: 10px;
+}
+
+.card-container {
+  display: flex-wrap;
+
 }

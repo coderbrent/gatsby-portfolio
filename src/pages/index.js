@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from '../components/image'
+import Social from '../components/social'
  
 const IndexPage = () => (
   <Layout>
@@ -9,6 +10,7 @@ const IndexPage = () => (
     <div className="container">
       <div className="picture">
         <Image />
+        <Social />
       </div>
       <div style={{ marginLeft: 10 }}>
       <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi!</div>
