@@ -11,7 +11,7 @@ const PortfolioPage = () => {
         <h3>Make A Portfolio They Said!</h3>
         <div className="article" style={{ display: 'inline-flex'}}>
           <div className="aside">
-          Here's my derpy ass portfolio section yall
+          
           </div>
           <div className="section">
           </div>

@@ -5,22 +5,39 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h3 className="heading">About Me</h3>
+    <h3 className="heading">A little bit about me!</h3>
     <div className="container">
       <div className="picture">
         <Image />
       </div>
       <div style={{ marginLeft: 10 }}>
-      <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi there!</div>
-        My name is Brent Abruzese and I'm a full stack web developer from New Jersey!
-        I love to spend time with my family, watch TV, play guitar and hockey!
+      <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi!</div>
+        My name is Brent Abruzese and I'm a full stack web developer from Central New Jersey!
+        When I'm not ⌨️ I love spending time with my 👪, watching 📺, reading 📘 and playing 🎸 and 🏒!
+      <div 
+        style={{ 
+          fontWeight: 'bold',
+          marginBottom: 4,
+          marginTop: 20 }}>
+          Where I've Been
+      </div>
+        Before becoming a developer, I owned a local limousine service. I grew
+        the business rapidly through social media marketing and seo techniques.
+        I went from a 1 vehicle operation to 10 vehicles and $1 mil in annual revenue
+        in just 4 years! With 22 employees and a client list full of celebrities, pro-athletes
+        and business executives, I enjoyed being an entrepreneur in ground transportation!
+        <div 
+        style={{ 
+          fontWeight: 'bold',
+          marginBottom: 4,
+          marginTop: 20 }}>
+          One door closes...
+      </div>
+          Unfortunately, disruption is the nature of the world we live in today and in 2018 we began
+          to really feel the effects of rideshare on our small business. As finances strained, we were ultimately
+          forced to close our doors. 
       </div>
     </div>
-    <h4 className="heading">My Tech</h4>
-      <div className="container" style={{ backgroundColor: 'red' }}>
-
-      </div>
-
   </Layout>
 )
 

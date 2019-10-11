@@ -660,19 +660,28 @@ pre tt:after {
   }
 }
 
+.heading {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  color: #222;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 15% 70% 15%;
   grid-column-gap: .5em;
   margin-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin-right: 3rem;
 }
 
 .gradientBackground {
-  background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+  background-image: linear-gradient( 135deg, #81FBB8 10%, #81fb81 25%, rgb(10, 231, 243) 100%);
 }
 
-.siteTitle {
-  font-size: 3rem;
+.pill-button-holder {
+  border: 1px solid black;
+  border-radius: 100%;
 }

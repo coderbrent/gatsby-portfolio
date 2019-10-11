@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       <Menu />
         <main>{children}</main>
         <footer>
-
+          <small> Copyright 2019, Brent Abruzese </small>
         </footer>
       </div>
     </>
