@@ -12,7 +12,7 @@
     "id": 2,
     "name": "The Burger Eater",
     "date": "whenever",
-    "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker. I DID build a little custom ORM though to make it!",
+    "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker.",
     "img": "https://www.whatever.com",
     "site": "https://www.whatever.com",
     "github": "https://github.com/coderbrent/whatever"

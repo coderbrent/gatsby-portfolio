@@ -1,3 +1,7 @@
+.card {
+  margin: 1rem;
+}
+
 .card-header {
   border-left: 8px rebeccapurple solid;
   background: rgb(2,0,36);

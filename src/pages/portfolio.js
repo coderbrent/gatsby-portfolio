@@ -9,9 +9,8 @@ const PortfolioPage = () => {
     <>
       <SEO title="Portfolio" />
       <Layout>
-        <h3>Make A Portfolio They Said!</h3>
-        <div className="article" style={{ display: 'inline-flex'}}>
-          <div className="aside">
+        <h3 className="heading">Some work I've done...</h3>
+          <div style={{ display: 'inline-flex'}}>
           { Projects.map(project => {
             return <Card
               key={project.id}
@@ -20,11 +19,7 @@ const PortfolioPage = () => {
               date={project.date}
             />
           })}
-            
           </div>
-          <div className="section">
-          </div>
-        </div>
       </Layout>
     </>
   )
