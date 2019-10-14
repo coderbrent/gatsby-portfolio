@@ -16,5 +16,52 @@
     "img": "https://www.whatever.com",
     "site": "https://www.whatever.com",
     "github": "https://github.com/coderbrent/whatever"
+  },
+  {
+    "id": 3,
+    "name": "Date Night",
+    "date": "whenever",
+    "desc": "Can't figure out WTF to do with your sig other? Use our Date Night app and figure it out!!",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "site": "https://somramnani.github.io/Date-Night/",
+    "github": "https://github.com/coderbrent/whatever"
+  },
+  {
+    "id": 4,
+    "name": "This Portfolio",
+    "date": "whenever",
+    "desc": "Hey! Doesn't this damn portfolio count for something!? It's got a blog and dark mode!!!",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "site": "https://somramnani.github.io/Date-Night/",
+    "github": "https://github.com/coderbrent/whatever"
+  },
+  {
+    "id": 5,
+    "name": "Some Other Project",
+    "date": "whenever",
+    "desc": "Hey! Doesn't this damn portfolio count for something!? It's got a blog and dark mode!!!",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "site": "https://somramnani.github.io/Date-Night/",
+    "github": "",
+    "stack": {
+      "react": true, 
+      "node": true, 
+      "mongo": true
+    }
+  },
+  {
+    "id": 6,
+    "name": "My Lifes Work",
+    "date": "whenever",
+    "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker.",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "site": "https://somramnani.github.io/Date-Night/",
+    "github": "",
+    "stack": { 
+      "react": true, 
+      "node": true, 
+      "mongo": true 
+    }
   }
 ]
+

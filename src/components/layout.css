@@ -621,45 +621,6 @@ pre tt:after {
   }
 }
 
-.nav-links {
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-name: fillIn;
-  text-decoration: none;
-  color: white;
-}
-
-@keyframes fillIn {
-  from {
-    color: aqua;
-  }
-
-  to {
-    color: rebeccapurple;
-  }
-}
-
-.nav-links:hover {
-  animation-duration: 5s;
-  animation-iteration-count: initial;
-  animation-name: slider;
-}
-
-@keyframes slider {
-  from {
-    border-bottom-color: rebeccapurple;
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-  }
-
-  to {
-    border-bottom-color: rebeccapurple;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-  }
-}
-
 .heading {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -669,14 +630,14 @@ pre tt:after {
   color: #222;
 }
 
-.container {
+.about-container {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-column-gap: .5em;
+  grid-template-columns: 70% 30%;
+  grid-gap: .5em;
   margin-bottom: 3rem;
   margin-right: 3rem;
 }
 
-.gradientBackground {
-  background-image: linear-gradient( 135deg, #81FBB8 10%, #81fb81 25%, rgb(10, 231, 243) 100%);
+.about-content {
+  background: #eee;
 }

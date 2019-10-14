@@ -8,7 +8,8 @@ const Menu = () => (
       background: 'black',
       paddingTop: '10px',
       marginBottom: '0',
-      fontFamily: 'futura',
+      fontFamily: 'roboto',
+      fontWeight: 'light'
     }}>
 
     <ul 
@@ -34,12 +35,8 @@ const Menu = () => (
         <Link className="nav-links" to="/blog">toggle light</Link>
       </li>
     </ul>
-    </div>
-
-    
-
+  </div>
   </>
-
 )
 
 export default Menu;

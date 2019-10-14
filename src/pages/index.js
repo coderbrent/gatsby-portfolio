@@ -6,12 +6,9 @@ import Image from '../components/image'
 const IndexPage = () => (
   <Layout>
     <h3 className="heading">A little bit about me!</h3>
-    <div className="container">
-      <div className="picture">
-        <Image />
-      </div>
+    <div className="about-container">
       <div style={{ marginLeft: 10 }}>
-      <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi!</div>
+      <div className="about-content" style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi!</div>
         My name is Brent Abruzese and I'm a full stack web developer from Central New Jersey!
         When I'm not ⌨️ I love spending time with my 👪, watching 📺, reading 📘 and playing 🎸 and 🏒!
       <div 

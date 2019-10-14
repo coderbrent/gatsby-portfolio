@@ -10,16 +10,17 @@ const PortfolioPage = () => {
       <SEO title="Portfolio" />
       <Layout>
         <h3 className="heading">Some work I've done...</h3>
-          <div style={{ display: 'inline-flex'}}>
+        <div className="card-grid">
           { Projects.map(project => {
             return <Card
               key={project.id}
               desc={project.desc}
               name={project.name}
               date={project.date}
+              stack={project.stack}
             />
           })}
-          </div>
+        </div>
       </Layout>
     </>
   )
