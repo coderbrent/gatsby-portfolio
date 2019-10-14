@@ -2,14 +2,12 @@ import React from 'react';
 import Layout from '../components/layout'
 import Link from 'gatsby-link'
 import './blog.css'
-import { bold } from 'ansi-colors';
 
 const BlogPage = ({ data }) => (
-
     <>
       <Layout>
         <div>
-          <h1>Latest Posts</h1>
+          <h1 className="heading">Latest Posts</h1>
           { data.allMarkdownRemark.edges.map(post => {
             return <div key={post.node.id}>
             <div className="blog">

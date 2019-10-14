@@ -623,27 +623,42 @@ pre tt:after {
 
 .heading {
   font-family: roboto;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-left: 5px;
-  padding: 10px;
-  border-bottom: 3px dotted rgba(76, 0, 130, 0.297);
-  border-right: 3px dotted rgba(76, 0, 130, 0.297);
-  border-left: 3px dotted rgba(76, 0, 130, 0.297);
-  border-top: 3px dotted rgba(76, 0, 130, 0.297);
-  display: inline-block;
-  font-weight: 300;
+  font-size: 5em;
+  color: white;
+  background-color: rgba(174, 0, 255, 0.464);
+  padding: 3px;
+  font-weight: bold;
+  width: 100%;
 }
 
 .about-container {
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-gap: .5em;
-  margin-bottom: 3rem;
-  margin-right: 3rem;
+  background-color: rgb(34, 5, 52);
+  color: rgb(255, 255, 255);
+  padding: .75em;
 }
 
-.about-content {
-  background: #eee;
+.about-container > div {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  font-family: BlinkMacSystemFont;
+  font-size: small;
+  font-weight: bolder;
+  padding: .75em;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  color: rgb(174, 0, 255);
+  font-weight: bold;
+  padding: 1.5em 1em 0em 1em;
+}
+
+.section {
+  font-family: monospace;
+  font-size: large;
+  color: white;
+  padding: 0em 1.75em;
+  line-height: 1.25em;
 }

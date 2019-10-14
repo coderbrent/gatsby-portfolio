@@ -15,7 +15,6 @@ export default function Template({ data }) {
             </div>
         </>
     )
-
 }
 
 export const postQuery = graphql`

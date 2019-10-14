@@ -1,24 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby'
+import '../components/menu.css'
 
 const Menu = () => (
   <>
-    <div
-      style={{
-      background: 'black',
-      paddingTop: '10px',
-      marginBottom: '0',
-      fontFamily: 'roboto',
-      fontWeight: 'light'
-    }}>
-
-    <ul 
-      style={{
-      listStyle: 'none',
-      display: 'flex',
-      justifyContent: 'space-evenly',
-    }}>
-
+    <div className="nav-bar">
       <li>
         <Link className="nav-links" to="/">about</Link>
       </li>
@@ -34,8 +20,7 @@ const Menu = () => (
       <li>
         <Link className="nav-links" to="/blog">toggle light</Link>
       </li>
-    </ul>
-  </div>
+    </div>
   </>
 )
 

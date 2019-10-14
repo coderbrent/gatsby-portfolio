@@ -1,34 +1,48 @@
-.nav-links {
+.nav-bar {
+  background-color: rgb(32, 1, 33);
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+li {
+  justify-content: center;
+}
+
+li > .nav-links {
+  font-weight: lighter;
+  text-transform: lowercase;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-name: fillIn;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  font-family: monospace;
 }
 
 @keyframes fillIn {
   from {
     color: aqua;
   }
-
   to {
     color: rebeccapurple;
   }
 }
 
 .nav-links:hover {
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-duration: .5s;
   animation-name: slider;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slider {
   from {
-    border-bottom-width: 0px;
+    border-bottom: 0px solid purple;
   }
-
   to {
-    border-bottom-width: 3px;
+    border-bottom: 8px solid purple;
   }
 }
