@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout'
 import Link from 'gatsby-link'
 import './blog.css'
+import { bold } from 'ansi-colors';
 
 const BlogPage = ({ data }) => (
 
@@ -12,10 +13,10 @@ const BlogPage = ({ data }) => (
           { data.allMarkdownRemark.edges.map(post => {
             return <div key={post.node.id}>
             <div className="blog">
-              <h3 className="blog-title nav-links">{post.node.frontmatter.title}</h3>
+              <h3 className="blog-title">{post.node.frontmatter.title}</h3>
                 <div className="entry-body">
-                  <small style={{ fontWeight: 'bold'}}>
-                    Posted by: { post.node.frontmatter.author } <br/> 
+                  <small style={{ fontWeight: 'lighter'}}>
+                    Posted by: <p style={{ fontWeight: 700, margin: 0 }}>{ post.node.frontmatter.author }</p> <br/> 
                     on: { post.node.frontmatter.date }
                   </small>
                     <p style={{ textDecoration: 'none' }}><Link to={post.node.frontmatter.path}>Read More...</Link></p>
