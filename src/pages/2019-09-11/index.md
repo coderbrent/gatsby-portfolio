@@ -1,5 +1,5 @@
 ---
-path: "post-two"
+path: "/post-two"
 date: "2019-10-11"
 title: "How Bollywood Movies Keep Me Going"
 author: "Som Ramnani"
