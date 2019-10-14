@@ -2,11 +2,20 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from '../components/image'
+import Social from '../components/social'
  
 const IndexPage = () => (
   <Layout>
     <h3 className="heading">A little bit about me!</h3>
+<<<<<<< HEAD
     <div className="about-container">
+=======
+    <div className="container">
+      <div className="picture">
+        <Image />
+        <Social />
+      </div>
+>>>>>>> 741744920c23317eb869b8ee01780a2dd1076e58
       <div style={{ marginLeft: 10 }}>
       <div className="about-content" style={{ fontWeight: 'bold', marginBottom: 4 }}>Hi!</div>
         My name is Brent Abruzese and I'm a full stack web developer from Central New Jersey!

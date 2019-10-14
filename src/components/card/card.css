@@ -7,7 +7,13 @@
 }
 
 .card {
+<<<<<<< HEAD
   margin-bottom: .5em;
+=======
+  margin: 1rem;
+  display: 'inherit';
+  width: 18rem;
+>>>>>>> 741744920c23317eb869b8ee01780a2dd1076e58
 }
 
 .card-header {
@@ -33,6 +39,7 @@
   background-color: lightslategray;
   color: white;
   font-size: smaller;
+<<<<<<< HEAD
   padding: 8px;
 }
 
@@ -123,4 +130,12 @@
   -webkit-animation-name: flipInX;
   animation-name: flipInX;
   animation-duration: 1s;
+=======
+  padding: 10px;
+}
+
+.card-container {
+  display: flex-wrap;
+
+>>>>>>> 741744920c23317eb869b8ee01780a2dd1076e58
 }
