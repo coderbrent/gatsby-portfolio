@@ -36,5 +36,13 @@ module.exports = {
         }
       },
       'gatsby-transformer-remark',
+      {
+        resolve: "gatsby-plugin-react-svg",
+        options: {
+          rule: {
+            include: /Icons/
+          }
+        }
+      },
   ],
 }

@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 export default function Template({ data }) {
     const post = data.markdownRemark
 
-    return(
+    return (
         <>
             <div>
                 <Link to="/blog">Go Back</Link>
