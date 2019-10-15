@@ -16,9 +16,6 @@ const Menu = () => (
         <Link className="nav-links" to="/portfolio">portfolio</Link>
       </li>
       <li>
-        <Link className="nav-links" to="/blog">blog</Link>
-      </li>
-      <li>
         <Icon width="10%" viewBox="0 0 1000 1000"/>
       </li>
     </div>
