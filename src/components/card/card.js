@@ -6,13 +6,6 @@ const Card = ({ name, date, img, site, github, desc, stack }) => {
   //... a cool feature would be to iterate over the description and search for
   //the specific entry 
 
-  const readDesc = (proj) => {
-    const myProject = proj;
-
-    myProject.forEach()
-  }
-
-
 return (
   <>
     <div className="card flipInX">
