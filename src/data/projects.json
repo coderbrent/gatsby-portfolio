@@ -4,7 +4,7 @@
     "name": "Legend of Brent",
     "date": "whenever",
     "desc": "What happens when three rookie developers attempt to make a React card game in the browser? Apparently this.",
-    "img": "https://www.whatever.com",
+    "img": false,
     "site": "https://www.whatever.com",
     "github": "https://github.com/coderbrent/whatever"
   },
@@ -13,8 +13,8 @@
     "name": "The Burger Eater",
     "date": "whenever",
     "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker.",
-    "img": "https://www.whatever.com",
-    "site": "https://www.whatever.com",
+    "img": false,
+    "site": "",
     "github": "https://github.com/coderbrent/whatever"
   },
   {
@@ -22,7 +22,7 @@
     "name": "Date Night",
     "date": "whenever",
     "desc": "Can't figure out WTF to do with your sig other? Use our Date Night app and figure it out!!",
-    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "img": "/src/images/brentphoto.png",
     "site": "https://somramnani.github.io/Date-Night/",
     "github": "https://github.com/coderbrent/whatever"
   },
@@ -31,7 +31,7 @@
     "name": "This Portfolio",
     "date": "whenever",
     "desc": "Hey! Doesn't this damn portfolio count for something!? It's got a blog and dark mode!!!",
-    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "img": false,
     "site": "https://somramnani.github.io/Date-Night/",
     "github": "https://github.com/coderbrent/whatever"
   },

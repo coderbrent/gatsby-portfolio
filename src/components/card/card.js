@@ -20,12 +20,13 @@ return (
         <div className="card-title"
           style={{ 
             display: 'inline-flex'}}>
-              {name} { !stack ? null : <div style={{paddingLeft: 10}}>💻</div>}
-
+              {name}
         </div>
+        
       </div>
       <div className="card-body"> {desc} </div>
     </div>
+    
   </>
   )
 }
