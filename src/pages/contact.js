@@ -12,7 +12,7 @@ const ContactPage = () => {
       <a 
         href="https://www.twitter.com/brenta1283"
         >
-        <Icon width="3%" viewBox="0 0 1000 1000" />
+        <Icon width="2.5%" viewBox="0 0 1000 1000" />
         twitter
       </a>
     </div>

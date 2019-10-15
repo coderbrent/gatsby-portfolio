@@ -14,15 +14,15 @@
     "date": "whenever",
     "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker.",
     "img": false,
-    "site": "",
-    "github": "https://github.com/coderbrent/whatever"
+    "site": "https://hamburger-eater.herokuapp.com/",
+    "github": "https://github.com/coderbrent/burger"
   },
   {
     "id": 3,
     "name": "Date Night",
     "date": "whenever",
     "desc": "Can't figure out WTF to do with your sig other? Use our Date Night app and figure it out!!",
-    "img": "/src/images/brentphoto.png",
+    "img": "/src/images/datenite.jpg",
     "site": "https://somramnani.github.io/Date-Night/",
     "github": "https://github.com/coderbrent/whatever"
   },

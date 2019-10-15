@@ -15,8 +15,11 @@ const PortfolioPage = () => {
             return <Card
               key={project.id}
               desc={project.desc}
+              img={project.img}
               name={project.name}
               date={project.date}
+              site={project.site}
+              github={project.github}
               stack={project.stack}
             />
           })}

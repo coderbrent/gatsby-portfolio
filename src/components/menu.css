@@ -1,16 +1,16 @@
 .nav-bar {
-  background-color: rgb(32, 1, 33);
-  display: inline-flex;
+  background-color: rgb(34, 5, 52);
+  display: flex;
   justify-content: flex-start;
   width: 100%;
-}
-
-li {
-  justify-content: center;
+  margin-bottom: 1%;
+  flex-direction: row;
 }
 
 li > .nav-links {
+  margin-top: 10px;
   font-weight: lighter;
+  font-size: 1.35em;
   text-transform: lowercase;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -19,6 +19,7 @@ li > .nav-links {
   color: white;
   text-decoration: none;
   font-family: monospace;
+  display: inline-flex;
 }
 
 @keyframes fillIn {

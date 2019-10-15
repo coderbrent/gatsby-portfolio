@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby'
 import '../components/menu.css'
-import Icon from '../Icons/twitter.svg'
+import TwitterIcon from '../Icons/twitter.svg'
+import GitHubIcon from '../Icons/github-logo.svg'
 
 const Menu = () => (
   <>
@@ -14,9 +15,6 @@ const Menu = () => (
       </li>
       <li>
         <Link className="nav-links" to="/portfolio">portfolio</Link>
-      </li>
-      <li>
-        <Icon width="10%" viewBox="0 0 1000 1000"/>
       </li>
     </div>
   </>
