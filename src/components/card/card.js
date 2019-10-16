@@ -4,6 +4,7 @@ import GitHubIcon from '../../Icons/github-logo.svg'
 
 const Card = ({ name, date, img, site, github, desc, stack }) => {
 
+
 return (
   <>
   <a href={site} style={{ textDecoration: 'none '}}>
@@ -15,11 +16,11 @@ return (
             {name}
         </div>
           <div style={{display: 'inline'}}>
-
+            { console.log(stack) }
           </div>
       </div>
       <div className="card-body"> {desc} </div>
-      {console.log()}
+      <div className="card-foot"> {stack} </div>
     </div>
     </a>
     

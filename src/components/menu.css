@@ -4,7 +4,6 @@
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 1%;
-  flex-direction: row;
 }
 
 li > .nav-links {
@@ -33,17 +32,18 @@ li > .nav-links {
 
 .nav-links:hover {
   animation-iteration-count: 1;
-  animation-duration: .5s;
-  animation-name: slider;
+  animation-duration: 1s;
+  animation-name: cursor;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
 
-@keyframes slider {
+/* @keyframes cursor {
   from {
-    border-bottom: 0px solid purple;
+    border-right: 0px solid purple;
   }
+
   to {
-    border-bottom: 8px solid purple;
+    border-right: 10px solid rebeccapurple;
   }
-}
+} */

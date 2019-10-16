@@ -16,7 +16,9 @@ const IndexPage = () => (
           </div>
         <div className="sub-heading">BUILDING STUFF</div>
           <div className="section">
-            What attracted me to programming (or "coding" as the kids call it these days) was a love of creating and building cool things.
+            What attracted me to web development was a love for creating and building cool things. I've been
+            working more recently in the MERN stack (Mongo, Express, React, Node), but I try to keep myself
+            from overengineering and using tools for the sake of using them (this portfolio being an example of that!)
           </div>
       </div>
     </div>
