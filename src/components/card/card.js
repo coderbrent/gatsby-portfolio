@@ -1,9 +1,7 @@
 import React from 'react'
 import '../card/card.css'
-import GitHubIcon from '../../Icons/github-logo.svg'
 
 const Card = ({ name, date, img, site, github, desc, stack }) => {
-
 
 return (
   <>
@@ -16,13 +14,13 @@ return (
             {name}
         </div>
           <div style={{display: 'inline'}}>
-            { console.log(stack) }
+            { console.log(typeof(stack)) }
           </div>
       </div>
       <div className="card-body"> {desc} </div>
-      <div className="card-foot"> {stack} </div>
+      <div className="card-foot"> { stack } </div>
     </div>
-    </a>
+  </a>
     
   </>
   )
