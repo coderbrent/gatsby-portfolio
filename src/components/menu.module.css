@@ -1,5 +1,6 @@
 nav {
   width: 100%;
+  border-left: rebeccapurple 10px solid;
 }
 
 ul {
@@ -12,7 +13,8 @@ ul {
   display: flex;
   justify-content: flex-start;
   list-style: none;
-  padding: 1rem;
+  padding: .75rem;
+  margin-left: 0;
 }
 
 .navItem {
@@ -39,6 +41,6 @@ li {
   }
 
   to {
-    border-bottom: 6px solid rebeccapurple;
+    border-bottom: 6px solid purple;
   }
 }
