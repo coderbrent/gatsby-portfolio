@@ -3,16 +3,16 @@
     "id": 1,
     "name": "Legend of Brent",
     "date": "whenever",
-    "desc": "What happens when three rookie developers attempt to make a React card game in the browser? Apparently this.",
+    "desc": "An attempt at a card 'PVE' battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
     "img": false,
-    "site": "https://www.whatever.com",
+    "site": "https://lob-game.herokuapp.com/",
     "github": "https://github.com/coderbrent/whatever"
   },
   {
     "id": 2,
     "name": "The Burger Eater",
     "date": "whenever",
-    "desc": "This incredibly useful, incredibly helpful, incredibly...stupid. Ok, it's pretty dumb. It's a to do list app disguised as some kind of burger consumption tracker.",
+    "desc": "A simple to-do li... burger tracker application that tracks burgers you've eaten vs burgers you have NOT eaten.. ahem.",
     "img": false,
     "site": "https://hamburger-eater.herokuapp.com/",
     "github": "https://github.com/coderbrent/burger"
@@ -21,19 +21,10 @@
     "id": 3,
     "name": "Date Night",
     "date": "whenever",
-    "desc": "Can't figure out WTF to do with your sig other? Use our Date Night app and figure it out!!",
+    "desc": "An web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
     "img": "/src/images/datenite.jpg",
     "site": "https://somramnani.github.io/Date-Night/",
-    "github": "https://github.com/coderbrent/whatever"
-  },
-  {
-    "id": 4,
-    "name": "This Portfolio",
-    "date": "whenever",
-    "desc": "Hey! Doesn't this damn portfolio count for something!? It's got a blog and dark mode!!!",
-    "img": false,
-    "site": "https://somramnani.github.io/Date-Night/",
-    "github": "https://github.com/coderbrent/whatever"
+    "github": "https://github.com/somramnani/Date-Night"
   }
 ]
 
