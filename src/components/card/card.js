@@ -1,26 +1,25 @@
 import React from 'react'
-import '../card/card.css'
+import cardStyles from '../card/card.module.css'
 
 const Card = ({ name, date, img, site, github, desc, stack }) => {
 
 return (
   <>
+  <div className={cardStyles.cardGrid}>
   <a href={site} style={{ textDecoration: 'none '}}>
-    <div className="card flipInX">
-      <div className="card-header" style={{ display: 'inline-flex'}}>
-        <div className="card-title"
+    <div className={cardStyles.card}>
+      <div className={cardStyles.cardHeader} style={{ display: 'inline-flex'}}>
+        <div className={cardStyles.cardTitle}
           style={{ 
           display: 'inline-flex'}}>
             {name}
         </div>
-          <div style={{display: 'inline'}}>
-            { console.log(typeof(stack)) }
-          </div>
       </div>
-      <div className="card-body"> {desc} </div>
-      <div className="card-foot"> { stack } </div>
+      <div className={cardStyles.cardBody}> {desc} </div>
+      <div className={cardStyles.cardFoot}> {stack} </div>
     </div>
   </a>
+  </div>
     
   </>
   )

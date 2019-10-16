@@ -633,7 +633,7 @@ pre tt:after {
 
 .about-container {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 80% 20%;
   background-color: rgb(34, 5, 52);
   color: rgb(255, 255, 255);
   padding: .75em;
@@ -656,7 +656,7 @@ pre tt:after {
 }
 
 .section {
-  font-family: monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: large;
   color: white;
   padding: 0em 1.75em;

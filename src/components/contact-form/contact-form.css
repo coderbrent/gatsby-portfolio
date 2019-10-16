@@ -1,0 +1,54 @@
+.contact-form-wrapper {
+  display: grid;
+  grid-auto-rows: 25% 25% 50%;
+  background-color: rgb(243, 243, 243);
+  padding: 1rem;
+}
+
+.contact-form-header {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: lightblue;
+  border-left: darkblue 3px solid
+}
+
+label {
+  color: #666;
+  font-size: smaller;
+  margin-left: .75em;
+}
+
+input {
+  background-color: rgb(229, 229, 229);
+  color: rgb(84, 84, 84);
+  border: none;
+  font-size: small;
+  margin-left: .50em;
+  padding: .25rem;
+}
+
+input::placeholder {
+  color: rgb(84, 84, 84);
+  border: none;
+}
+
+input:focus-within {
+  background-color: rgb(255, 255, 255);
+  color: rgb(52, 52, 52);
+}
+
+legend {
+  font-size: large;
+  color: #666;
+  display: none;
+}
+
+.cust-textarea {
+  background-color: rgb(229, 229, 229);
+  color: rgb(84, 84, 84);
+  border: none;
+  font-size: small;
+  margin-left: .50em;
+  padding: .25rem;
+}

@@ -1,0 +1,44 @@
+nav {
+  width: 100%;
+}
+
+ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.navList {
+  background-color: rgb(41, 0, 69);
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 1rem;
+}
+
+.navItem {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+.navItem:hover {
+  animation-iteration-count: 1;
+  animation-duration: .3s;
+  animation-name: cursor;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cursor {
+  from {
+    border-bottom: 0px solid purple;
+  }
+
+  to {
+    border-bottom: 6px solid rebeccapurple;
+  }
+}
