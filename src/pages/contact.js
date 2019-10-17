@@ -7,7 +7,7 @@ const ContactPage = () => {
   <>
   <Layout>
     <div>
-      <h1 className="heading">Contact me</h1>
+      <h1 className="heading">contact me</h1>
     </div>
       <ContactForm />
   </Layout>

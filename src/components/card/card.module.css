@@ -1,11 +1,16 @@
 .cardGrid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
   gap: 1em;
 }
 
 .card {
-  margin-bottom: .5em;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  animation-duration: 1s;
 }
 
 .cardTitle {
@@ -16,7 +21,7 @@
 
 .cardHeader {
   border-left: 10px black;
-  background-color: black;
+  background-color: rgb(120, 120, 120);
   font-size: smaller;
   padding: 8px;
   min-width: 100%;
@@ -28,8 +33,8 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   border-top: 2px solid rebeccapurple;
-  background-color: lightslategray;
-  color: white;
+  background-color: rgb(232, 232, 232);
+  color: black;
   font-size: smaller;
   padding: 8px;
 }
@@ -42,7 +47,7 @@
 
 .cardFoot {
   width: inherit;
-  background-color: rgb(112, 112, 112);
+  background-color: rgb(214, 214, 214);
   display: block;
 }
 
@@ -124,12 +129,4 @@
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }
-}
-
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
-  animation-duration: 1s;
 }

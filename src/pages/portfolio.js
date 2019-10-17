@@ -9,7 +9,7 @@ const PortfolioPage = () => {
     <>
       <SEO title="Portfolio" />
       <Layout>
-        <h3 className="heading">Some work I've done...</h3>
+        <h3 className="heading">some work I've done...</h3>
         <div className="card-grid">
           { Projects.map(project => {
             return <Card
