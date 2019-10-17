@@ -510,7 +510,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.1 5rem / 2);
+  margin-bottom: calc(.5rem / 2);
 }
 ol li {
   padding-left: 0;
