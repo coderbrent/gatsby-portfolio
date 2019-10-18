@@ -1,38 +1,90 @@
-nav {
-  width: 100%;
+.navWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-left: rebeccapurple 10px solid;
   animation-name: borderPhaser;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  width: 100%;
 }
 
-ul {
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-.navList {
+/* .navList {
   background-color: rgb(41, 0, 69);
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   list-style: none;
   padding: .75rem;
   margin-left: 0;
   margin-bottom: 0;
+  width: 50%;
+} */
+
+/* .navSocial {
+  position: absolute;
+  background-color: rgb(41, 0, 69);
+  display: inline-flex;
+  list-style: none;
+  padding: .17rem;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+} */
+
+ul > li {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navSocialGrid {
+  background-color: rgb(41, 0, 69);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  width: 100%;
+  justify-items: self-end;
+  align-items: center;
+  margin: 0;
+}
+
+.navSocialGridItem {
+  margin-right: 1rem;
+  margin-top: .35rem;
+  text-decoration: none;
+}
+
+.navNewList {
+  background-color: rgb(41, 0, 69);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  padding: 1rem;
+  align-items: center;
+  grid-gap: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.navNewItem {
+  text-decoration: none;
+  color: white;
+}
+
+.navItemSocial {
+  margin: 0rem;
+  text-decoration: none;
 }
 
 .navItem {
   text-decoration: none;
   color: white;
-  margin: 1rem;
+  margin: 0rem;
+  padding: 0rem;
 }
 
-li {
-  margin-bottom: 0;
-}
-
-.navItem:hover {
+.navNewItem:hover {
   animation-iteration-count: 1;
   animation-duration: .3s;
   animation-name: cursor;

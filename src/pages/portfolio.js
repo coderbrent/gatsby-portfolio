@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import SEO from "../components/seo"
 import Projects from '../data/projects.json'
 import Card from '../components/card/card'
+import cardStyles from '../components/card/card.module.css'
 
 const PortfolioPage = () => {
   return (
@@ -10,7 +11,7 @@ const PortfolioPage = () => {
       <SEO title="Portfolio" />
       <Layout>
         <h3 className="heading">some work I've done...</h3>
-        <div className="card-grid">
+        <div className={cardStyles.cardGrid}>
           { Projects.map(project => {
             return <Card
               key={project.id}
