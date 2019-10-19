@@ -625,7 +625,7 @@ pre tt:after {
 .heading {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.75em;
-  color: rgb(160, 0, 219);
+  color: rgb(41, 0, 69);
   padding: 3px;
   /* text-transform: uppercase; */
   font-variant: small-caps;
@@ -642,7 +642,7 @@ pre tt:after {
 .sub-heading {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.75rem;
-  color: rgb(153, 11, 219);
+  color: rgb(58, 4, 93);
   font-weight: bold;
   text-align: left;
 }
@@ -658,7 +658,7 @@ pre tt:after {
 
 .sectionParagraphs {
   font-size: medium;
-  color: #555;
+  color: #333;
   padding: .55rem;
 }
 

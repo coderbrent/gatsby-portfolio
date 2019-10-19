@@ -8,9 +8,8 @@ import LinkedInLogo from '../../Icons/linkedin.svg'
 const Menu = () => (
   <>
     <nav className={menuStyles.navWrapper}>
-
       <ul className={menuStyles.navNewList}>
-        <li>
+        <li className={menuStyles.navLink}>
           <Link className={menuStyles.navNewItem} to="/" target="_blank">about</Link>
         </li>
         <li>
@@ -23,26 +22,29 @@ const Menu = () => (
           <Link className={menuStyles.navNewItem} to="/blog">blog</Link>
         </li>
       </ul>
-
       <ul className={menuStyles.navSocialGrid}>
         <li>
           <a href="https://www.twitter.com/brenta1283" 
             className={menuStyles.navSocialGridItem}>
-              <TwitterIcon />
+              <TwitterIcon 
+                className={menuStyles.socialLinks}
+                fill={'white'} />
           </a>
         </li>
-
         <li>
           <a href="https://github.com/coderbrent"
             className={menuStyles.navSocialGridItem}>
-              <GithubIcon fill={'white'}/>
+              <GithubIcon 
+                className={menuStyles.socialLinks}
+                fill={'white'}/>
           </a>
         </li>
-
         <li>
           <a href="https://www.linkedin.com/in/brent-abruzese" 
             className={menuStyles.navSocialGridItem}>
-              <LinkedInLogo fill={'white'}/>
+              <LinkedInLogo 
+                className={menuStyles.socialLinks} 
+                fill={'white'}/>
           </a>
         </li>
       </ul>

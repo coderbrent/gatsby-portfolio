@@ -1,10 +1,9 @@
 import React from 'react'
 import cardStyles from '../card/card.module.css'
-import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Card = ({ name, date, img, site, github, desc, stack }) => {
-
+  
 return (
   <>
     <div className={cardStyles.card}>
