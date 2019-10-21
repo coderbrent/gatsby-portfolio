@@ -1,0 +1,16 @@
+.bfWrapper {
+  padding: 1rem;
+  background-color: rebeccapurple;
+  margin-top: .5em;
+}
+
+.bfHeader {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(46, 0, 79);
+}
+
+.bfPosts {
+  color: white;
+  font-size: smaller;
+}

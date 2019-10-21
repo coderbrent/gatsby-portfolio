@@ -1,0 +1,14 @@
+.factCard {
+  font-size: smaller;
+  background-color: rgb(52, 104, 156);
+  color: white;
+  padding: .5rem 1rem .10rem;
+  margin-top: 1rem;
+  margin: 1rem 0rem 0rem 0rem
+}
+
+.factBodyHeader {
+  font-weight: bold;
+  font-size: smaller;
+  text-align: center;
+}
