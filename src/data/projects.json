@@ -4,9 +4,9 @@
     "name": "Legend of Brent",
     "date": "whenever",
     "desc": "An attempt at a card 'PVE' battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
-    "img": "../../static/brentphoto.png",
-    "site": "",
-    "github": "https://github.com/coderbrent/whatever",
+    "img": "",
+    "site": "https://lob-game.herokuapp.com/",
+    "github": "https://github.com/somramnani/The-Legend-of-Brent",
     "stack": ["react", "node", "mongo", "express"]
   },
   {
@@ -24,7 +24,7 @@
     "name": "Date Night",
     "date": "whenever",
     "desc": "An web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
-    "img": "/datenite.jpg",
+    "img": "",
     "site": "https://somramnani.github.io/Date-Night/",
     "github": "https://github.com/somramnani/Date-Night"
   }
