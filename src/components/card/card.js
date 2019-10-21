@@ -7,7 +7,7 @@ const Card = ({ name, date, img, site, github, desc, stack }) => {
   
 return (
   <>
-    <div className={cardStyles.card}>
+    <div className={cardStyles.cardWrapper}>
       <a href={site} style={{ textDecoration: 'none '}}>
         <div className={cardStyles.cardHeader}>
           <div className={cardStyles.cardTitle}>

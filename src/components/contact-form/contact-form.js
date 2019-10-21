@@ -18,7 +18,7 @@ const ContactForm = () => {
           <label htmlFor="name">
             Name 
           <input autoFocus
-            className={contactFormStyles.input}
+            className={contactFormStyles.formInput}
             id="name"
             type="text"
             name="name"
@@ -32,7 +32,7 @@ const ContactForm = () => {
         <div className={contactFormStyles.formRow}>
           <label htmlFor="email">
             Email 
-          <input className={contactFormStyles.input}
+          <input className={contactFormStyles.formInput}
             id="email"
             type="email" 
             name="email"
@@ -45,7 +45,7 @@ const ContactForm = () => {
         <div className={contactFormStyles.formRow}>
           <label htmlFor="message">
             Message 
-          <input className={contactFormStyles.input}
+          <input className={contactFormStyles.formInput}
             type="text"
             id="message"
             name="message"
@@ -55,13 +55,15 @@ const ContactForm = () => {
             />
           </label>
         </div>
-        <button
-          className={contactFormStyles.submitButton}
-          type="submit"
-          value="send"
-          >
-          send
-        </button>
+        <div className={contactFormStyles.formRow}>
+          <button
+            className={contactFormStyles.submitButton}
+            type="submit"
+            value="send"
+            >
+            send
+          </button>
+        </div>
     </form>
   </>
 

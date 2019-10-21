@@ -23,7 +23,16 @@
     "id": 3,
     "name": "Date Night",
     "date": "whenever",
-    "desc": "An web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
+    "desc": "A web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
+    "img": "",
+    "site": "https://somramnani.github.io/Date-Night/",
+    "github": "https://github.com/somramnani/Date-Night"
+  },
+  {
+    "id": 4,
+    "name": "Chrono Cards",
+    "date": "whenever",
+    "desc": "A React built browser game where the user must avoid clicking the same card twice in a row.",
     "img": "",
     "site": "https://somramnani.github.io/Date-Night/",
     "github": "https://github.com/somramnani/Date-Night"
