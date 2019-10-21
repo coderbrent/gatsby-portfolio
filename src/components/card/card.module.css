@@ -7,14 +7,11 @@
 .card {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
   animation-name: flipInX;
-  animation-duration: 1s;
-  animation-name: borderPhaser;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  border-left: 5px solid rebeccapurple;
+  animation-iteration-count: 1;
+  animation-duration: initial;
+  animation-direction: normal;
+  animation-play-state: running;
 }
 
 .cardTitle {

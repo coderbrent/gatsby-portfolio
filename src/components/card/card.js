@@ -21,5 +21,4 @@ return (
   )
 }
 
-
 export default Card;
