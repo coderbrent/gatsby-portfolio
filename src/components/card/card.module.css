@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  margin: 1rem;
 }
 
 .card {
@@ -14,17 +15,39 @@
   animation-play-state: running;
 }
 
+.cardHeader {
+  display: flex;
+  background-color: rgb(41, 0, 69);
+  font-size: smaller;
+  padding: 8px;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
 .cardTitle {
   font-weight: bold;
   font-size: larger;
   color: rgb(255, 255, 255);
 }
 
-.cardHeader {
-  background-color: rgb(41, 0, 69);
-  font-size: smaller;
-  padding: 8px;
-  min-width: 100%;
+.cardTitleDeployLink {
+  margin: 0;
+  padding: 0;
+  fill: white;
+}
+
+.cardTitleCodeLink {
+  margin: 0;
+  padding: 0;
+  fill: white;
+}
+
+.cardTitleDeployLink:hover {
+  fill: purple;
+}
+
+.cardTitleCodeLink:hover {
+  fill: purple;
 }
 
 .cardBody {
