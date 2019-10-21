@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import contactFormStyles from '../contact-form/contact-form.module.css'
 
 const ContactForm = () => {
@@ -45,7 +45,7 @@ const ContactForm = () => {
         <div className={contactFormStyles.formRow}>
           <label htmlFor="message">
             Message 
-          <input className={contactFormStyles.formInput}
+          <textarea className={contactFormStyles.formInputMessage}
             type="text"
             id="message"
             name="message"

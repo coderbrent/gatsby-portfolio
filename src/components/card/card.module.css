@@ -9,15 +9,11 @@
   display: inline;
 }
 
-.cardWrapper:hover {
-  box-shadow: 1px 1px 1px 3px rgb(41, 0, 69);
-}
-
 .cardHeader {
   display: flex;
   background-color: rgb(41, 0, 69);
   font-size: smaller;
-  padding: 8px;
+  padding: 5px;
   min-width: 100%;
   justify-content: space-between;
 }
@@ -50,9 +46,9 @@
 
 .cardBody {
   background-color: rgb(232, 232, 232);
-  color: black;
+  color: rgb(64, 64, 64);
   font-size: smaller;
-  padding: 8px;
+  padding: 10px;
 }
 
 .cardFoot {

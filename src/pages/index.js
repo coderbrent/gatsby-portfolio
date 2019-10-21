@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import BrentImage from '../components/BrentImage'
  
 const IndexPage = () => (
@@ -10,16 +10,16 @@ const IndexPage = () => (
         <BrentImage />
       </div>
     <div>
-      <h1 className="heading" style={{ fontSize: '5rem'}}>hello!</h1>
+      <h1 className="heading" style={{ fontSize: '5rem', marginBottom: '.25rem'}}>hello!</h1>
       <div>
         <div className="sectionBlock">
         <div className="sub-heading">about me</div>
           <p className="sectionParagraphs">Hi! My name is Brent Abruzese - I'm a full stack web developer from Central New Jersey!
-            I love spending time with my family, watching TV (I love paranormal 👻 shows!), 
+            I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
             reading and playing hockey! I hav</p>
         </div>
         <div className="sectionBlock">
-        <div className="sub-heading">why i 💗 to code</div>
+        <div className="sub-heading">why i <span role="img" aria-label="heart">💗</span> to code</div>
           <p className="sectionParagraphs">What attracted me to web development was a love for creating and building cool things. 
             Back in the dial up days, I "picked up" a copy of Visual Basic 3.0 and began building
             punters and mass mailers on America Online like lots of other degenerate 90's youth! I did

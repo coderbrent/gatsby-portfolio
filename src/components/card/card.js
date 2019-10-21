@@ -15,14 +15,14 @@ return (
           </div>
             <div>
               <a href={github}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <CodeOnlyIcon 
                   className={cardStyles.cardTitleDeployLink} 
                   />
               </a> &nbsp;
               <a href={site}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <DeployedIcon 
                   className={cardStyles.cardTitleCodeLink} 
