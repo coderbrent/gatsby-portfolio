@@ -8,10 +8,11 @@ const BlogPage = ({ data }) => (
       <h5 className="heading">Latest Posts</h5>
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
-            <h3>{post.node.frontmatter.title}</h3>
+            <h3 className="sub-heading">{post.node.frontmatter.title}</h3>
               <small>Posted by {post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
               <br />
               <br />
+              {post.node.frontmatter.excerpt}
               <Link to={post.node.frontmatter.path}>Read More</Link>
               <br />
               <br />

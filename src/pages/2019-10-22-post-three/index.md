@@ -1,8 +1,8 @@
 ---
 path: "/post-three"
 date: "2019-10-22"
-title: "My TURD Post"
+title: "Another post..."
 author: "Brent Abruzese"
 ---
 
-Yep - this is my THIRD post in Gatsby.
+Testing this out to make sure it works...

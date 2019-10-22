@@ -2,6 +2,7 @@ import React from 'react';
 import blogFeedStyles from '../blog-feed/BlogFeed.module.css'
 
 const BlogFeed = () => {
+
   return (
     <>
       <div className={blogFeedStyles.bfWrapper}>
@@ -10,7 +11,6 @@ const BlogFeed = () => {
         </p>
         <div className={blogFeedStyles.bfBody}>
           <p className={blogFeedStyles.bfPosts}> 
-            None for now...
           </p>
           <p className={blogFeedStyles.bfPosts}> 
             A hard-coded one...

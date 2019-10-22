@@ -5,4 +5,4 @@ title: "My SECOND Post"
 author: "Brent Abruzese"
 ---
 
-Yep - this is my second post in Gatsby.
+This seems to be working - yay!
