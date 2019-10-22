@@ -8,9 +8,17 @@ const BlogFeed = () => {
         <p className={blogFeedStyles.bfHeader}>
           Recent Blog Posts
         </p>
+        <div className={blogFeedStyles.bfBody}>
           <p className={blogFeedStyles.bfPosts}> 
             None for now...
           </p>
+          <p className={blogFeedStyles.bfPosts}> 
+            A hard-coded one...
+          </p>
+          <p className={blogFeedStyles.bfPosts}> 
+            Still nothing...
+          </p>
+        </div>
       </div>
     </>
   )

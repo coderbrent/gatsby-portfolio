@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import BrentImage from '../components/BrentImage'
-import FactCard from '../components/fact-card/FactCard'
 import BlogFeed from '../components/blog-feed/BlogFeed'
  
 const IndexPage = () => (

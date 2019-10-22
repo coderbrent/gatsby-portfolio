@@ -1,16 +1,32 @@
 .bfWrapper {
-  padding: 1rem;
   background-color: rebeccapurple;
-  margin-top: .5em;
+  margin-top: 2em;
+  max-height: 1000px;
 }
 
 .bfHeader {
-  font-size: 1rem;
+  display: flex;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(46, 0, 79);
+  /* color: rgb(46, 0, 79); */
+  color: white;
+  padding: 5%;
+}
+
+.bfBody {
+  width: 100%;
 }
 
 .bfPosts {
+  padding: .5rem;
   color: white;
   font-size: smaller;
+  font-weight: lighter;
+}
+
+.bfPosts:nth-child(odd) {
+  padding: .5rem;
+  background-color: rgb(226, 226, 226);
+  color: #777;
+  font-weight: lighter;
 }
