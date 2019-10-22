@@ -2,14 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import BrentImage from '../components/BrentImage'
-import BlogFeed from '../components/blog-feed/BlogFeed'
+import FactCard from '../components/fact-card/FactCard'
  
 const IndexPage = () => (
   <Layout>
     <div className="about-container">
       <div className="imageFrame">
         <BrentImage />
-        <BlogFeed />
+        <FactCard />
       </div>
     <div>
       <h1 className="heading" style={{ fontSize: '5rem', marginBottom: '.25rem'}}>hello!</h1>
@@ -18,7 +18,7 @@ const IndexPage = () => (
         <div className="sub-heading">about me</div>
           <p className="sectionParagraphs">Hi! My name is Brent Abruzese - I'm a full stack web developer from Central New Jersey!
             I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
-            reading and playing hockey! I hav</p>
+            reading and playing hockey!</p>
         </div>
         <div className="sectionBlock">
         <div className="sub-heading">why i <span role="img" aria-label="heart">💗</span> to code</div>

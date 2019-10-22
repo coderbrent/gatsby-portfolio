@@ -4,6 +4,7 @@ import menuStyles from '../menu/menu.module.css'
 import GithubIcon from '../../Icons/github.svg'
 import TwitterIcon from '../../Icons/twitter.svg'
 import LinkedInLogo from '../../Icons/linkedin.svg'
+import MailIcon from '../../Icons/envelope.svg'
 
 const Menu = () => (
   <>
@@ -43,6 +44,14 @@ const Menu = () => (
           <a href="https://www.linkedin.com/in/brent-abruzese" 
             className={menuStyles.navSocialGridItem}>
               <LinkedInLogo 
+                className={menuStyles.socialLinks} 
+                fill={'white'}/>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:brent.abruzese@gmail.com" 
+            className={menuStyles.navSocialGridItem}>
+              <MailIcon
                 className={menuStyles.socialLinks} 
                 fill={'white'}/>
           </a>

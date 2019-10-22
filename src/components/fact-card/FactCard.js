@@ -5,17 +5,17 @@ const FactCard = () => (
   <>
     <div className={fcStyles.factCard}>
       <p className={fcStyles.factBodyHeader}>
-        Some fun facts about my portfolio...
+        Need to reach me?
       </p>
         <ul>
           <li className="check">
-            Built in Gatsby
+            <span>e: brent.abruzese@gmail.com</span>
           </li>
           <li className="check">
-            NO Bootstrap!
+            <span>c: (848) 213-2522</span>
           </li>
           <li className="check">
-            Totally accessible!
+            <span>download my resume!</span>
           </li>
         </ul>
     </div>
