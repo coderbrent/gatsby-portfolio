@@ -7,7 +7,7 @@ import FactCard from '../components/fact-card/FactCard'
 const IndexPage = () => (
   <Layout>
     <div className="about-container">
-      <div className="imageFrame">
+      <div className="imageFrame" role="img">
         <BrentImage />
         <FactCard />
       </div>

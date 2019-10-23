@@ -1,18 +1,45 @@
 .factCard {
+  font-family: Roboto;
+  display: grid;
   font-size: smaller;
+  font-weight: bolder;
   background-color: rgb(52, 104, 156);
   color: white;
-  padding: .5rem 1.25rem .10rem;
+  padding: .5rem 1rem .10rem;
   margin-top: 1rem;
   margin: 1rem 0rem 0rem 0rem;
   border-top: solid 5px rgb(35, 35, 96);
 }
 
 .factBodyHeader {
+  display: flex;
   font-weight: bold;
   font-size: 1.5em;
+  margin-bottom: .5em;
 }
 
-ul {
+.check {
+  display: inline-flex;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.skills {
+  display: block;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+ul > .factCard {
   list-style-type: none;
+}
+
+a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightgrey;
 }

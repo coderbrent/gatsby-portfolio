@@ -7,7 +7,8 @@
     "img": "",
     "site": "https://lob-game.herokuapp.com/",
     "github": "https://github.com/somramnani/The-Legend-of-Brent",
-    "stack": ["react", "node", "mongo", "express"]
+    "stack": ["react", "node", "mongo", "express"],
+    "features": ["OAuth authentication system built using Redux and JWT", "Some other feature"]
   },
   {
     "id": 2,
