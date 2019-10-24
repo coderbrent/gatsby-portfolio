@@ -12,7 +12,7 @@ const IndexPage = () => (
         <FactCard />
       </div>
     <div>
-      <h1 className="heading" style={{ fontSize: '5rem', marginBottom: '.25rem'}}>hello!</h1>
+      <h1 className="heading">hello!</h1>
       <div>
         <div className="sectionBlock">
         <div className="sub-heading">about me</div>
@@ -32,7 +32,7 @@ const IndexPage = () => (
         <div className="sub-heading">what i'm up to now</div>
           <p className="sectionParagraphs">After spending the last 7 years starting and growing a limousine service,
             my company began to really start feeling the effects of rideshare (Uber/Lyft). I had to
-            close my company and lay off my 22 employees in October 2019. 
+            shut down and lay off my 22 employees in October 2019. 
             It certainly stung, but it brought me full circle. I now bring my years of entreprenurial experience
             to web developing. I'm currently freelancing and hunting for an awesome company to join!</p>
         </div>
