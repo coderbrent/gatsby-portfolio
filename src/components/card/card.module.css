@@ -56,3 +56,9 @@
   background-color: rgb(214, 214, 214);
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}

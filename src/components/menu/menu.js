@@ -6,7 +6,7 @@ import TwitterIcon from '../../Icons/twitter.svg'
 import LinkedInLogo from '../../Icons/linkedin.svg'
 
 const Menu = () => {
-  const [isVisible, setVisible] = useState({ isVisible: false })
+  const [isVisible, setVisible] = useState({ isVisible: null })
   
   const toggleMobile = () => {
     if(isVisible) {
