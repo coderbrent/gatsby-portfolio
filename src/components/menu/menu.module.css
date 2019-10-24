@@ -2,10 +2,7 @@
 .navWrapper {
   display: flex;
   border-left: rebeccapurple 10px solid;
-  animation-name: borderPhaser;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation: borderPhaser infinite alternate-reverse 3s;
   width: 100%;
 }
 
@@ -14,7 +11,7 @@
   display: flex;
   list-style: none;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1em;
   align-items: flex-start;
   width: 100%;
   margin: 0;
@@ -27,11 +24,7 @@
 }
 
 .navBarItem:hover {
-  animation-iteration-count: 1;
-  animation-duration: .3s;
-  animation-name: cursor;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation: cursor normal forwards 1 .3s;
 }
 
 ul > li {
@@ -80,7 +73,7 @@ ul > li {
 /* mobile responsive hamburger menu */
 .hamburgerMenu {
   background-color: rgb(41, 0, 69);
-  /* display: none; */
+  display: flex;
   list-style: none;
   justify-content: space-evenly;
   padding: 1rem;
@@ -90,39 +83,40 @@ ul > li {
 }
 
 .hamburgerButton {
-  display: inline-flex;
+  display: flex;
   border: 0;
   background-color: transparent;
   color: white;
-  font-size: 36px;
+  font-size: 100%;
   margin-left: 5em;
 }
 
-.hamburgerMenu > p {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .hamburgerMenuLinks {
-  /* display: none; */
+  display: flex;
   width: 100%;
-  font-size: 2.75rem;
+  font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  align-content: center;
   justify-content: center;
   font-weight: bolder;
 }
 
+.hamburgerMenu > p {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .hiddenMenu {
-  /* display: none; */
+  display: flex;
   flex-direction: column;
   background-color: rgb(41, 0, 69);
-  align-items: center;
+  height: 100%;
 }
 
 .hamburgerMenuLinks:nth-child(odd) {
-  /* display: none; */
+  display: block;
   background-color: rgba(115, 0, 115, 0.327);
   color: white;
 }
@@ -160,17 +154,16 @@ ul > li {
 
 /* media queries */
 @media (max-width: 576px) {
+  .hamburgerButton,
   .hamburgerMenuLinks, 
   .hiddenMenu, 
   .hamburgerMenuLinks:nth-child(odd)
-  .hamburgerMenu
+  .hamburgerMenu,
+  .backUp, .dropDown
    {
-    display: flex;
+    display: block;
   }
-  .navBar {
-    display: none;
-  }
-  .navSocial {
+  .navBar, .navSocial {
     display: none;
   }
   .navWrapper {
