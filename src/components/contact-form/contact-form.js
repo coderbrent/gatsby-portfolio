@@ -1,22 +1,25 @@
 import React from 'react'
 import contactFormStyles from '../contact-form/contact-form.module.css'
+import textForm from '../../components/text-form/textForm'
 
 const ContactForm = () => {
 
   return (
   <>
-    <form method="post" 
-      className={contactFormStyles.contactFormWrapper} 
+  <div className={contactFormStyles.container}>
+    <form  
+      className={contactFormStyles.contactFormWrapper}
+      method="post"
       name="contact" 
       netlify-honeypot="bot-field"
       data-netlify="true"
-      >
-      <input type="hidden" name="bot-field" />
+      > <input type="hidden" name="bot-field" />
 
-        <legend>Contact Me!</legend>
+      <div className="fieldset">
         <div className={contactFormStyles.formRow}>
           <label htmlFor="name">
-            Name 
+            Name
+          </label>
           <input autoFocus
             className={contactFormStyles.formInput}
             id="name"
@@ -26,12 +29,12 @@ const ContactForm = () => {
             required={true}
             aria-required="true"
             />
-          </label>
         </div>
 
         <div className={contactFormStyles.formRow}>
           <label htmlFor="email">
-            Email 
+            Email
+            </label>
           <input className={contactFormStyles.formInput}
             id="email"
             type="email" 
@@ -40,11 +43,11 @@ const ContactForm = () => {
             required={true}
             aria-required="true"
             />
-          </label>
         </div>
         <div className={contactFormStyles.formRow}>
           <label htmlFor="message">
-            Message 
+            Message
+          </label>
           <textarea className={contactFormStyles.formInputMessage}
             type="text"
             id="message"
@@ -53,9 +56,9 @@ const ContactForm = () => {
             required={true}
             aria-required="true"
             />
-          </label>
+          
         </div>
-        <div className={contactFormStyles.formRow}>
+        <div className={contactFormStyles.buttonRow}>
           <button
             className={contactFormStyles.submitButton}
             type="submit"
@@ -64,7 +67,9 @@ const ContactForm = () => {
             send
           </button>
         </div>
-    </form>
+        </div>
+      </form>
+    </div>
   </>
 
   )

@@ -4,6 +4,7 @@ import menuStyles from '../menu/menu.module.css'
 import GithubIcon from '../../Icons/github.svg'
 import TwitterIcon from '../../Icons/twitter.svg'
 import LinkedInLogo from '../../Icons/linkedin.svg'
+import ThemeContext from "../../context/ThemeContext"
 
 const Menu = () => {
   const [isVisible, setVisible] = useState({ isVisible: null })
@@ -18,7 +19,9 @@ const Menu = () => {
   }
 
   return (
-  <>
+  <ThemeContext.Consumer>
+  {theme => (
+    <>
     <nav className={menuStyles.navWrapper}>
       <ul className={menuStyles.navBar}>
         <li className={menuStyles.navLink}>
@@ -35,6 +38,10 @@ const Menu = () => {
         </li>
       </ul>
       <ul className={menuStyles.navSocial}>
+      <button className="dark-switcher" style={{ backgroundColor: 'transparent', color: 'white', border: 0}} 
+        onClick={theme.toggleDark}>
+          { theme.dark ?  '☀' :  '☾' }
+        </button>
       <li>
           <a href="https://www.twitter.com/brenta1283" 
             className={menuStyles.navSocialItem}>
@@ -82,7 +89,9 @@ const Menu = () => {
           <Link to="/blog">blog</Link>
         </li>
       </div>
-  </>
+      </>
+    )}
+  </ThemeContext.Consumer>
   )
 }
 export default Menu;
