@@ -1,14 +1,17 @@
 .factCard {
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: grid;
   font-size: smaller;
   font-weight: bolder;
   background-color: rgb(52, 104, 156);
   color: white;
-  padding: .5rem 1rem .10rem;
-  margin-top: 1rem;
+  padding: 1rem;
   margin: 1rem 0rem 0rem 0rem;
   border-top: solid 5px rgb(35, 35, 96);
+}
+
+ul {
+  margin: 0;
 }
 
 .factBodyHeader {
@@ -22,6 +25,7 @@
   display: inline-flex;
   align-items: center;
   font-weight: lighter;
+  justify-content: center;
 }
 
 .skills {
