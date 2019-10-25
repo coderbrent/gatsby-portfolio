@@ -52,13 +52,39 @@
 }
 
 .cardFoot {
+  display: flex;
+  font-size: small;
+  font-weight: bold;
+  color: white;
   width: inherit;
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(82, 82, 82);
   display: block;
+  /* padding: 0.5em; */
+}
+
+.iconWrapper {
+  padding-left: 5px;
+}
+
+.footRow {
+  padding: .5em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footRow:nth-child(even) {
+  background-color: darkgrey;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .cardGrid {
     grid-template-columns: 1fr;
   }
+}
+
+li, ul {
+  list-style-type: none;
 }

@@ -1,7 +1,6 @@
-import React from "react"
+// import React from "react"
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-import { ThemeProvider } from "./src/context/ThemeContext"
-
-export const wrapRootElement = ({ element }) => (
-  <ThemeProvider>{element}</ThemeProvider>
-)
+// export const wrapRootElement = ({ element }) => (
+//   <ThemeToggler>{element}</ThemeToggler>
+// )

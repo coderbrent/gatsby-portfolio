@@ -37,6 +37,7 @@ module.exports = {
       },
       'gatsby-transformer-remark',
       'gatsby-transformer-json',
+      'gatsby-plugin-dark-mode',
       {
         resolve: "gatsby-plugin-react-svg",
         options: {

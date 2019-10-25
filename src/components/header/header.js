@@ -1,12 +1,9 @@
 import { Link } from "gatsby"
-import ThemeContext from "../../context/ThemeContext"
 import PropTypes from "prop-types"
 import React from "react"
 import headerStyles from '../header/header.module.css'
 
 const Header = ({ siteTitle }) => (
-  <ThemeContext.Consumer>
-   { theme => (
   <header
     className={headerStyles.background}
   >
@@ -31,8 +28,6 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </header>
-  )}
-  </ThemeContext.Consumer>
 )
 
 Header.propTypes = {
