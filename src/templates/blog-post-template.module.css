@@ -1,0 +1,57 @@
+html {
+  margin-top: 1em;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(246, 246, 246);
+  padding: 1rem;
+  height: 100%;
+  margin: 0em 5em 0em 5em;
+}
+
+.title {
+  font-size: 5rem;
+  color: #333;
+  border-bottom: purple solid 15px;
+}
+
+.subtitle {
+  display: inline-flex;
+  margin-left: .45em;
+  margin-bottom: 1.25rem;
+  font-size: larger;
+  color: rebeccapurple;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.bodyContainer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  margin: 0em 5em 1em 3em;
+  font-size: large;
+  color: #444;
+}
+
+.button {
+  margin-left: 2.4rem;
+  margin-top: 10px;
+  font-weight: bolder;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.avatar {
+  display: flex;
+  background-size: 100%;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  background-image: url('../images/brentphoto.png')
+}

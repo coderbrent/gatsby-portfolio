@@ -1,6 +1,5 @@
 import React from 'react'
 import contactFormStyles from '../contact-form/contact-form.module.css'
-import textForm from '../../components/text-form/textForm'
 
 const ContactForm = () => {
 

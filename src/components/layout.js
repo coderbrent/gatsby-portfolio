@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
+
     render={data => (
       <ThemeContext.Consumer>
         {theme => (
@@ -31,7 +32,7 @@ const Layout = ({ children }) => (
               }}
             >
               <Menu />
-              {children}
+              <main>{children}</main>
               <footer>
                 <small> Copyright 2019, Brent Abruzese </small>
               </footer>

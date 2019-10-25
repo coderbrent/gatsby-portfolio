@@ -1,8 +1,8 @@
 ---
 path: "/post-three"
-date: "2019-10-22"
-title: "Another post..."
+date: "2019-10-24"
+title: "another post..."
 author: "Brent Abruzese"
 ---
 
-Testing this out to make sure it works...
+💀💀💀 tired right now 

@@ -1,0 +1,36 @@
+.container {
+  color: #777;
+}
+
+.blogTitle {
+  font-size: 2em;
+  color: white;
+  background-color: purple;
+  padding: .25em;
+}
+
+.basic {
+  padding: 1em;
+  font-family: 'Georgia';
+  color: #333;
+  margin-bottom: 0;
+}
+
+.button {
+  margin-top: .25em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  padding: .5em;
+}
+
+.postPreview {
+  background-color: rgb(244, 244, 244);
+  padding: 0;
+}
+
+.postPreview:nth-child(even) {
+  background-color: rgb(226, 226, 226);
+}
