@@ -3,6 +3,7 @@ path: "/post-one"
 date: "2019-10-25"
 title: "blogs hea!"
 author: "Brent Abruzese"
+img: ../images/brentphoto.png
 ---
 
 ###Well that was fun!

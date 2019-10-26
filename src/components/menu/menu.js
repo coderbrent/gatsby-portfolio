@@ -38,14 +38,14 @@ const Menu = () => {
         </li>
       </ul>
       <ul className={menuStyles.navSocial}>
-      {/* <label>
+      <label>
         <input
           type="checkbox"
           onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
           checked={theme === 'dark'}
         />{' '}
         Dark mode
-      </label> */}
+      </label>
       <li>
           <a href="https://www.twitter.com/brenta1283" 
             className={menuStyles.navSocialItem}>

@@ -51,7 +51,7 @@ html {
   display: flex;
   background-size: 100%;
   border-radius: 100%;
-  height: 45px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   background-image: url('../images/brentphoto.png')
 }
