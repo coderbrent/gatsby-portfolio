@@ -653,7 +653,8 @@ pre tt:after {
 
 .sectionParagraphs {
   font-size: medium;
-  color: #333;
+  font-weight: 300;
+  color: rgb(29, 29, 29);
   padding: .55rem;
 }
 

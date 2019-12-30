@@ -12,7 +12,8 @@ const ContactForm = () => {
       name="contact" 
       netlify-honeypot="bot-field"
       data-netlify="true"
-      > <input type="hidden" name="bot-field" />
+    > 
+    <input type="hidden" name="bot-field" />
 
       <div className="fieldset">
         <div className={contactFormStyles.formRow}>

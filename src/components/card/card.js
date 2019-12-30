@@ -1,33 +1,45 @@
 import React from 'react'
-import cardStyles from '../card/card.module.css'
-import CodeOnlyIcon from '../../Icons/code.svg'
-import DeployedIcon from '../../Icons/deployed.svg'
+import classes from '../card/card.module.css'
 import GitHubIcon from '../../Icons/github.svg'
-import WebIcon from '../../Icons/internet.svg'
 
-const Card = ({ name, date, img, site, github, desc, stack, features }) => {
+const Card = ({ 
+  name, 
+  date, 
+  img, 
+  site, 
+  github, 
+  desc, 
+  stack, 
+  features }) => {
   
 return (
   <>
-    <div className={cardStyles.cardWrapper}>
-      <div className={cardStyles.cardHeader}>
-        <div className={cardStyles.cardTitle}>
-          {name}
-        </div>
-          <div style={{ color: 'white'}}>{date}</div>
-        </div>
-          <div className={cardStyles.cardBody}> {desc} </div>
-          <div className={cardStyles.cardFoot}> 
-            <li className={cardStyles.footRow}>
-              <GitHubIcon className={cardStyles.cardTitleCodeLink}/> 
-                <a href={github} target="_blank" rel="noopener noreferrer"> View the source on GitHub!</a>
-            </li>
-            <li className={cardStyles.footRow}>
-              <WebIcon className={cardStyles.cardTitleCodeLink}/> 
-                <a href={site} target="_blank" rel="noopener noreferrer"> Visit the deployed project!</a>
-            </li>
-          </div>
+  <div className={classes.cardWrapper}>
+    <div className={classes.cardHeader}>
+      <div className={classes.cardTitle}>
+        {name}
+      </div>
+      <li style={{ fill: 'black'}}>
+        <GitHubIcon 
+          className={classes.cardTitleCodeLink}
+        /> 
+          <a 
+            href={github} 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+          </a>
+        </li>
+      </div>
+    <div className={classes.cardBody}> 
+      {desc} 
     </div>
+    <div className={classes.cardFoot}> 
+      <li className={classes.footRow}>
+        Features: {features}
+      </li>
+    </div>
+  </div>
   </>
   )
 }

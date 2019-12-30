@@ -1,6 +1,6 @@
 .cardGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   margin: 1rem;
 }
@@ -10,9 +10,11 @@
 }
 
 .cardHeader {
-  padding: .5rem;
+  padding-left: 1em;
+  padding-top: 1em;
   display: flex;
-  background-color: rgb(41, 0, 69);
+  /* background-color: rgb(41, 0, 69); */
+  background-color: rgb(232, 232, 232);
   font-size: smaller;
   min-width: 100%;
   justify-content: space-between;
@@ -20,20 +22,17 @@
 
 .cardTitle {
   font-weight: bold;
-  font-size: larger;
-  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  color: black;
+  line-height: .75em;
 }
 
 .cardTitleDeployLink {
-  margin: 0;
-  padding: 0;
   fill: white;
 }
 
 .cardTitleCodeLink {
-  margin: 0;
-  padding: 0;
-  fill: white;
+  fill: rgb(62, 0, 84);
 }
 
 .cardTitleDeployLink:hover {
@@ -45,21 +44,20 @@
 }
 
 .cardBody {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(249, 249, 249);
   color: rgb(64, 64, 64);
   font-size: smaller;
-  padding: 10px;
+  padding: 1em;
 }
 
 .cardFoot {
   display: flex;
   font-size: small;
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  color: rgb(33, 33, 33);
   width: inherit;
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(232, 232, 232);
   display: block;
-  /* padding: 0.5em; */
 }
 
 .iconWrapper {
@@ -71,11 +69,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
-}
-
-.footRow:nth-child(even) {
-  background-color: darkgrey;
   width: 100%;
 }
 
