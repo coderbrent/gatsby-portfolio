@@ -26,10 +26,10 @@ const FactCard = () => {
             <strong style={{ fontSize: 'larger'}}>...Proficient in...</strong> 
               <ul>
                 <li>
-                 <strong>JavaScript</strong> - React, Node, Express
+                 <strong>Front End</strong> - JavaScript (ES5/ES6 +), React (Hooks/Context/Redux/SSGs/SSR), Webpack, Babel, Handlebars, pug
                 </li>
                 <li>
-                  <strong>DBs</strong> - PostGres, MySQL, Mongo, Redis, Firebase
+                  <strong>Back End</strong> - Node.js, MySQL(Data Structures/Sequelize), Mongo(Mongoose/CloudAtlas), Firebase, Express.js
                 </li>
               </ul>
           </li>

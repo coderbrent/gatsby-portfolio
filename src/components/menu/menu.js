@@ -4,7 +4,6 @@ import menuStyles from '../menu/menu.module.css'
 import GithubIcon from '../../Icons/github.svg'
 import TwitterIcon from '../../Icons/twitter.svg'
 import LinkedInLogo from '../../Icons/linkedin.svg'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Menu = () => {
   const [isVisible, setVisible] = useState({ isVisible: null })
@@ -12,15 +11,12 @@ const Menu = () => {
   const toggleMobile = () => {
     if(isVisible) {
       setVisible(false);
-      return console.log('false')
-    }
+    } else { 
       setVisible(true);
-      return console.log('true')
   }
+}
 
   return (
-    <ThemeToggler>
-        {({ theme, toggleTheme }) => (
     <>
     <nav className={menuStyles.navWrapper}>
       <ul className={menuStyles.navBar}>
@@ -38,14 +34,7 @@ const Menu = () => {
         </li>
       </ul>
       <ul className={menuStyles.navSocial}>
-      <label>
-        <input
-          type="checkbox"
-          onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-          checked={theme === 'dark'}
-        />{' '}
-        Dark mode
-      </label>
+    
       <li>
           <a href="https://www.twitter.com/brenta1283" 
             className={menuStyles.navSocialItem}>
@@ -95,7 +84,5 @@ const Menu = () => {
       </div>
     </>
     )}
-  </ThemeToggler>
-  )
-}
+
 export default Menu;

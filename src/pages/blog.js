@@ -22,7 +22,6 @@ const BlogPage = ({ data }) => (
         ))}
         </div>
     </Layout>
-
   </>
 )
 
