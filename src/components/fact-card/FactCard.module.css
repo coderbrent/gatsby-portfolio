@@ -24,13 +24,13 @@ ul {
 .check {
   display: inline-flex;
   align-items: center;
-  font-weight: lighter;
+  font-weight: 200;
   justify-content: center;
 }
 
 .skills {
   display: block;
-  font-weight: lighter;
+  font-weight: 200;
   margin-top: 1rem;
 }
 
