@@ -1,12 +1,13 @@
 import React from 'react'
 import classes from '../card/card.module.css'
 import GitHubIcon from '../../Icons/github.svg'
+import CodeIcon from '../../Icons/deployed.svg'
 
 const Card = ({ 
   name, 
   date, 
   img, 
-  site, 
+  site,
   github, 
   desc, 
   stack, 
@@ -20,9 +21,20 @@ return (
         {name}
       </div>
       <li style={{ fill: 'black'}}>
+      <a 
+        href={github} 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
         <GitHubIcon 
           className={classes.cardTitleCodeLink}
-        /> 
+        />
+      </a>
+        </li>
+        <li style={{ fill: 'black'}}>
+        <CodeIcon
+          className={classes.cardTitleCodeLink}
+        />
           <a 
             href={github} 
             target="_blank" 
@@ -37,6 +49,7 @@ return (
     <div className={classes.cardFoot}> 
       <li className={classes.footRow}>
         Features: {features}
+        Photos: {img}
       </li>
     </div>
   </div>

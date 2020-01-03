@@ -6,25 +6,26 @@
 }
 
 .cardWrapper {
-  display: inline;
+  display: block;
 }
 
 .cardHeader {
-  padding-left: 1em;
-  padding-top: 1em;
-  display: flex;
-  /* background-color: rgb(41, 0, 69); */
+  display: inline-grid;
+  grid-template-columns: 7fr 1fr 1fr;
   background-color: rgb(232, 232, 232);
-  font-size: smaller;
-  min-width: 100%;
   justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+
+.cardMedia {
+  display: block;
 }
 
 .cardTitle {
   font-weight: bold;
   font-size: xx-large;
   color: black;
-  line-height: .75em;
 }
 
 .cardTitleDeployLink {
@@ -32,6 +33,7 @@
 }
 
 .cardTitleCodeLink {
+  padding: 0;
   fill: rgb(62, 0, 84);
 }
 
@@ -55,13 +57,7 @@
   font-size: small;
   font-weight: normal;
   color: rgb(33, 33, 33);
-  width: inherit;
   background-color: rgb(232, 232, 232);
-  display: block;
-}
-
-.iconWrapper {
-  padding-left: 5px;
 }
 
 .footRow {
@@ -80,4 +76,6 @@
 
 li, ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

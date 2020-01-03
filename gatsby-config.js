@@ -15,6 +15,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,8 +43,13 @@ module.exports = {
         }
       },
       'gatsby-transformer-remark',
-      'gatsby-transformer-json',
-      'gatsby-plugin-dark-mode',
+      'gatsby-transformer-json', {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          path: `${__dirname}/src/data`,
+          name: `data`,
+        },
+      },
       {
         resolve: "gatsby-plugin-react-svg",
         options: {
@@ -46,6 +58,6 @@ module.exports = {
           }
         }
       },
-      'gatsby-plugin-sass'
+      'gatsby-plugin-sass',
   ],
 }

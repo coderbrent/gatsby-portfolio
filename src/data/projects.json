@@ -4,7 +4,7 @@
     "name": "legend-of-brent",
     "date": "07/09/19",
     "desc": "An attempt at a card 'PVE' battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
-    "img": "",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
     "site": "https://lob-game.herokuapp.com/",
     "github": "https://github.com/somramnani/The-Legend-of-Brent",
     "stack": ["react", "node", "mongo", "express"],
@@ -25,7 +25,7 @@
     "name": "date-night",
     "date": "05/13/2019",
     "desc": "A web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
-    "img": "",
+    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
     "site": "",
     "github": "https://github.com/coderbrent/react-date-night"
   },
