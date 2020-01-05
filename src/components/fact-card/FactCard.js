@@ -10,8 +10,9 @@ const FactCard = () => {
   <>
     <div className={fcStyles.factCard}>
       <p className={fcStyles.factBodyHeader}>
-        Jr. Web Developer...
+        Jr. Web Developer..
       </p>
+      <p className={fcStyles.factBodySubHeader}>Actively Seeking Employment!</p>
         <ul>
           <li className={fcStyles.check}>
             <MailIcon /><a href="mailto:brent.abruzese@gmail.com">brent.abruzese@gmail.com</a>
