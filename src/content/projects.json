@@ -1,36 +1,38 @@
 [
   {
     "id": 1,
+    "status": "in progress",
     "name": "legend-of-brent",
     "date": "07/09/19",
-    "desc": "An attempt at a card 'PVE' battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
-    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "desc": "An attempt at a card battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
+    "img": "https://images.unsplash.com/photo-1553986782-9f6de60b51b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80",
     "site": "https://lob-game.herokuapp.com/",
     "github": "https://github.com/somramnani/The-Legend-of-Brent",
-    "stack": ["react", "node", "mongo", "express"],
     "features": ["OAuth authentication system built using Redux and JWT", "Some other feature"]
   },
   {
     "id": 2,
+    "status": "deployed",
     "name": "burger-eater",
     "date": "07/07/19",
-    "desc": "A simple to-do li... burger tracker application that tracks burgers you've eaten vs burgers you have NOT eaten.. ahem.",
-    "img": "https://via.placeholder.com/150",
+    "desc": "A different take on the todo list app built on a Node/SQL back-end. One thing that was fun/unique here was that I put together a simple ORM rather than use Sequelize.",
+    "img": "https://repository-images.githubusercontent.com/188906246/35ce8100-2f4b-11ea-91e8-0ec75b7c7a6d",
     "site": "https://hamburger-eater.herokuapp.com/",
-    "github": "https://github.com/coderbrent/burger",
-    "stack": ["handlebars", "node", "mysql", "express"]
+    "github": "https://github.com/coderbrent/burger"
   },
   {
     "id": 3,
+    "status": "in progress",
     "name": "date-night",
     "date": "05/13/2019",
     "desc": "A web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
-    "img": "https://images.unsplash.com/photo-1526317447103-54d0515d8e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "img": "https://repository-images.githubusercontent.com/219836866/4daa0300-2f53-11ea-86ed-994abc2ef1bd",
     "site": "",
     "github": "https://github.com/coderbrent/react-date-night"
   },
   {
     "id": 4,
+    "status": "deployed",
     "name": "chrono-cards",
     "date": "06/11/2019",
     "desc": "A React built browser game where the user must avoid clicking the same card twice in a row.",

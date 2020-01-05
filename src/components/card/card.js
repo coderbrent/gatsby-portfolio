@@ -1,14 +1,26 @@
 import React from 'react'
 import classes from '../card/card.module.css'
 import GitHubIcon from '../../Icons/github.svg'
-import CodeIcon from '../../Icons/deployed.svg'
-import HerokuIcon from '../../Icons/heroku.svg'
+import HttpIcon from '../../Icons/http.svg'
+
+const DeployedTag = ({ status }) => {
+  return (
+    <div className={classes.deployed}>{status}</div>
+  )
+}
+
+const InProgressTag = ({ status }) => {
+  return (
+    <div className={classes.inProgress}>{status}</div>
+  )
+}
 
 const Card = ({
-  name, 
+  name,
+  status,
   img, 
   site,
-  github, 
+  github,
   desc, 
   stack, 
   features }) => {
@@ -16,22 +28,23 @@ const Card = ({
 return (
   <>
   <div className={classes.cardWrapper}>
-    <div className={classes.cardMedia}>
-      <img style={{ margin: 0, padding: 0}} src={img} />
-    </div>
     <div className={classes.cardHeader}>
       <div className={classes.cardTitle}>
         {name}
       </div>
-      
+      <div>
+      { status === 'deployed' ? <DeployedTag status={status}/> : <InProgressTag status={status}/> }
       </div>
+    </div>
+    <div className={classes.cardMedia}>
+      <img style={{ margin: 0, padding: 0}} src={img} />
+    </div>
     <div className={classes.cardBody}> 
       {desc} 
     </div>
-    <div className={classes.cardFoot}> 
-      <li className={classes.footRow}>
-        Features: {features}
-      </li>
+    <div className={classes.cardFoot}>
+      <div className={classes.cardFootChildren}>{ github ? <a style={{ color: `black`, fontSize: `1.75em`}} href={github}>view github: <GitHubIcon /></a> : null }</div>
+      <div className={classes.cardFootChildren}>{ site ? <a style={{ color: `black`, fontSize: `1.75em`}} href={site}>view deployed: <HttpIcon /></a> : null }</div>
     </div>
   </div>
   </>

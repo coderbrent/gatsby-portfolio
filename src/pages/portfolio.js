@@ -13,13 +13,13 @@ const PortfolioPage = () => {
       edges {
         node {
           id
+          status
           img
           desc
           name
           site
           github
           date
-          stack
           features
         }
       }
@@ -37,11 +37,11 @@ const PortfolioPage = () => {
                 key={project.node.id}
                 desc={project.node.desc}
                 img={project.node.img}
+                status={project.node.status}
                 name={project.node.name}
                 date={project.node.date}
                 site={project.node.site}
                 github={project.node.github}
-                stack={project.node.stack}
                 features={project.node.features}
               />
             })}
