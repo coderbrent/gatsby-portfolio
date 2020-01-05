@@ -7,19 +7,22 @@
 
 .cardWrapper {
   display: block;
+  margin: 0;
 }
 
 .cardHeader {
-  display: inline-grid;
-  grid-template-columns: 7fr 1fr 1fr;
-  background-color: rgb(232, 232, 232);
+  display: inline-flex;
+  align-items: baseline;
   justify-content: space-between;
+  background-color: rgb(232, 232, 232);
   width: 100%;
   padding: 1em;
+  margin: 0;
 }
 
 .cardMedia {
   display: block;
+  width: 100%;
 }
 
 .cardTitle {

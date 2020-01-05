@@ -15,7 +15,7 @@
     "name": "burger-eater",
     "date": "07/07/19",
     "desc": "A simple to-do li... burger tracker application that tracks burgers you've eaten vs burgers you have NOT eaten.. ahem.",
-    "img": "",
+    "img": "https://via.placeholder.com/150",
     "site": "https://hamburger-eater.herokuapp.com/",
     "github": "https://github.com/coderbrent/burger",
     "stack": ["handlebars", "node", "mysql", "express"]
@@ -25,7 +25,7 @@
     "name": "date-night",
     "date": "05/13/2019",
     "desc": "A web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
-    "img": "/Users/brentabruzese/Desktop/projects/gatsby-portfolio/src/images/datenite.jpg",
+    "img": "https://images.unsplash.com/photo-1526317447103-54d0515d8e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     "site": "",
     "github": "https://github.com/coderbrent/react-date-night"
   },
@@ -34,9 +34,9 @@
     "name": "chrono-cards",
     "date": "06/11/2019",
     "desc": "A React built browser game where the user must avoid clicking the same card twice in a row.",
-    "img": "",
-    "site": "https://somramnani.github.io/Date-Night/",
-    "github": "https://github.com/somramnani/Date-Night"
+    "img": "https://repository-images.githubusercontent.com/195163131/0f96db80-2e8e-11ea-9b85-a238cc880f09",
+    "site": "https://chrono-cards.herokuapp.com/",
+    "github": "https://github.com/coderbrent/chrono-cards"
   }
 ]
 

@@ -1,50 +1,48 @@
 import React from 'react';
 import Layout from '../components/layout'
 import SEO from "../components/seo"
-import Projects from '../data/projects.json'
 import Card from '../components/card/card'
 import cardStyles from '../components/card/card.module.css'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const PortfolioPage = () => {
 
-  const data = graphql`query portfolioData {
+  const data = useStaticQuery(graphql`
+    query projectQuery {
     allProjectsJson {
       edges {
         node {
           id
           img
-          github
-          features
           desc
-          date
           name
           site
+          github
+          date
           stack
+          features
         }
       }
     }
-  }`
-
-  console.log(data)
-
+  }`)
+    
   return (
     <>
       <SEO title="Portfolio" />
       <Layout>
         <h3 className="heading">my work...</h3>
           <div className={cardStyles.cardGrid}>
-            { Projects.map(project => {
+            { data.allProjectsJson.edges.map(project => {
               return <Card
-                key={project.id}
-                desc={project.desc}
-                img={project.img}
-                name={project.name}
-                date={project.date}
-                site={project.site}
-                github={project.github}
-                stack={project.stack}
-                features={project.features}
+                key={project.node.id}
+                desc={project.node.desc}
+                img={project.node.img}
+                name={project.node.name}
+                date={project.node.date}
+                site={project.node.site}
+                github={project.node.github}
+                stack={project.node.stack}
+                features={project.node.features}
               />
             })}
           </div>
@@ -52,5 +50,6 @@ const PortfolioPage = () => {
     </>
   )
 }
+
 
 export default PortfolioPage;

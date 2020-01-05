@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
+        path: `./src/content/`,
       },
     },
     {
@@ -46,7 +46,7 @@ module.exports = {
       'gatsby-transformer-json', {
         resolve: 'gatsby-source-filesystem',
         options: {
-          path: `${__dirname}/src/data`,
+          path: `${__dirname}/src/content`,
           name: `data`,
         },
       },
