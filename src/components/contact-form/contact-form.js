@@ -1,13 +1,13 @@
 import React from 'react'
-import contactFormStyles from '../contact-form/contact-form.module.css'
+import classes from '../contact-form/contact-form.module.css'
 
 const ContactForm = () => {
 
   return (
   <>
-  <div className={contactFormStyles.container}>
+  <div className={classes.container}>
     <form  
-      className={contactFormStyles.contactFormWrapper}
+      className={classes.contactFormWrapper}
       method="post"
       name="contact" 
       netlify-honeypot="bot-field"
@@ -16,12 +16,12 @@ const ContactForm = () => {
     <input type="hidden" name="bot-field" />
 
       <div className="fieldset">
-        <div className={contactFormStyles.formRow}>
+        <div className={classes.formRow}>
           <label htmlFor="name">
             Name
           </label>
           <input autoFocus
-            className={contactFormStyles.formInput}
+            className={classes.formInput}
             id="name"
             type="text"
             name="name"
@@ -31,11 +31,11 @@ const ContactForm = () => {
             />
         </div>
 
-        <div className={contactFormStyles.formRow}>
+        <div className={classes.formRow}>
           <label htmlFor="email">
             Email
             </label>
-          <input className={contactFormStyles.formInput}
+          <input className={classes.formInput}
             id="email"
             type="email" 
             name="email"
@@ -44,11 +44,11 @@ const ContactForm = () => {
             aria-required="true"
             />
         </div>
-        <div className={contactFormStyles.formRow}>
+        <div className={classes.formRow}>
           <label htmlFor="message">
             Message
           </label>
-          <textarea className={contactFormStyles.formInputMessage}
+          <textarea className={classes.formInputMessage}
             type="text"
             id="message"
             name="message"
@@ -58,9 +58,9 @@ const ContactForm = () => {
             />
           
         </div>
-        <div className={contactFormStyles.buttonRow}>
+        <div className={classes.buttonRow}>
           <button
-            className={contactFormStyles.submitButton}
+            className={classes.submitButton}
             type="submit"
             value="send"
             >
