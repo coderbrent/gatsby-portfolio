@@ -1,46 +1,53 @@
 .container {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: left;
+  background-color: rgb(41, 0, 69);
+  padding: 1em;
+  border-bottom-left-radius: 40pt;
+}
+
+.formHeaderBar {
+  background-color:rgb(41, 0, 69);
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  border-top-right-radius: 40pt;
 }
 
 .contactFormWrapper {
-  display: grid;
-  margin-left: 1rem;
-  margin-right: 1rem;
+
 }
 
 .formRow {
   display: flex;
   min-width: 100px;
-  max-width: 100%;
-  padding: 4px 0;
+  padding: .25em 0;
+  margin: 0em 1em;
 }
 
-label {
-  color: #666;
+.formLabel {
+  color: rgb(227, 227, 227);
   font-size: large;
-  font-size: smaller;
   margin-right: 1em;
 }
 
 .formInput {
-  background-color: rgb(234, 234, 234);
+  background-color: hsl(0, 0%, 80%);
   color: rgb(84, 84, 84);
   border: none;
   font-size: small;
   padding: 5px 20px 8px 13px;
   width: 100%;
+  border-radius: 5pt;
 }
 
 .formInputMessage {
-  background-color: hsl(0, 0%, 93%);
-  color: rgb(84, 84, 84);
+  background-color: hsl(0, 0%, 80%);
+  color: rgb(54, 54, 54);
   border: none;
   font-size: small;
   padding: .5em;
   resize: none;
-  width: 30em;
+  width: 100%;
+  border-radius: 5pt;
 }
 
 .formInput::placeholder {
@@ -53,10 +60,9 @@ label {
   color: rgb(52, 52, 52);
 }
 
-legend {
-  font-size: large;
-  color: #666;
-  display: none;
+.formInputMessage:focus-within {
+  background-color: rgb(255, 255, 255);
+  color: rgb(52, 52, 52);
 }
 
 .buttonRow {

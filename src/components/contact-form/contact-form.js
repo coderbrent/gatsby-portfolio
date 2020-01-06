@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from '../contact-form/contact-form.module.css'
 
 const ContactForm = () => {
+  const [isSent, setIsSent] = useState(false);
 
   return (
   <>
+   <div className={classes.formHeaderBar}>
+   {}
+  </div>
   <div className={classes.container}>
     <form  
       className={classes.contactFormWrapper}
@@ -17,7 +21,7 @@ const ContactForm = () => {
 
       <div className="fieldset">
         <div className={classes.formRow}>
-          <label htmlFor="name">
+          <label className={classes.formLabel} htmlFor="name">
             Name
           </label>
           <input autoFocus
@@ -32,7 +36,7 @@ const ContactForm = () => {
         </div>
 
         <div className={classes.formRow}>
-          <label htmlFor="email">
+          <label className={classes.formLabel} htmlFor="email">
             Email
             </label>
           <input className={classes.formInput}
@@ -45,7 +49,7 @@ const ContactForm = () => {
             />
         </div>
         <div className={classes.formRow}>
-          <label htmlFor="message">
+          <label className={classes.formLabel} htmlFor="message">
             Message
           </label>
           <textarea className={classes.formInputMessage}
