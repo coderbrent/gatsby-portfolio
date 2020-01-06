@@ -8,7 +8,7 @@
 
 .navBar {
   background-color: rgb(41, 0, 69);
-  display: flex;
+  display: inline-flex;
   list-style: none;
   justify-content: flex-start;
   padding: 1em;
@@ -25,10 +25,6 @@
 
 .navBarItem:hover {
   animation: cursor normal forwards 1 .3s;
-}
-
-ul > li {
-  margin: 0px;
 }
 
 /* social links */
@@ -73,39 +69,42 @@ ul > li {
 /* mobile responsive hamburger menu */
 .hamburgerMenu {
   background-color: rgb(41, 0, 69);
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
+  display: inline-flex;
+  justify-content: space-between;
   padding: 1rem;
   align-items: center;
-  width: 100%; 
-  margin: 0;
+  width: 100%;
 }
 
 .hamburgerButton {
-  display: flex;
   border: 0;
   background-color: transparent;
   color: white;
   font-size: 100%;
-  margin-left: 5em;
-}
-
-.hamburgerMenuLinks {
-  display: flex;
-  width: 100%;
-  font-size: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  align-content: center;
-  justify-content: center;
-  font-weight: bolder;
 }
 
 .hamburgerMenu > p {
   color: white;
   font-weight: bold;
-  text-transform: uppercase;
+  font-variant-caps: all-small-caps;
+  font-size: larger;
+}
+
+.hamburgerMenuLinks {
+  text-decoration: none;
+  width: 100%;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburgerMenuLinkContainers {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 1em;
 }
 
 .hiddenMenu {
@@ -113,22 +112,23 @@ ul > li {
   flex-direction: column;
   background-color: rgb(41, 0, 69);
   height: 100%;
+  width: 100%;
 }
 
-.hamburgerMenuLinks:nth-child(odd) {
-  display: block;
+.hamburgerMenuLinkContainers:nth-child(odd) {
   background-color: rgba(115, 0, 115, 0.327);
   color: white;
 }
 
 /* animation classes & keyframes */
 .dropDown {
-  animation: dropDown forwards 1 1s;
+  animation: dropDown forwards 1 .5s;
   background-color: rgb(41, 0, 69);
 }
 
 .backUp {
   animation: backUp forwards 1 1s;
+  display: none;
   background-color: rgb(41, 0, 69);
 }
 
@@ -152,14 +152,14 @@ ul > li {
   }
 }
 
-/* media queries */
 @media (max-width: 576px) {
   .hamburgerButton,
   .hamburgerMenuLinks, 
-  .hiddenMenu, 
-  .hamburgerMenuLinks:nth-child(odd)
+  .hiddenMenu,
+  .hamburgerMenuLinkContainers,
+  .hamburgerMenuLinkContainers:nth-child(odd)
   .hamburgerMenu,
-  .backUp, .dropDown
+  .hamburgerMenu > p
    {
     display: block;
   }
@@ -171,13 +171,19 @@ ul > li {
   }
 }
 
+/* When the screen gets smaller, this is what gets hidden... */
 @media (min-width: 576px) {
-  .hamburgerMenu, 
+  .hamburgerMenu,
   .hamburgerMenuLinks, 
-  .hiddenMenu, 
-  .hamburgerMenuLinks:nth-child(odd),
-  .dropDown, .backUp
+  .hiddenMenu,
+  .hamburgerMenuLinkContainers,
+  .hamburgerMenuLinkContainers:nth-child(odd),
+  .dropDown, .backUp, .hamburgerMenu > p
    {
     display: none;
+  }
+  
+  body, html {
+    margin: 0;
   }
 }

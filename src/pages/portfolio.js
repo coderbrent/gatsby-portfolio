@@ -30,7 +30,15 @@ const PortfolioPage = () => {
     <>
       <SEO title="Portfolio" />
       <Layout>
-        <h3 className="heading">my work...</h3>
+        <h3 
+          className="heading" 
+          style={{ display: `inline-flex`, alignItems: `center`}}>
+            my work... 
+          <span style={{ fontSize: `3rem`, marginLeft: `.75em`}} 
+            role="img" aria-label="artist emoji">
+            👨🏽‍🎨
+          </span>
+        </h3>
           <div className={cardStyles.cardGrid}>
             { data.allProjectsJson.edges.map(project => {
               return <Card

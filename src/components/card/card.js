@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from '../card/card.module.css'
 import GitHubIcon from '../../Icons/github.svg'
-import HttpIcon from '../../Icons/http.svg'
+import HerokuIcon from '../../Icons/heroku.svg'
 
 const DeployedTag = ({ status }) => {
   return (
@@ -37,14 +37,18 @@ return (
       </div>
     </div>
     <div className={classes.cardMedia}>
-      <img style={{ margin: 0, padding: 0}} src={img} />
+      <img style={{ margin: 0, padding: 0}} src={img} alt="project screenshot" />
     </div>
     <div className={classes.cardBody}> 
       {desc} 
     </div>
     <div className={classes.cardFoot}>
-      <div className={classes.cardFootChildren}>{ github ? <a style={{ color: `black`, fontSize: `1.75em`}} href={github}>view github: <GitHubIcon /></a> : null }</div>
-      <div className={classes.cardFootChildren}>{ site ? <a style={{ color: `black`, fontSize: `1.75em`}} href={site}>view deployed: <HttpIcon /></a> : null }</div>
+      <div className={classes.cardFootChildren}>
+        { github ? <a className={classes.footerLinks} href={github}> View github: <GitHubIcon fill="rgb(115, 0, 115)" /></a> : null }
+      </div>
+      <div className={classes.cardFootChildren}>
+        { site ? <a className={classes.footerLinks} href={site}>View deployed: <HerokuIcon /></a> : 'work in progress!' }
+      </div>
     </div>
   </div>
   </>

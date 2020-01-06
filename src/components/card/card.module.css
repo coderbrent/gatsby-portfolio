@@ -1,35 +1,14 @@
 .cardGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 1.75rem;
   margin: 1rem;
-}
-
-.deployed {
-  background-color: rgb(2, 225, 139);
-  color: white;
-  font-family: Roboto;
-  font-size: small;
-  font-variant-caps: all-small-caps;
-  font-weight: bolder;
-  border-radius: 10pt;
-  padding: 0em .55em;
-}
-
-.inProgress {
-  background-color: rgb(127, 0, 165);
-  color: white;
-  font-family: Roboto;
-  font-size: small;
-  font-variant-caps: all-small-caps;
-  font-weight: bolder;
-  border-radius: 10pt;
-  padding: 0em .55em;
 }
 
 .cardWrapper {
   display: block;
   margin: 0;
+
 }
 
 .cardHeader {
@@ -40,6 +19,8 @@
   width: 100%;
   padding: 1em;
   margin: 0;
+  /* border-top-left-radius: 10pt; */
+  border-top-right-radius: 60pt;
 }
 
 .cardMedia {
@@ -50,29 +31,13 @@
 .cardTitle {
   font-weight: bold;
   font-size: xx-large;
+  font-variant-caps: all-petite-caps;
   color: black;
   margin-bottom: 5px;
 }
 
-.cardTitleDeployLink {
-  fill: white;
-}
-
-.cardTitleCodeLink {
-  padding: 0;
-  fill: rgb(62, 0, 84);
-}
-
-.cardTitleDeployLink:hover {
-  fill: rgb(187, 0, 255);
-}
-
-.cardTitleCodeLink:hover {
-  fill: rgb(187, 0, 255);
-}
-
 .cardBody {
-  border-top: 8px darkmagenta solid;
+  border-top: 8px rgb(115, 0, 115) solid;
   background-color: rgb(249, 249, 249);
   color: rgb(64, 64, 64);
   font-size: smaller;
@@ -80,14 +45,15 @@
 }
 
 .cardFoot {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   align-items: center;
-  font-size: small;
+  font-size: medium;
   font-weight: normal;
   background-color: rgb(232, 232, 232);
-  padding: 1rem;
+  padding: .5rem;
   justify-content: space-around;
+  border-bottom-left-radius: 60pt;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,4 +66,36 @@ li, ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footerLinks {
+  font-variant-caps: all-small-caps;
+  display: inline-flex;
+  color: #979797;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Status component classes */
+.deployed {
+  background-color: rgb(2, 225, 139);
+  color: white;
+  font-family: Roboto;
+  font-size: small;
+  font-variant-caps: all-small-caps;
+  font-weight: bolder;
+  border-radius: 10pt;
+  padding: 0em .55em;
+}
+
+.inProgress {
+  background-color: rgb(115, 0, 115);
+  color: white;
+  font-family: Roboto;
+  font-size: small;
+  font-variant-caps: all-small-caps;
+  font-weight: bolder;
+  border-radius: 10pt;
+  padding: 0em .55em;
 }

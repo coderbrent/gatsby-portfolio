@@ -4,39 +4,34 @@
   font-size: smaller;
   font-weight: bolder;
   background-color: rgb(52, 104, 156);
-  color: rgb(132, 194, 215);
+  color: rgb(181, 213, 224);
   padding: 1rem;
   margin: 1rem 0rem 0rem 0rem;
   border-top: solid 5px rgb(35, 35, 96);
 }
 
-ul {
-  margin: 0;
-}
-
-.factBodyHeader {
-  display: flex;
+.cardHeader {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin-bottom: .15em;
 }
 
-.factBodySubHeader {
+.cardSubHeader {
   font-variant-caps: all-petite-caps;
   padding: .35em;
   color: white;
 }
 
 .check {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   font-weight: 200;
-  justify-content: center;
+  width: 100%;
 }
 
 .skills {
   display: block;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 1rem;
 }
 
@@ -44,13 +39,13 @@ ul > .factCard {
   list-style-type: none;
 }
 
-a {
+.factCardLinks {
   margin-left: 10px;
   text-decoration: none;
   color: rgb(169, 194, 203);
   font-weight: 400;
 }
 
-a:hover {
+.factCardLinks:hover {
   color: lightgrey;
 }
