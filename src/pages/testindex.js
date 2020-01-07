@@ -13,7 +13,8 @@ const IndexPage = () => (
     <div>
       <h1 className="heading">hello!</h1>
       <div>
-        <h1>I'm a Jr. Developer with a bad attitude.</h1>   
+        <h1>I'm a...</h1>
+        <h3>Full Stack Web Developer</h3>
       </div>
     </div>
     </div>
