@@ -12,10 +12,6 @@
   border-top-right-radius: 40pt;
 }
 
-.contactFormWrapper {
-
-}
-
 .formRow {
   display: flex;
   min-width: 100px;
@@ -58,6 +54,7 @@
 .formInput:focus-within {
   background-color: rgb(255, 255, 255);
   color: rgb(52, 52, 52);
+  box-shadow: 1px 1px 4px 3px;
 }
 
 .formInputMessage:focus-within {
