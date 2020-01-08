@@ -21,7 +21,7 @@ const FactCard = () => {
             <PhoneIcon /><a className={classes.factCardLinks} href="tel:(848) 213-2522">Call Me!</a>
           </li>
           <li className={classes.check}>
-            <ResumeIcon /><a className={classes.factCardLinks} href="https://drive.google.com/file/d/1vTyshLQd8q_okMf9lJZrTVF6_oFaPQZS/view?usp=sharing">Download my resume!</a>
+            <ResumeIcon /><a className={classes.factCardLinks} href="https://docs.google.com/document/d/1nbpzVuxNffmlNrJGpAatrPDubQuhunZQfuU6kzAx0kc/edit?usp=sharing">Download my resume!</a>
           </li>
           <li className={classes.skills}>
             <strong style={{ fontSize: 'larger'}}>Proficient in...</strong> 

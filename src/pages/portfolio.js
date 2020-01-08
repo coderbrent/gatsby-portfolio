@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout'
 import SEO from "../components/seo"
 import Card from '../components/card/card'
-import cardStyles from '../components/card/card.module.css'
+import classes from '../components/card/card.module.css'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const PortfolioPage = () => {
@@ -30,16 +30,16 @@ const PortfolioPage = () => {
     <>
       <SEO title="Portfolio" />
       <Layout>
-        <h3 
-          className="heading" 
+        <div className={classes.cardGrid}>
+          <h3
+          className={classes.gridHeading}
           style={{ display: `inline-flex`, alignItems: `center`}}>
             my work... 
-          <span style={{ fontSize: `3rem`, marginLeft: `.75em`}} 
-            role="img" aria-label="artist emoji">
-            👨🏽‍🎨
-          </span>
-        </h3>
-          <div className={cardStyles.cardGrid}>
+            <span style={{ fontSize: `3rem`, marginLeft: `.75em`}} 
+              role="img" aria-label="artist emoji">
+              👨🏽‍🎨
+            </span>
+          </h3>
             { data.allProjectsJson.edges.map(project => {
               return <Card
                 key={project.node.id}

@@ -54,6 +54,12 @@
   border-bottom-left-radius: 60pt;
 }
 
+.gridHeading {
+  font-size: 6em;
+  align-items: stretch;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 768px) {
   .cardGrid {
     grid-template-columns: 1fr;
