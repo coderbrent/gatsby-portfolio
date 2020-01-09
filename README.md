@@ -1,4 +1,4 @@
-Hello! 👋
+**Hello! 👋
 
 Thanks for taking a moment to check out my portfolio on my Github!
 
