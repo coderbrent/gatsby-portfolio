@@ -55,9 +55,9 @@
 }
 
 .gridHeading {
-  font-size: 6em;
-  align-items: stretch;
-  flex-direction: column;
+  display: flex;
+  font-size: 4em;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {

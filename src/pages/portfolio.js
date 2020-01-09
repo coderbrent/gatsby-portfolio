@@ -30,30 +30,28 @@ const PortfolioPage = () => {
     <>
       <SEO title="Portfolio" />
       <Layout>
-        <div className={classes.cardGrid}>
-          <h3
-          className={classes.gridHeading}
-          style={{ display: `inline-flex`, alignItems: `center`}}>
-            my work... 
-            <span style={{ fontSize: `3rem`, marginLeft: `.75em`}} 
-              role="img" aria-label="artist emoji">
-              👨🏽‍🎨
-            </span>
-          </h3>
-            { data.allProjectsJson.edges.map(project => {
-              return <Card
-                key={project.node.id}
-                desc={project.node.desc}
-                img={project.node.img}
-                status={project.node.status}
-                name={project.node.name}
-                date={project.node.date}
-                site={project.node.site}
-                github={project.node.github}
-                features={project.node.features}
-              />
-            })}
-          </div>
+        <h3 className={classes.gridHeading}>
+          portfolio
+          <span style={{ fontSize: `4rem`, marginLeft: `.75em`}} 
+            role="img" aria-label="artist emoji">
+            👨🏽‍🎨
+        </span>
+        </h3>
+        <div className={classes.cardGrid}>          
+          { data.allProjectsJson.edges.map(project => {
+            return <Card
+              key={project.node.id}
+              desc={project.node.desc}
+              img={project.node.img}
+              status={project.node.status}
+              name={project.node.name}
+              date={project.node.date}
+              site={project.node.site}
+              github={project.node.github}
+              features={project.node.features}
+            />
+          })}
+        </div>
       </Layout>
     </>
   )
