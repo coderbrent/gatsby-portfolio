@@ -4,7 +4,7 @@
   font-size: smaller;
   font-weight: bolder;
   background-color: rgb(52, 104, 156);
-  color: rgb(181, 213, 224);
+  color: rgb(150, 211, 254);
   padding: 1rem;
   margin: 1rem 0rem 0rem 0rem;
   border-top: solid 5px rgb(35, 35, 96);
@@ -12,8 +12,13 @@
 
 .cardHeader {
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 2em;
   margin-bottom: .15em;
+  letter-spacing: 2px;
+  text-align: left;
+  padding-left: .5em;
+  line-height: 1em;
+  color: rgb(150, 211, 254);
 }
 
 .cardSubHeader {
@@ -27,6 +32,7 @@
   align-items: flex-start;
   font-weight: 200;
   width: 100%;
+  margin: .25em 0em;
 }
 
 .skills {

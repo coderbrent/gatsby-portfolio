@@ -2,12 +2,12 @@
   {
     "id": 1,
     "status": "in progress",
-    "name": "legend-of-brent",
-    "date": "07/09/19",
-    "desc": "An attempt at a card battle game in React. Still a little scrubby, but the idea is there. Click character selection from the landing page to play!",
-    "img": "https://images.unsplash.com/photo-1553986782-9f6de60b51b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80",
-    "site": "https://lob-game.herokuapp.com/",
-    "github": "https://github.com/somramnani/The-Legend-of-Brent",
+    "name": "dna-trans",
+    "date": "01/10/2020",
+    "desc": "This website is being built for a private, small business. The client expressed interest in increasing their search engine ranking to bring in more business online.",
+    "img": "https://repository-images.githubusercontent.com/231612306/74afd280-37a6-11ea-8667-d140b5ed5492",
+    "site": "https://www.dnatransporthq.com",
+    "github": "https://github.com/coderbrent/dna-trans",
     "features": ["OAuth authentication system built using Redux and JWT", "Some other feature"]
   },
   {
@@ -41,4 +41,3 @@
     "github": "https://github.com/coderbrent/chrono-cards"
   }
 ]
-
