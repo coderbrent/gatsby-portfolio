@@ -1,17 +1,22 @@
 .container {
   color: #777;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  margin-top: 1em;
 }
 
 .blogTitle {
-  font-size: 2em;
+  font-size: 1.75em;
   color: white;
   background-color: rgb(41, 0, 69);
   padding: .25em;
+  border-top-right-radius: 10pt;
 }
 
-.basic {
+.content {
   padding: 1em;
-  font-family: 'Georgia';
+  font-family: Roboto;
   color: #333;
   margin-bottom: 0;
 }
@@ -24,13 +29,24 @@
   background-color: lightseagreen;
   color: white;
   padding: .5em;
+  margin-left: 1em;
 }
 
 .postPreview {
   background-color: rgb(244, 244, 244);
   padding: 0;
+  border-bottom-right-radius: 10pt;
+  border-bottom-left-radius: 10pt;
 }
 
-.postPreview:nth-child(even) {
-  background-color: rgb(226, 226, 226);
+.header {
+  color: rgb(147, 11, 181);
+  font-size: 7em;
+  font-variant-caps: petite-caps;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

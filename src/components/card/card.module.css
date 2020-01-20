@@ -8,7 +8,6 @@
 .cardWrapper {
   display: block;
   margin: 0;
-
 }
 
 .cardHeader {
@@ -19,7 +18,6 @@
   width: 100%;
   padding: 1em;
   margin: 0;
-  /* border-top-left-radius: 10pt; */
   border-top-right-radius: 60pt;
 }
 
@@ -56,6 +54,12 @@
   border-bottom-left-radius: 60pt;
 }
 
+.gridHeading {
+  display: flex;
+  font-size: 4em;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .cardGrid {
     grid-template-columns: 1fr;
@@ -65,7 +69,7 @@
 li, ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0em;
 }
 
 .footerLinks {
@@ -73,8 +77,9 @@ li, ul {
   display: inline-flex;
   color: #979797;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  text-decoration: none;
 }
 
 /* Status component classes */

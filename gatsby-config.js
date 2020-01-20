@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brent Abruzese`,
-    description: `My Gatsby built portfolio!`,
+    description: `My developer portfolio built on Gatsby!`,
     author: `@brenta1283`,
   },
   plugins: [
@@ -30,7 +30,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/Icons/rsz_brentphoto.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-catch-links',
