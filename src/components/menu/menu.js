@@ -24,17 +24,14 @@ const Menu = () => {
           <Link className={classes.navBarItem} to="/">about</Link>
         </li>
         <li>
-          <Link className={classes.navBarItem} to="/contact">contact</Link>
-        </li>
-        <li>
           <Link className={classes.navBarItem} to="/portfolio">portfolio</Link>
          </li>
          <li>
           <Link className={classes.navBarItem} to="/blog">blog</Link>
         </li>
       </ul>
+      
       <ul className={classes.navSocial}>
-    
       <li>
           <a href="https://www.twitter.com/brenta1283" 
             className={classes.navSocialItem}>

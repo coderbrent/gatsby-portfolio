@@ -7,7 +7,6 @@ const BlogPage = ({ data }) => (
   <>
     <Layout>
       <div className={classes.container}>
-      <h1 className={classes.header}>Latest Posts</h1>
         {data.allMarkdownRemark.edges.map(post => (
           <div className={classes.postPreview} key={post.node.id}>
             <h3 className={classes.blogTitle}>{post.node.frontmatter.title}</h3>

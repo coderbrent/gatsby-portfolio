@@ -1,13 +1,14 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import headerStyles from '../header/header.module.css'
+import classes from '../header/header.module.css'
 
 const Header = ({ siteTitle }) => (
   <header
-    className={headerStyles.background}
+    className={classes.background}
   >
     <div
+      className={classes.header}
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -25,6 +26,9 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <div className={classes.subtitle}>
+          Full Stack JavaScript Developer
+        </div>
       </h1>
     </div>
   </header>

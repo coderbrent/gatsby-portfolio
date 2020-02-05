@@ -1,0 +1,13 @@
+.subtitle {
+  color: rgb(28, 28, 28);
+  font-weight: 200;
+  font-size: .65em;
+  padding-left: .25em;
+}
+
+@media (max-width: 576px) {
+  .header
+   {
+    display: none;
+  }
+}

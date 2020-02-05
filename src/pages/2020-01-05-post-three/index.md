@@ -1,9 +1,9 @@
 ---
-path: "/post-three"
-date: "2020-01-05"
-title: "happy new year!"
+path: "/post-two"
+date: "2020-02-05"
+title: "whose hiring!?"
 author: "Brent Abruzese"
 img: ../images/brentphoto.png
 ---
 
-Happy New Year
+Wow! Job hunting is terrible!! Who should do it? No one! Ever!!!
