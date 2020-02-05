@@ -634,7 +634,9 @@ pre tt:after {
 }
 
 .emoji {
-  font-size: 2.5rem;
+  padding-left: 1rem;
+  padding-top: 8px;
+  font-size: 2.25rem;
 }
 
 .sub-heading {

@@ -11,14 +11,20 @@ const IndexPage = () => (
         <ContactCard />
       </div>
     <div>
-      <h1 className="heading">hi! 
-        <span
+      <div style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+      }}>
+      <h1 className="heading">
+        hi!
+      </h1>
+      <span
           className="emoji"
           role="img" 
           aria-label="waving emoji">
             👋
         </span>
-      </h1>
+      </div>
         <section className="section-block">
           <p className="para">My name is Brent Abruzese - I'm a former business owner turned full stack JavaScript developer from the 
             mythical "limbo-plane" of Central New Jersey! (it exists, trust me - I'm here right now.)
