@@ -30,7 +30,7 @@ const ContactCard = () => {
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://docs.google.com/document/d/e/2PACX-1vQirxbJ7XFC9mp5Wsrrd2xmviCq8sjI_MaXlodgmYoz82ECxXOvfRo6-B9j0isbOjcKkbXPy3yPrFb3/pub">
             <ResumeIcon 
               className={classes.icon} 
               fill="#290045" 
