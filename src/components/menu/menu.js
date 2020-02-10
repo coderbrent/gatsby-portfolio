@@ -70,9 +70,6 @@ const Menu = () => {
         <Link className={classes.hamburgerMenuLinks} to="/">about</Link>
       </li>
       <li className={classes.hamburgerMenuLinkContainers}>
-        <Link className={classes.hamburgerMenuLinks} to="/contact">contact</Link>
-      </li>
-      <li className={classes.hamburgerMenuLinkContainers}>
         <Link className={classes.hamburgerMenuLinks} to="/portfolio">portfolio</Link>
       </li>
       <li className={classes.hamburgerMenuLinkContainers}>
