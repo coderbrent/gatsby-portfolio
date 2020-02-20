@@ -8,7 +8,7 @@
     "img": "https://repository-images.githubusercontent.com/231612306/74afd280-37a6-11ea-8667-d140b5ed5492",
     "site": "https://www.dnatransporthq.com",
     "github": "https://github.com/coderbrent/dna-trans",
-    "features": ["OAuth authentication system built using Redux and JWT", "Some other feature"]
+    "stack": ["gatsby", "graphql", "bulma", "node"]
   },
   {
     "id": 2,
@@ -18,7 +18,8 @@
     "desc": "A different take on the todo list app built on a Node/SQL back-end. One thing that was fun/unique here was that I put together a simple ORM rather than use Sequelize.",
     "img": "https://repository-images.githubusercontent.com/188906246/35ce8100-2f4b-11ea-91e8-0ec75b7c7a6d",
     "site": "https://hamburger-eater.herokuapp.com/",
-    "github": "https://github.com/coderbrent/burger"
+    "github": "https://github.com/coderbrent/burger",
+    "stack": ["react", "handlebars", "mysql", "node", "bootstrap"]
   },
   {
     "id": 3,
@@ -28,7 +29,8 @@
     "desc": "A mini Uber-like reservation system that allows a user to add a pickup and sources the closest vehicle/driver pairings to the user submitted location. MERN stack application.",
     "img": "https://repository-images.githubusercontent.com/229190919/c8063980-4cee-11ea-8791-6ba67110aef0",
     "site": "",
-    "github": "https://github.com/coderbrent/reserve-a-car"
+    "github": "https://github.com/coderbrent/reserve-a-car",
+    "stack": ["react", "mongo", "node", "material-ui"]
   },
   {
     "id": 4,
@@ -38,6 +40,7 @@
     "desc": "A React built browser game where the user must avoid clicking the same card twice in a row.",
     "img": "https://repository-images.githubusercontent.com/195163131/0f96db80-2e8e-11ea-9b85-a238cc880f09",
     "site": "https://chrono-cards.herokuapp.com/",
-    "github": "https://github.com/coderbrent/chrono-cards"
+    "github": "https://github.com/coderbrent/chrono-cards",
+    "stack": ["react", "node", "bootstrap"]
   }
 ]

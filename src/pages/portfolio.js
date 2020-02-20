@@ -20,7 +20,7 @@ const PortfolioPage = () => {
           site
           github
           date
-          features
+          stack
         }
       }
     }
@@ -42,6 +42,7 @@ const PortfolioPage = () => {
               site={project.node.site}
               github={project.node.github}
               features={project.node.features}
+              stack={project.node.stack}
             />
           })}
         </div>
