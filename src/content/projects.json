@@ -23,12 +23,12 @@
   {
     "id": 3,
     "status": "in progress",
-    "name": "date-night",
-    "date": "05/13/2019",
-    "desc": "A web application that combines API calls from Yelp, Eventbrite and Google places to provide a 'one stop shop' evening itinerary creator for the user.",
-    "img": "https://repository-images.githubusercontent.com/219836866/4daa0300-2f53-11ea-86ed-994abc2ef1bd",
+    "name": "reserve-a-car",
+    "date": "01/19/20",
+    "desc": "A mini Uber-like reservation system that allows a user to add a pickup and sources the closest vehicle/driver pairings to the user submitted location. MERN stack application.",
+    "img": "https://repository-images.githubusercontent.com/229190919/c8063980-4cee-11ea-8791-6ba67110aef0",
     "site": "",
-    "github": "https://github.com/coderbrent/react-date-night"
+    "github": "https://github.com/coderbrent/reserve-a-car"
   },
   {
     "id": 4,
