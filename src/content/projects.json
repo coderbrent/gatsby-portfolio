@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "status": "in progress",
+    "status": false,
     "name": "dna-trans",
     "date": "01/10/2020",
     "desc": "This website is being built for a private, small business. The client expressed interest in increasing their search engine ranking to bring in more business online.",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "status": "deployed",
+    "status": true,
     "name": "burger-eater",
     "date": "07/07/19",
     "desc": "A different take on the todo list app built on a Node/SQL back-end. One thing that was fun/unique here was that I put together a simple ORM rather than use Sequelize.",
@@ -23,18 +23,18 @@
   },
   {
     "id": 3,
-    "status": "in progress",
+    "status": false,
     "name": "reserve-a-car",
     "date": "01/19/20",
     "desc": "A mini Uber-like reservation system that allows a user to add a pickup and sources the closest vehicle/driver pairings to the user submitted location. MERN stack application.",
     "img": "https://repository-images.githubusercontent.com/229190919/c8063980-4cee-11ea-8791-6ba67110aef0",
     "site": "",
     "github": "https://github.com/coderbrent/reserve-a-car",
-    "stack": ["react", "mongo", "node", "material-ui"]
+    "stack": ["react", "mongo", "node", "material-ui", "redux"]
   },
   {
     "id": 4,
-    "status": "deployed",
+    "status": true,
     "name": "chrono-cards",
     "date": "06/11/2019",
     "desc": "A React built browser game where the user must avoid clicking the same card twice in a row.",

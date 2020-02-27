@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'gatsby'
 import classes from '../menu/menu.module.css'
 import GithubIcon from '../../Icons/github.svg'
@@ -13,11 +13,11 @@ const Menu = () => {
       setVisible(false);
     } else {
       setVisible(true);
+    }
   }
-}
 
   return (
-    <>
+    <div>
     <nav className={classes.navWrapper}>
       <ul className={classes.navBar}>
         <li className={classes.navLink}>
@@ -33,38 +33,42 @@ const Menu = () => {
       
       <ul className={classes.navSocial}>
       <li>
-          <a href="https://www.twitter.com/brenta1283" 
-            className={classes.navSocialItem}>
-              <TwitterIcon 
-                className={classes.navSocialLinks}
-                fill={'white'} />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/coderbrent"
-            className={classes.navSocialItem}>
-              <GithubIcon 
-                className={classes.navSocialLinks}
-                fill={'white'}/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/brent-abruzese" 
-            className={classes.navSocialItem}>
-              <LinkedInLogo 
-                className={classes.navSocialLinks} 
-                fill={'white'}/>
-          </a>
-        </li>
-        </ul>
-
-        <ul className={classes.hamburgerMenu}>
-          <p>Brent Abruzese</p>
-          <button onClick={() => toggleMobile()} className={classes.hamburgerButton}>
-              ☰
-          </button>
-        </ul>
-    </nav>
+        <a href="https://www.twitter.com/brenta1283" 
+          className={classes.navSocialItem}>
+        <TwitterIcon 
+          className={classes.navSocialLinks}
+          fill={'white'} 
+        />
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/coderbrent"
+          className={classes.navSocialItem}>
+        <GithubIcon 
+          className={classes.navSocialLinks}
+          fill={'white'}/>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/brent-abruzese" 
+          className={classes.navSocialItem}>
+        <LinkedInLogo 
+          className={classes.navSocialLinks} 
+          fill={'white'}
+        />
+        </a>
+      </li>
+          
+    </ul>
+    <ul className={classes.hamburgerMenu}>
+      <p>
+        Brent Abruzese
+      </p>
+      <button onClick={() => toggleMobile()} className={classes.hamburgerButton}>
+        ☰
+      </button>
+    </ul>
+  </nav>
     <div className={ isVisible ? classes.backUp : classes.dropDown }>
       <li className={classes.hamburgerMenuLinkContainers}>
         <Link className={classes.hamburgerMenuLinks} to="/">about</Link>
@@ -76,7 +80,10 @@ const Menu = () => {
         <Link className={classes.hamburgerMenuLinks} to="/blog">blog</Link>
       </li>
     </div>
-    </>
-)}
+  </div>
+  
+  )
+}
+
 
 export default Menu;

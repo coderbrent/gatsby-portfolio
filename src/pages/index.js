@@ -1,41 +1,155 @@
 import React from "react"
 import Layout from "../components/layout"
-import BrentImage from '../components/BrentImage'
-import ContactCard from '../components/contact-card/ContactCard'
- 
-const IndexPage = () => (
-  <Layout>
-    <div className="about-container">
-      <div className="imageFrame" role="img">
-        <BrentImage />
-        <ContactCard />
-      </div>
-    <div>
-      <div style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-      }}>
-      <h1 className="heading">
-        hi!
-      </h1>
-      <span
-          className="emoji"
-          role="img" 
-          aria-label="waving emoji">
-            👋
-        </span>
-      </div>
-        <section className="section-block">
-          <p className="para">My name is Brent Abruzese - I'm a former business owner turned full stack JavaScript developer from the 
-            mythical "limbo-plane" of Central New Jersey! (it exists, trust me - I'm here right now.)
-            <p> I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
-            reading and playing hockey!</p>
-          </p>
+import ThemeProvider from '../context/ThemeProvider'
+import Button from '../components/Button'
+import { 
+  FiGithub, 
+  FiLinkedin, 
+  FiTwitter, 
+  FiCoffee, 
+  FiBook,
+  FiMail
+} from "react-icons/fi";
+import ProjectCard from '../components/ProjectCard'
+import { graphql, useStaticQuery } from 'gatsby'
+
+const data = graphql`
+  query {
+    site {
+      siteMetadata {
+        social {
+          email
+          github
+          linkedin
+          stackoverflow
+          twitter
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = () => {
+  const siteData = useStaticQuery(data)
+  const { social } = siteData.site.siteMetadata
+
+  return (
+    <ThemeProvider>
+      <Layout>
+        <div 
+          css={{ 
+            display: `inline-flex`, 
+            alignItems: `center`,
+
+          }}
+        >
+        <section 
+          css={{ 
+            margin: `.5rem .1rem`,
+            paddingRight: `1rem`
+          }}
+        >
+          <h3 
+            css={{ 
+              fontFamily: `fira mono`,
+              '@media (max-width: 576px)': {
+                textAlign: `left`,
+                transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
+            }}}>
+            Hello there!
+          </h3>
+            <p 
+              css={{ 
+                marginRight: `6rem`,
+                '@media (max-width: 576px)': {
+                  marginRight: `0rem`,
+                  transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+                  textAlign: `left`
+                 }
+              }}
+            >
+              I'm a former business owner turned full stack JavaScript developer!
+              I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
+              reading and playing hockey! 
+            </p>
         </section>
-        
-    </div>
-    </div>
-  </Layout>
-)
+        <aside 
+          css={{ 
+            display: `grid`,
+            gridGap: `1rem`, 
+            gridTemplateColumns: `1fr 1fr`,
+            '@media (max-width: 576px)': {
+              gridTemplateColumns: `1fr`,
+              fontSize: `1.5rem`,
+              transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
+            }
+          }}
+        >
+          <Button 
+            as="a"
+            circular
+            href={social.github}
+          > 
+            <FiGithub /> 
+          </Button>
+          <Button 
+            circular
+            as="a"
+            href={social.linkedin}
+          > 
+            <FiLinkedin /> 
+          </Button>
+          <Button 
+            circular
+            as="a"
+            href={social.twitter}
+          > 
+            <FiTwitter /> 
+          </Button>
+          <Button 
+            circular
+            as="a"
+            href={social.email}
+          > 
+            <FiMail /> 
+          </Button>
+        </aside>
+        </div>
+        <section css={{ margin: `auto auto`}}>
+          <div css={{ display: `flex` }}>
+            <h3 
+              css={{ 
+                fontFamily: `fira mono`, 
+                marginRight: `.5rem`,
+                '@media (max-width: 576px)': {
+                  marginBottom: `.25rem`,
+                  transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
+                }
+              }}
+            >
+              My Work
+            </h3> 
+            <FiCoffee size="1.5rem"/>
+          </div>
+          <ProjectCard />
+        </section>
+        <section css={{ margin: `auto auto`}}>
+          <div css={{ display: `flex` }}>
+          <h3 
+            css={{ 
+              fontFamily: `fira mono`,
+              marginRight: `.5rem`
+            }}
+          >
+            My Blog
+          </h3>
+            <FiBook size="1.5rem"/>
+          </div>
+            <p>Blog feed goes here...</p>
+        </section>
+      </Layout>
+    </ThemeProvider>
+  )
+}
 
 export default IndexPage

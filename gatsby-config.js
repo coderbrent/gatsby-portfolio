@@ -3,6 +3,13 @@ module.exports = {
     title: `Brent Abruzese`,
     description: `My developer portfolio built on Gatsby!`,
     author: `@brenta1283`,
+    social: {
+      twitter: 'https://twitter.com/BrentA1283',
+      github: 'https://github.com/coderbrent',
+      email: 'mailto:brent.abruzese@gmail.com',
+      stackoverflow: 'https://stackoverflow.com/users/10956869/brent-abruzese',
+      linkedin: 'https://linkedin.com/in/brent-abruzese'
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -63,6 +70,13 @@ module.exports = {
         options: {
           trackingId: `UA-156186170-2`
         }
-      }
+      },
+      {
+        resolve: `gatsby-plugin-typography`,
+        options: {
+          pathToConfigModule: `${__dirname}/src/utils/typography`
+        }
+      },
+      `gatsby-plugin-emotion`,
   ],
 }
