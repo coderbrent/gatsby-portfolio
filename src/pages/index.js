@@ -12,6 +12,7 @@ import {
 } from "react-icons/fi";
 import ProjectCard from '../components/ProjectCard'
 import { graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 
 const data = graphql`
   query {
@@ -72,6 +73,8 @@ const IndexPage = () => {
               I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
               reading and playing hockey! 
             </p>
+            <Link to="/blog">Blog!</Link>
+            <Link to="/">Home</Link>
         </section>
         <aside 
           css={{ 
@@ -115,7 +118,7 @@ const IndexPage = () => {
           </Button>
         </aside>
         </div>
-        <section css={{ margin: `auto auto`}}>
+        <section css={{ margin: `2.5rem auto`}}>
           <div css={{ display: `flex` }}>
             <h3 
               css={{ 
@@ -132,20 +135,6 @@ const IndexPage = () => {
             <FiCoffee size="1.5rem"/>
           </div>
           <ProjectCard />
-        </section>
-        <section css={{ margin: `auto auto`}}>
-          <div css={{ display: `flex` }}>
-          <h3 
-            css={{ 
-              fontFamily: `fira mono`,
-              marginRight: `.5rem`
-            }}
-          >
-            My Blog
-          </h3>
-            <FiBook size="1.5rem"/>
-          </div>
-            <p>Blog feed goes here...</p>
         </section>
       </Layout>
     </ThemeProvider>

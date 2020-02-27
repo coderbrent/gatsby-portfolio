@@ -1,7 +1,7 @@
 ---
 path: "/post-one"
 date: "2019-10-25"
-title: "blogs hea!"
+title: "Blogs here!"
 author: "Brent Abruzese"
 img: ../images/brentphoto.png
 ---

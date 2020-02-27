@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import ReactIcon from '../Icons/reacticon.svg'
 import GraphQLIcon from '../Icons/graphql.svg'
 import BulmaIcon from '../Icons/bulma.svg'
@@ -11,18 +11,14 @@ import BootstrapIcon from '../Icons/bootstrap.svg'
 import MaterialUiIcon from '../Icons/materialui.svg'
 import ReduxIcon from '../Icons/redux.svg'
 import { graphql, useStaticQuery } from 'gatsby'
-import { CUBIC_BEZIER_TRANSITION, getTheme, PRIMARY_COLOR } from '../utils/theme';
+import { CUBIC_BEZIER_TRANSITION, getTheme } from '../utils/theme';
 import ThemeContext from '../context/ThemeContext';
-import { css, keyframes } from '@emotion/core'
+import { css } from '@emotion/core'
 
 const Card = ({ name, img, desc, stack, github }) => {
   const { theme } = useContext(ThemeContext);
-  const { 
-    muted, 
+  const {
     color, 
-    background, 
-    borderColor, 
-    borderHoverColor, 
     secondary 
   } = getTheme(theme);
 
@@ -120,7 +116,6 @@ const Card = ({ name, img, desc, stack, github }) => {
         </div>
       </div>
     </div>
-
   )
 }
 

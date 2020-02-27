@@ -1,7 +1,7 @@
 ---
 path: "/post-three"
 date: "2019-10-24"
-title: "new portfolio, who dis"
+title: "This portfolio"
 author: "Brent Abruzese"
 ---
 
