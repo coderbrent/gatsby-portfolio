@@ -35,7 +35,7 @@ export const getTheme = theme =>
         background: '#222',
         color: 'rgba(205, 218, 239, 1)',
         secondary: 'rgba(233,175,163,1)',
-        muted: 'hsla(0, 0%, 100%, 0.60)',
+        muted: 'slateblue',
         borderColor: 'hsla(0, 0%, 100%, 0.60)',
         borderHoverColor: 'rgba(231,150,134,1)',
       };

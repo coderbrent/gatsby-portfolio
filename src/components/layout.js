@@ -2,6 +2,7 @@ import React from 'react'
 import { node } from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header/header"
+import ThemeProvider from '../context/ThemeProvider'
 
 const Layout = ({ children }) => {
 
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <ThemeProvider>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div 
         css={{ 
@@ -28,6 +30,7 @@ const Layout = ({ children }) => {
       >
         <main>{ children }</main>
       </div>
+      </ThemeProvider>
     </>
   )
 }

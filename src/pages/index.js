@@ -1,6 +1,6 @@
 import React from "react"
+import ThemeContext from '../context/ThemeContext'
 import Layout from "../components/layout"
-import ThemeProvider from '../context/ThemeProvider'
 import Button from '../components/Button'
 import { 
   FiGithub, 
@@ -37,7 +37,7 @@ const IndexPage = () => {
   const { social } = siteData.site.siteMetadata
 
   return (
-    <ThemeProvider>
+
       <Layout>
         <div 
           css={{ 
@@ -53,6 +53,7 @@ const IndexPage = () => {
         >
           <h2 
             css={{
+              fontSize: `2.5rem`,
               fontFamily: `work sans`,
               fontWeight: `bolder`,
               fontVariantCaps: `all-petite-caps`,
@@ -148,7 +149,9 @@ const IndexPage = () => {
           >
             <h2 
               css={{ 
-                fontFamily: `fira mono`, 
+                fontFamily: `work sans`,
+                fontWeight: `bolder`,
+                fontVariantCaps: `all-petite-caps`,
                 marginRight: `.5rem`,
                 '@media (max-width: 576px)': {
                   marginBottom: `.25rem`,
@@ -163,7 +166,6 @@ const IndexPage = () => {
           <ProjectCard />
         </section>
       </Layout>
-    </ThemeProvider>
   )
 }
 
