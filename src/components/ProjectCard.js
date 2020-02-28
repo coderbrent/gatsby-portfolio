@@ -14,7 +14,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { CUBIC_BEZIER_TRANSITION, getTheme } from '../utils/theme';
 import ThemeContext from '../context/ThemeContext';
 
-const Card = ({ name, img, desc, stack, github }) => {
+const Card = ({ name, img, desc, stack, github, site }) => {
   const { theme } = useContext(ThemeContext);
   const {
     color, 
@@ -24,7 +24,8 @@ const Card = ({ name, img, desc, stack, github }) => {
 
   return (
     <div 
-      css={{ 
+      css={{
+        margin: `1rem 0rem`,
         maxWidth: `670px`,
         borderRadius: `10pt`,
         transition: CUBIC_BEZIER_TRANSITION,
@@ -70,21 +71,25 @@ const Card = ({ name, img, desc, stack, github }) => {
             margin: `auto auto`,
         }}}
       >
-      <h3 
-        css={{ 
-          color: secondary,
-          padding: `0rem`,
-          fontFamily: `fira mono`,
-          fontSize: `1.15rem`,
-          fontWeight: `10`,
-          transition: CUBIC_BEZIER_TRANSITION,
-          margin: `0rem 0rem`,
-          '@media (max-width: 576px)': {
-            fontSize: `3rem`,
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-        }
-        }}>
-        { name }
+      <h3 css={{ fontSize: `1.15rem`, marginBottom: `0rem`,}}>
+        <a 
+          href={site}
+          css={{
+            color: secondary,
+            textDecoration: `none`,
+            fontFamily: `fira mono`,
+            fontSize: `1.15rem`,
+            fontWeight: `10`,
+            transition: CUBIC_BEZIER_TRANSITION,
+            margin: `0rem 0rem`,
+            '@media (max-width: 576px)': {
+              fontSize: `3rem`,
+              transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+          }
+          }}
+        >
+          { name }
+        </a>
       </h3>
         { stack }
       </div>
@@ -162,6 +167,7 @@ const ProjectCard = () => {
           img={project.node.img}
           desc={project.node.desc}
           github={project.node.github}
+          site={project.node.site}
           status={project.node.status}
           stack={project.node.stack.map((tech, i) => {
             switch(tech) {
