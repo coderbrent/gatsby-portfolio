@@ -75,7 +75,7 @@ const IndexPage = () => {
             >
               I'm a former business owner turned full stack JavaScript developer!
               I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
-              reading and playing hockey. I'm enjoy building things with React, GraphQL, Node and Mongo, but I'm always open and eager to
+              reading and playing hockey. I enjoy building things with React, GraphQL, Node and Mongo, but I'm always open and eager to
               jump into new stacks and expand my knowledge in new directions. My goal is to join a company/organization whose values mirror
               my own. Having been an entrepreneur, I'd truly love for my code to have a positive impact on small businesses.
             </p>
