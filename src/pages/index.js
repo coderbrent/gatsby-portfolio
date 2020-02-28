@@ -25,6 +25,7 @@ const data = graphql`
           linkedin
           stackoverflow
           twitter
+          resume
         }
       }
     }
