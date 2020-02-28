@@ -13,13 +13,13 @@ import ReduxIcon from '../Icons/redux.svg'
 import { graphql, useStaticQuery } from 'gatsby'
 import { CUBIC_BEZIER_TRANSITION, getTheme } from '../utils/theme';
 import ThemeContext from '../context/ThemeContext';
-import { css } from '@emotion/core'
 
 const Card = ({ name, img, desc, stack, github }) => {
   const { theme } = useContext(ThemeContext);
   const {
     color, 
-    secondary 
+    secondary,
+    muted
   } = getTheme(theme);
 
   return (
@@ -36,9 +36,10 @@ const Card = ({ name, img, desc, stack, github }) => {
           display: `flex`, 
           alignItems: `flex-start`,
           '@media (max-width: 576px)': {
-            display: `block`,
+            display: `flex`,
             margin: `1rem auto`,
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
+            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+            flexDirection: `column-reverse`
         }}}
       >
       <img 
@@ -47,7 +48,7 @@ const Card = ({ name, img, desc, stack, github }) => {
           borderRadius: `10pt`,
           marginRight: `1rem`,
           '@media (max-width: 576px)': {
-            maxWidth: 460,
+            maxWidth: 325,
             minWidth: 190,
             transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
         }} }
@@ -95,7 +96,7 @@ const Card = ({ name, img, desc, stack, github }) => {
             padding: `0`,
             margin: `0`,
             '@media (max-width: 576px)': {
-              transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+              transition: CUBIC_BEZIER_TRANSITION,
               textAlign: `center`,
               margin: `auto auto`,
           }
@@ -103,16 +104,22 @@ const Card = ({ name, img, desc, stack, github }) => {
         >
           { desc }
         </div>
+        <div css={{ display: `block`}}>
           <a 
             href={github}
-            css={css`
-              color: ${secondary};
-              text-decoration: none;
-              border-bottom: 1px dashed ${secondary};
-            `}
+            css={{
+              color: muted,
+              textDecoration: `none`,
+              '&:hover': { color: secondary },
+              '@media (max-width: 576px)': {
+                transition: CUBIC_BEZIER_TRANSITION,
+                textAlign: `center`
+              }
+            }}
           >
-            source
+            {`</code>`}
           </a>
+          </div>
         </div>
       </div>
     </div>

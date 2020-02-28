@@ -14,3 +14,6 @@ import 'typeface-arimo';
 import 'typeface-trocchi';
 import 'typeface-libre-baskerville';
 import 'typeface-varela-round';
+import 'typeface-lora'
+import 'typeface-bitter'
+import 'typeface-work-sans'

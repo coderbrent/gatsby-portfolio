@@ -6,9 +6,10 @@ import {
   FiGithub, 
   FiLinkedin, 
   FiTwitter, 
-  FiCoffee, 
-  FiBook,
-  FiMail
+  FiCoffee,
+  FiMail,
+  FiDownloadCloud,
+  FiActivity,
 } from "react-icons/fi";
 import ProjectCard from '../components/ProjectCard'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -41,7 +42,6 @@ const IndexPage = () => {
           css={{ 
             display: `inline-flex`, 
             alignItems: `center`,
-
           }}
         >
         <section 
@@ -50,15 +50,17 @@ const IndexPage = () => {
             paddingRight: `1rem`
           }}
         >
-          <h3 
-            css={{ 
-              fontFamily: `fira mono`,
+          <h2 
+            css={{
+              fontFamily: `work sans`,
+              fontWeight: `bolder`,
+              fontVariantCaps: `all-petite-caps`,
               '@media (max-width: 576px)': {
                 textAlign: `left`,
                 transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
             }}}>
-            Hello there!
-          </h3>
+            hello there!
+          </h2>
             <p 
               css={{ 
                 marginRight: `6rem`,
@@ -71,10 +73,10 @@ const IndexPage = () => {
             >
               I'm a former business owner turned full stack JavaScript developer!
               I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
-              reading and playing hockey! 
+              reading and playing hockey. I'm enjoy building things with React, GraphQL, Node and Mongo, but I'm always open and eager to
+              jump into new stacks and expand my knowledge in new directions. My goal is to join a company/organization whose values mirror
+              my own. Having been an entrepreneur, I'd truly love for my code to have a positive impact on small businesses.
             </p>
-            <Link to="/blog">Blog!</Link>
-            <Link to="/">Home</Link>
         </section>
         <aside 
           css={{ 
@@ -116,23 +118,46 @@ const IndexPage = () => {
           > 
             <FiMail /> 
           </Button>
+          <Button 
+            circular
+            as="a"
+            href={social.resume}
+          > 
+            <FiDownloadCloud /> 
+          </Button>
+          <Button 
+            circular
+            as="a"
+            href={social.stackoverflow}
+          > 
+            <FiActivity /> 
+          </Button>
         </aside>
         </div>
         <section css={{ margin: `2.5rem auto`}}>
-          <div css={{ display: `flex` }}>
-            <h3 
+          <div 
+            css={{ 
+              display: `flex`,
+              '@media (max-width: 576px)': {
+                justifyContent: `center`,
+                display: `flex`,
+                transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+              }
+            }}
+          >
+            <h2 
               css={{ 
                 fontFamily: `fira mono`, 
                 marginRight: `.5rem`,
                 '@media (max-width: 576px)': {
                   marginBottom: `.25rem`,
-                  transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
+                  transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
                 }
               }}
             >
-              My Work
-            </h3> 
-            <FiCoffee size="1.5rem"/>
+              my work
+            </h2> 
+            <FiCoffee css={{ marginTop: `.29rem`, fill: 'slateblue'}} size="1.5rem"/>
           </div>
           <ProjectCard />
         </section>

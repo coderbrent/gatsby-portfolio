@@ -26,7 +26,7 @@ export const getTheme = theme =>
     ? { //light theme
         background: 'white',
         color: '#333',
-        secondary: 'slateblue',
+        secondary: 'rgba(53,75,94,1)',
         muted: 'hsla(0, 0%, 0%, 0.6)',
         borderColor: '#eee',
         borderHoverColor: 'transparent'

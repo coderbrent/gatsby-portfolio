@@ -12923,6 +12923,11 @@ typeface-arimo@^0.0.72:
   resolved "https://registry.yarnpkg.com/typeface-arimo/-/typeface-arimo-0.0.72.tgz#5476119bfc3d2c9478a3308c6030ddd1ec567a50"
   integrity sha512-DF6wnbqwcZx91zECeOA0LiHkjKWrq0PH6wFCnBxU7WUiP4uCQSGbES02zSimaJS/u0nlVeHAXkMyT4ma8hWPjw==
 
+typeface-bitter@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/typeface-bitter/-/typeface-bitter-0.0.71.tgz#bfd97a1b3a52c1275319ca169f92e3419c7abf8e"
+  integrity sha512-F8fJUCWtVTkgw2UfxaYOQt3lPsrmGKYiUC3ZOBcS88QuRpN0qd29s07o2q07vow2E+KP8LLuezbrZ/rTMw/XlQ==
+
 typeface-fira-mono@^0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-fira-mono/-/typeface-fira-mono-0.0.72.tgz#b396d2a08814bb3a32d94ef71c74d37883c3475b"
@@ -12932,6 +12937,11 @@ typeface-libre-baskerville@^0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-libre-baskerville/-/typeface-libre-baskerville-0.0.72.tgz#c5d6d82a9b316f01a1714088f8ca36fe7c3f418b"
   integrity sha512-8eY5Tee80wNMfKCPYQguj2dODct+sQo3Et7meKOYklvaBRA1PK/DQnaNlYT+I85s1Z7PGUwBtZuG0yOIz4R9vg==
+
+typeface-lora@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-lora/-/typeface-lora-0.0.72.tgz#850c211ef51167d8b71b610c93a9b1ca0f17863c"
+  integrity sha512-6Q029hpZAJOU2K0V3JM0xColUa/u/0xpzgN5nv1aKe019lNYp9u+6u+BF3zK7n+gwGAjrz75qdFxhM34fheSAA==
 
 typeface-open-sans@^0.0.75:
   version "0.0.75"
@@ -12957,6 +12967,11 @@ typeface-varela-round@^0.0.71:
   version "0.0.71"
   resolved "https://registry.yarnpkg.com/typeface-varela-round/-/typeface-varela-round-0.0.71.tgz#05ba85720ceaa2ab61f47f450e99301e58b422e6"
   integrity sha512-wxFtFZ0lp82cM1i7ec2kACtRwBz0H986zaDlqDtLXSpCX83Rujr2VAkVtud7zvKTeUILADuf/JYk67zgO5+zsg==
+
+typeface-work-sans@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.72.tgz#2b40abbda07e2cf6d9fbd9d334bb8c3014c80e32"
+  integrity sha512-hJa+mh217r4qlEq0zK0Aqn7chyDzJYziObsd9nokEd0lMBKbGNf/10VHS3AqeVKDye3evfTvZ11tmj5WizIJrA==
 
 typeface-zilla-slab@^0.0.72:
   version "0.0.72"

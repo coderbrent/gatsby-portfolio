@@ -8,7 +8,8 @@ module.exports = {
       github: 'https://github.com/coderbrent',
       email: 'mailto:brent.abruzese@gmail.com',
       stackoverflow: 'https://stackoverflow.com/users/10956869/brent-abruzese',
-      linkedin: 'https://linkedin.com/in/brent-abruzese'
+      linkedin: 'https://linkedin.com/in/brent-abruzese',
+      resume: 'https://docs.google.com/document/d/e/2PACX-1vQirxbJ7XFC9mp5Wsrrd2xmviCq8sjI_MaXlodgmYoz82ECxXOvfRo6-B9j0isbOjcKkbXPy3yPrFb3/pub',
     }
   },
   plugins: [

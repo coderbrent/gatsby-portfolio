@@ -23,20 +23,21 @@ const Header = ({ siteTitle }) => {
       }}>
       <div 
         css={{ 
-          display: `flex`, 
+          display: `flex`,
           alignItems: `center`,
           width: `100%`,
         }}
       >
       <h1 
         css={{ 
-          margin: 0, 
-          fontSize: `3rem`,
+          margin: `0rem 1rem`, 
+          fontSize: `5rem`,
           fontWeight: `bold`,
           marginRight: `.75rem`,
           '@media (max-width: 576px)': {
-            fontSize: `1.5rem`,
-            transition: `${CUBIC_BEZIER_TRANSITION}`
+            fontSize: `3.25rem`,
+            transition: `${CUBIC_BEZIER_TRANSITION}`,
+            marginLeft: `.75rem`
           }
         }}>
         <Link
@@ -57,10 +58,20 @@ const Header = ({ siteTitle }) => {
           alignItems: `center`,
           borderRadius: `50%`, 
           padding: `.25rem`,
-          transition: CUBIC_BEZIER_TRANSITION
+          transition: CUBIC_BEZIER_TRANSITION,
+          '@media (max-width: 576px)': {
+            display: `none`
+          }
         }}
       >
-        <GeekSvg />
+        <GeekSvg 
+          css={{ 
+            '@media (max-width: 576px)': {
+              width: `2.75rem`,
+              height: `2.75rem`,
+              transition: `${CUBIC_BEZIER_TRANSITION}`,
+            }
+           }} />
       </div>
       </div>
       <Button
