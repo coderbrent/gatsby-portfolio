@@ -1,5 +1,4 @@
 import React from "react"
-import ThemeContext from '../context/ThemeContext'
 import Layout from "../components/layout"
 import Button from '../components/Button'
 import { 
@@ -13,7 +12,6 @@ import {
 } from "react-icons/fi";
 import ProjectCard from '../components/ProjectCard'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Link } from 'gatsby'
 
 const data = graphql`
   query {
@@ -92,7 +90,10 @@ const IndexPage = () => {
             }
           }}
         >
-          <Button 
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="link to my github page"
             as="a"
             circular
             href={social.github}
@@ -100,6 +101,9 @@ const IndexPage = () => {
             <FiGithub /> 
           </Button>
           <Button 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="my linkedin page"
             circular
             as="a"
             href={social.linkedin}
@@ -107,6 +111,9 @@ const IndexPage = () => {
             <FiLinkedin /> 
           </Button>
           <Button 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="my twitter page"
             circular
             as="a"
             href={social.twitter}
@@ -114,6 +121,7 @@ const IndexPage = () => {
             <FiTwitter /> 
           </Button>
           <Button 
+            aria-label="send me an email"
             circular
             as="a"
             href={social.email}
@@ -121,6 +129,9 @@ const IndexPage = () => {
             <FiMail /> 
           </Button>
           <Button 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="link to my resume"
             circular
             as="a"
             href={social.resume}
@@ -128,6 +139,9 @@ const IndexPage = () => {
             <FiDownloadCloud /> 
           </Button>
           <Button 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="link to my stackoverflow page"
             circular
             as="a"
             href={social.stackoverflow}

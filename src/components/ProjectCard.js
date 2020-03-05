@@ -122,7 +122,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
               }
             }}
           >
-            {`</code>`}
+            {`</view-code>`}
           </a>
           </div>
         </div>
