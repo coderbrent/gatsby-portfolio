@@ -9,9 +9,11 @@ import {
   FiMail,
   FiDownloadCloud,
   FiActivity,
+  FiBookOpen,
 } from "react-icons/fi";
 import ProjectCard from '../components/ProjectCard'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
+import ThemeContext from "../context/ThemeContext";
 
 const data = graphql`
   query {
@@ -30,40 +32,60 @@ const data = graphql`
   }
 `
 
+const blogData = graphql`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            excerpt
+            id
+            frontmatter {
+              path
+              author
+              date
+              title
+          }
+        }
+      }
+    }
+  }
+`
+
 const IndexPage = () => {
   const siteData = useStaticQuery(data)
+  const gqlBlogData = useStaticQuery(blogData)
   const { social } = siteData.site.siteMetadata
 
   return (
-
       <Layout>
         <div 
           css={{ 
-            display: `inline-flex`, 
+            display: `flex`, 
             alignItems: `center`,
           }}
         >
         <section 
           css={{ 
-            margin: `.5rem .1rem`,
+            margin: `.5rem 2.5rem`,
             paddingRight: `1rem`
           }}
         >
           <h2 
             css={{
-              fontSize: `2.5rem`,
-              fontFamily: `work sans`,
+              fontSize: `2rem`,
+              fontFamily: `Trocchi`,
               fontWeight: `bolder`,
-              fontVariantCaps: `all-petite-caps`,
               '@media (max-width: 576px)': {
                 textAlign: `left`,
                 transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
             }}}>
-            hello there!
+            Hello!
           </h2>
             <p 
               css={{ 
-                marginRight: `6rem`,
+                marginRight: `9rem`,
+                marginLeft: `.25rem`,
+                marginBottom: `0rem`,
                 '@media (max-width: 576px)': {
                   marginRight: `0rem`,
                   transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
@@ -150,7 +172,7 @@ const IndexPage = () => {
           </Button>
         </aside>
         </div>
-        <section css={{ margin: `2.5rem auto`}}>
+        <section css={{ margin: `2.5rem 2.5rem`}}>
           <div 
             css={{ 
               display: `flex`,
@@ -163,9 +185,8 @@ const IndexPage = () => {
           >
             <h2 
               css={{ 
-                fontFamily: `work sans`,
+                fontFamily: `Trocchi`,
                 fontWeight: `bolder`,
-                fontVariantCaps: `all-petite-caps`,
                 marginRight: `.5rem`,
                 '@media (max-width: 576px)': {
                   marginBottom: `.25rem`,
@@ -173,13 +194,91 @@ const IndexPage = () => {
                 }
               }}
             >
-              my work
+              My Work
             </h2> 
-            <FiCoffee css={{ marginTop: `.29rem`, fill: 'slateblue'}} size="1.5rem"/>
+            <FiCoffee 
+              css={{ 
+                marginTop: `.29rem`, 
+                fill: 'slateblue' 
+              }} 
+              size="1.5rem"
+            />
           </div>
           <ProjectCard />
         </section>
-      </Layout>
+        <div 
+          css={{ 
+            display: `flex`,
+            alignItems: `baseline`,
+            '@media (max-width: 576px)': {
+              justifyContent: `center`,
+              display: `flex`,
+              transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+            }
+          }}
+        >
+            <h2 
+              css={{ 
+                fontFamily: `Trocchi`,
+                fontWeight: `bolder`,
+                marginBottom: `.5rem`,
+                marginLeft: `2.5rem`,
+                '@media (max-width: 576px)': {
+                  marginBottom: `.25rem`,
+                  transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+                }
+              }}
+            >
+              My Blog
+            </h2> 
+            <FiBookOpen
+              css={{ 
+                marginLeft: `.5rem`, 
+                fill: 'slateblue' 
+              }} 
+              size="1.5rem"
+            />
+          </div>
+        <div css={{ margin: '1rem 2.5rem'}}>
+          {gqlBlogData.allMarkdownRemark.edges.map(post => (
+          <div key={post.node.id}>
+            <h2 
+              css={{ 
+                fontFamily: 'Trocchi',
+                marginBottom: '.5rem',
+                backgroundColor: 'slateblue',
+                padding: '.5rem .2rem'
+              }}
+            >
+              {post.node.frontmatter.title}
+            </h2>
+              <small css={{ color: 'slateblue'}}>
+                Posted by: {post.node.frontmatter.author} on {post.node.frontmatter.date}
+              </small>
+              <br />
+              <p>{post.node.excerpt}</p>
+              <Link 
+                css={{
+                  display: 'flex',
+                  color: 'white',
+                  textDecorationStyle: 'dashed',
+                  textDecorationSkipInk: 'auto',
+                  textUnderlinePosition: 'under',
+                }} 
+                to={post.node.frontmatter.path}>
+                <p 
+                  css={{ 
+                    marginBottom: '.5rem',
+                  }}
+                >
+                  read more
+                </p>
+              </Link>
+              <br/>
+          </div>
+        ))}
+      </div>
+    </Layout>
   )
 }
 

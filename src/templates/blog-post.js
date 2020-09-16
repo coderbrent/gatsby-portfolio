@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ThemeProvider from '../context/ThemeProvider'
 import ThemeContext from '../context/ThemeContext';
-import { getTheme } from '../utils/theme'
 
 //this is the blog TEMPLATE
 export default function Template({ data }) {
@@ -15,13 +14,32 @@ export default function Template({ data }) {
     <ThemeContext.Consumer>
       {({ theme }) => (
         <Layout>
-        <div>
-          <h1>{post.frontmatter.title}</h1>
+        <div 
+          css={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            padding: '1rem 5rem', 
+            margin: '.5rem 3rem'
+          }}
+        >
+          <h1 css={{ fontFamily: 'Trocchi'}}>{post.frontmatter.title}</h1>
             <h4>
-              Posted on {post.frontmatter.date}&nbsp;
+              Posted on - {post.frontmatter.date}&nbsp;
             </h4>
             <div><div dangerouslySetInnerHTML={{ __html: post.html }} /></div>
-              <Link to="/"><button>go back</button></Link>
+              <Link to="/">
+                <button 
+                  css={{
+                    border: 'none',
+                    background: 'slateblue',
+                    color: 'white',
+                    padding: '.5rem 1rem',
+                    width: '100%'
+                  }}
+                >
+                  go back
+                </button>
+              </Link>
           </div>
         </Layout>
       )}

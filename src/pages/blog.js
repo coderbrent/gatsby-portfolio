@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import ThemeProvider from '../context/ThemeProvider'
 import ThemeContext from '../context/ThemeContext'
-import { getTheme, CUBIC_BEZIER_TRANSITION } from '../utils/theme'
+import { getTheme, CUBIC_BEZIER_TRANSITION, PRIMARY_COLOR } from '../utils/theme'
 import { FiArrowRightCircle, FiBook } from 'react-icons/fi';
 import Layout from '../components/layout'
 
 //This is the blog display component
 const Blog = () => {
-  // const { theme } = useContext(ThemeContext);
-  // const { color, secondary, background } = getTheme(theme);
+  const { theme } = useContext(ThemeContext);
+  const { color, secondary, background } = getTheme(theme);
 
   const data = useStaticQuery(graphql`
     {
@@ -46,18 +46,18 @@ const Blog = () => {
       </div>
         {data.allMarkdownRemark.edges.map(post => (
           <div css={{
-            background: 'black'
+            background: background
           }}>
           {post.node.frontmatter.title}
           </div>
         ))}
       </Layout>
-      {/* <div css={{ maxWidth: 670, background: background}}>
+      <div css={{ maxWidth: 670, background: background}}>
       <div css={{ display: `flex` }}>
         <h3 
           css={{ 
-            fontFamily: `fira mono`,
-            marginRight: `.5rem`
+            fontFamily: `Trocchi`,
+            marginLeft: `.5rem`
           }}
         >
           My Blog
@@ -103,14 +103,14 @@ const Blog = () => {
                       transition: `${CUBIC_BEZIER_TRANSITION}`
                     }
                   }} 
-                  color={secondary} 
+                  color={secondary}
                 />
                 </div>
               </Link>
               <br/>
           </div>
         ))}
-      </div> */}
+      </div>
     </ThemeProvider>
   )
 }

@@ -1,6 +1,16 @@
 [
   {
     "id": 1,
+    "status": true,
+    "name": "vanilla-schedule",
+    "date": "09/18/2020",
+    "desc": "An employee scheduling web app built on vanilla JavaScript, CSS and HTML.",
+    "img": "https://repository-images.githubusercontent.com/291347677/ac7b8800-f815-11ea-9836-317efa104eca",
+    "github": "https://github.com/coderbrent/vanilla-schedule",
+    "stack": ["javascript", "mongo", "node"]
+  },
+  {
+    "id": 2,
     "status": false,
     "name": "dna-trans",
     "date": "01/10/2020",
@@ -11,7 +21,7 @@
     "stack": ["gatsby", "graphql", "bulma", "node"]
   },
   {
-    "id": 2,
+    "id": 3,
     "status": true,
     "name": "burger-eater",
     "date": "07/07/19",
@@ -22,7 +32,7 @@
     "stack": ["react", "handlebars", "mysql", "node", "bootstrap"]
   },
   {
-    "id": 3,
+    "id": 4,
     "status": false,
     "name": "reserve-a-car",
     "date": "01/19/20",
@@ -33,7 +43,7 @@
     "stack": ["react", "mongo", "node", "material-ui", "redux"]
   },
   {
-    "id": 4,
+    "id": 5,
     "status": true,
     "name": "chrono-cards",
     "date": "06/11/2019",

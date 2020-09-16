@@ -1,11 +1,15 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useContext } from "react"
-import ThemeContext from "../../context/ThemeContext"
-import { FiSun, FiMoon } from 'react-icons/fi'
-import { BACKGROUND_TRANSITION_TIME, getTheme, CUBIC_BEZIER_TRANSITION } from '../../utils/theme'
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React, { useContext } from "react";
+import ThemeContext from "../../context/ThemeContext";
+import { FiSun, FiMoon } from 'react-icons/fi';
+import { 
+  BACKGROUND_TRANSITION_TIME, 
+  getTheme, 
+  CUBIC_BEZIER_TRANSITION 
+} from '../../utils/theme';
 import Button from '../Button';
-import GeekSvg from '../../Icons/geek.svg'
+import GeekSvg from '../../Icons/geek.svg';
 
 const Header = ({ siteTitle }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -18,7 +22,7 @@ const Header = ({ siteTitle }) => {
         display: `flex`,
         alignItems: `center`,
         justifyContent: `space-between`,
-        margin: `2rem auto`,
+        margin: `2rem`,
         maxWidth: 960,
       }}>
       <div 
@@ -30,8 +34,10 @@ const Header = ({ siteTitle }) => {
       >
       <h1 
         css={{ 
-          margin: `0rem 1rem`, 
-          fontSize: `5rem`,
+          margin: `0rem 1rem`,
+          fontFamily: 'Trocchi',
+          fontSize: `4rem`,
+          color: secondary,
           fontWeight: `bold`,
           marginRight: `.75rem`,
           '@media (max-width: 576px)': {
@@ -53,8 +59,8 @@ const Header = ({ siteTitle }) => {
       </h1>
       <div 
         css={{ 
-          backgroundColor: `${secondary}`, 
-          display: `flex`, 
+          backgroundColor: secondary, 
+          display: `flex`,
           alignItems: `center`,
           borderRadius: `50%`, 
           padding: `.25rem`,
@@ -83,7 +89,9 @@ const Header = ({ siteTitle }) => {
           marginRight: `1rem`,
           background,
           transitionDuration: '0s',
-          transitionDelay: theme === 'dark' ? '0s' : BACKGROUND_TRANSITION_TIME,
+          transitionDelay: 
+            theme === 'dark' ? '0s' : 
+            BACKGROUND_TRANSITION_TIME,
           transitionProperty: 'background-color, color',
         }}
       >

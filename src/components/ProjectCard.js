@@ -35,7 +35,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
       <div 
         css={{ 
           display: `flex`, 
-          alignItems: `flex-start`,
+          alignItems: `center`,
           '@media (max-width: 576px)': {
             display: `flex`,
             margin: `1rem auto`,
@@ -55,11 +55,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
         }} }
         src={ img } 
       />
-      <div 
-        css={{
-          display: `block`
-        }}
-      >
+      <div>
       <div 
         css={{ 
           display: `inline-flex`,
