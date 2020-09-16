@@ -25,6 +25,11 @@ const Layout = ({ children }) => {
           maxWidth: 960, 
           margin: `0 auto`,
           padding: `0rem 1rem`,
+          '@media (max-width: 576px)': {
+            width: '100%',
+            marginBottom: `.25rem`,
+            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+          }
         }}
       >
       <Header siteTitle={data.site.siteMetadata.title} />

@@ -54,6 +54,9 @@ const IndexPage = () => {
               fontSize: `2rem`,
               fontFamily: `Trocchi`,
               fontWeight: `bolder`,
+              textDecoration: 'underline',
+              textDecorationColor: 'slateblue',
+              textUnderlinePosition: 'under',
               '@media (max-width: 576px)': {
                 textAlign: `left`,
                 transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
@@ -167,6 +170,9 @@ const IndexPage = () => {
                 fontFamily: `Trocchi`,
                 fontWeight: `bolder`,
                 marginRight: `.5rem`,
+                textDecoration: 'underline',
+                textDecorationColor: 'slateblue',
+                textUnderlinePosition: 'under',
                 '@media (max-width: 576px)': {
                   marginBottom: `.25rem`,
                   transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,

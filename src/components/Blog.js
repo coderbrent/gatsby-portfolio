@@ -29,10 +29,11 @@ const Blog = () => {
     <div 
       css={{ 
         display: `flex`,
-        alignItems: `baseline`,
+        alignItems: `center`,
         '@media (max-width: 576px)': {
           justifyContent: `center`,
           display: `flex`,
+          width: '100%',
           transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
         }
       }}
@@ -43,9 +44,11 @@ const Blog = () => {
       fontWeight: `bolder`,
       marginBottom: `.5rem`,
       marginLeft: `2.5rem`,
+      textDecoration: 'underline',
+      textDecorationColor: 'slateblue',
+      textUnderlinePosition: 'under',
       '@media (max-width: 576px)': {
         marginBottom: `.25rem`,
-        transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
       }
     }}
   >
@@ -59,7 +62,15 @@ const Blog = () => {
     size="1.5rem"
   />
 </div>
-<div css={{ margin: '1rem 2.5rem'}}>
+<div 
+  css={{ 
+    margin: '2.5rem', 
+    paddingRight: '10rem',
+    '@media (max-width: 576px)': {
+      width: '100%',
+      transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+    }
+  }}>
   {gqlBlogData.allMarkdownRemark.edges.map(post => (
   <div key={post.node.id}>
     <h2 
@@ -67,7 +78,7 @@ const Blog = () => {
         fontFamily: 'Trocchi',
         marginBottom: '.5rem',
         backgroundColor: 'slateblue',
-        padding: '.5rem .2rem'
+        padding: '.5rem .5rem'
       }}
     >
       {post.node.frontmatter.title}
@@ -75,19 +86,19 @@ const Blog = () => {
     <small css={{ color: 'slateblue'}}>
       Posted by: {post.node.frontmatter.author} on {post.node.frontmatter.date}
     </small>
-    <br />
-    <p>{post.node.excerpt}</p>
+    <p css={{ margin: '.75rem .1rem'}}>{post.node.excerpt}</p>
     <Link 
       css={{
         display: 'flex',
-        color: 'white',
+        color: 'slateblue',
         textDecorationStyle: 'dashed',
         textDecorationSkipInk: 'auto',
         textUnderlinePosition: 'under',
       }} 
       to={post.node.frontmatter.path}>
       <p 
-        css={{ 
+        css={{
+          color: 'slateblue',
           marginBottom: '.5rem',
         }}
       >
