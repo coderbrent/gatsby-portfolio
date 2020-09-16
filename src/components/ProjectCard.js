@@ -27,9 +27,11 @@ const Card = ({ name, img, desc, stack, github, site }) => {
       css={{
         margin: `1rem 0rem`,
         maxWidth: `670px`,
-        borderRadius: `10pt`,
         transition: CUBIC_BEZIER_TRANSITION,
-        backgroundColor: 'transparent'
+        '@media (max-width: 576px)': {
+          padding: '1rem',
+          backgroundColor: muted,
+        }
       }}
     >
       <div 
@@ -38,7 +40,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
           alignItems: `center`,
           '@media (max-width: 576px)': {
             display: `flex`,
-            margin: `1rem auto`,
+            margin: `0rem 0rem`,
             textAlign: 'center',
             transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
             flexDirection: `column-reverse`
@@ -50,8 +52,11 @@ const Card = ({ name, img, desc, stack, github, site }) => {
           borderRadius: `10pt`,
           marginRight: `1rem`,
           '@media (max-width: 576px)': {
-            maxWidth: 325,
-            minWidth: 190,
+            zIndex: 10000,
+            minWidth: '100%',
+            borderRadius: '0',
+            margin: '0',
+            padding: '0',
             transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
         }} }
         src={ img } 
@@ -93,13 +98,13 @@ const Card = ({ name, img, desc, stack, github, site }) => {
           css={{ 
             color: color,
             fontSize: `smaller`,
-            transition: CUBIC_BEZIER_TRANSITION,
-            padding: `0`,
+            transition: CUBIC_BEZIER_TRANSITION,            
             margin: `0`,
             '@media (max-width: 576px)': {
               transition: CUBIC_BEZIER_TRANSITION,
               textAlign: `center`,
               margin: `auto auto`,
+              padding: `0rem 3rem`,
           }
           }}
         >
@@ -114,7 +119,8 @@ const Card = ({ name, img, desc, stack, github, site }) => {
               textDecoration: `none`,
               '&:hover': { color: secondary },
               '@media (max-width: 576px)': {
-                textAlign: `center`
+                textAlign: `center`,
+                fontSize: 'larger'
               }
             }}
           >
