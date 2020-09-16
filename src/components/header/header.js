@@ -10,6 +10,7 @@ import {
 } from '../../utils/theme';
 import Button from '../Button';
 import GeekSvg from '../../Icons/geek.svg';
+import BrentImage from '../BrentImage';
 
 const Header = ({ siteTitle }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -59,7 +60,6 @@ const Header = ({ siteTitle }) => {
       </h1>
       <div 
         css={{ 
-          backgroundColor: secondary, 
           display: `flex`,
           alignItems: `center`,
           borderRadius: `50%`, 
@@ -70,14 +70,16 @@ const Header = ({ siteTitle }) => {
           }
         }}
       >
-        <GeekSvg 
+        {/* <GeekSvg 
           css={{ 
             '@media (max-width: 576px)': {
               width: `2.75rem`,
               height: `2.75rem`,
               transition: `${CUBIC_BEZIER_TRANSITION}`,
             }
-           }} />
+           }} 
+        /> */}
+        <BrentImage />
       </div>
       </div>
       <Button

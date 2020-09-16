@@ -7,16 +7,16 @@ const BrentImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "brentphoto.png" }) {
         childImageSharp {
-          fluid(maxWidth: 225, quality: 100)
+          fixed(width: 90, quality: 100)
           {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
       }
     }
   `)
 
-  return <Img css={{ borderRadius: `50%` }} fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return <Img fadeIn='true' css={{ borderRadius: `50%` }} fixed={data.placeholderImage.childImageSharp.fixed} />
+};
 
-export default BrentImage
+export default BrentImage;
