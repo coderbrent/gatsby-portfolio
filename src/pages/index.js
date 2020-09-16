@@ -12,7 +12,6 @@ import {
 } from "react-icons/fi";
 import ProjectCard from '../components/ProjectCard';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import ThemeContext from "../context/ThemeContext";
 import Blog from '../components/Blog';
 
 const data = graphql`

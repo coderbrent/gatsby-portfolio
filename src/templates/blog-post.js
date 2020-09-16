@@ -18,8 +18,8 @@ export default function Template({ data }) {
           css={{ 
             display: 'flex',
             flexDirection: 'column',
-            padding: '1rem 5rem', 
-            margin: '.5rem 3rem'
+            padding: '.5rem 0', 
+            margin: '.5rem 2.5rem'
           }}
         >
           <h1 css={{ fontFamily: 'Trocchi'}}>{post.frontmatter.title}</h1>
