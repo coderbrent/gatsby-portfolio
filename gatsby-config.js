@@ -9,7 +9,7 @@ module.exports = {
       email: 'mailto:brent.abruzese@gmail.com',
       stackoverflow: 'https://stackoverflow.com/users/10956869/brent-abruzese',
       linkedin: 'https://linkedin.com/in/brent-abruzese',
-      resume: '',
+      resume: 'https://drive.google.com/file/d/1k3k4Cj9xW3zzxsQiUKxV6-1EylC7uVB2/view?usp=sharing',
     }
   },
   plugins: [
