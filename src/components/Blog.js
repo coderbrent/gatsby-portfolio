@@ -23,7 +23,7 @@ const blogData = graphql`
 
 const Blog = () => {
   const gqlBlogData = useStaticQuery(blogData);
-
+ 
   return (
     <>
     <div 

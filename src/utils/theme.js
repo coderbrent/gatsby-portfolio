@@ -32,10 +32,10 @@ export const getTheme = theme =>
         borderHoverColor: 'transparent'
       } 
     : { //dark theme
-        background: '#222',
+        background: '#24274D',
         color: 'rgba(205, 218, 239, 1)',
-        secondary: 'rgba(233,175,163,1)',
-        muted: 'slateblue',
+        secondary: '#2e9cca',
+        muted: '#464866',
         borderColor: 'hsla(0, 0%, 100%, 0.60)',
         borderHoverColor: 'rgba(231,150,134,1)',
       };
