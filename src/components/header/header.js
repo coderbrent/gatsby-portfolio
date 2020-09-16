@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => {
         display: `flex`,
         alignItems: `center`,
         justifyContent: `space-between`,
-        margin: `2rem`,
+        margin: '3rem 1rem',
         maxWidth: 960,
       }}>
       <div 
