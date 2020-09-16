@@ -32,8 +32,8 @@ const data = graphql`
 `
 
 const IndexPage = () => {
-  const siteData = useStaticQuery(data)
-  const { social } = siteData.site.siteMetadata
+  const siteData = useStaticQuery(data);
+  const { social } = siteData.site.siteMetadata;
 
   return (
       <Layout>
@@ -45,7 +45,7 @@ const IndexPage = () => {
         >
         <section 
           css={{ 
-            margin: `.5rem 2.5rem`,
+            margin: `.5rem 1.5rem`,
             paddingRight: `1rem`
           }}
         >
@@ -54,19 +54,16 @@ const IndexPage = () => {
               fontSize: `2rem`,
               fontFamily: `Trocchi`,
               fontWeight: `bolder`,
-              textDecoration: 'underline',
-              textDecorationColor: 'slateblue',
-              textUnderlinePosition: 'under',
+              lineHeight: '2.5rem',
               '@media (max-width: 576px)': {
                 textAlign: `left`,
                 transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
             }}}>
-            Hello!
+            Hi! I build things with <span css={{ color: 'gold'}}>JavaScript</span> for people!
           </h2>
             <p 
               css={{ 
                 marginRight: `9rem`,
-                marginLeft: `.25rem`,
                 marginBottom: `0rem`,
                 '@media (max-width: 576px)': {
                   marginRight: `0rem`,
