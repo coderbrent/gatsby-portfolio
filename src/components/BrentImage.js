@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 const BrentImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "brentphoto.png" }) {
+      placeholderImage: file(relativePath: { eq: "IMG_8686.JPG" }) {
         childImageSharp {
-          fixed(width: 90, quality: 100)
+          fixed(width: 260, quality: 100)
           {
             ...GatsbyImageSharpFixed_tracedSVG
           }
@@ -16,7 +16,7 @@ const BrentImage = () => {
     }
   `)
 
-  return <Img fadeIn='true' css={{ borderRadius: `50%` }} fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <Img css={{ opacity: '.75', borderRadius: '10pt' }} fixed={data.placeholderImage.childImageSharp.fixed} />
 };
 
 export default BrentImage;

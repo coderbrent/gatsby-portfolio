@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { 
 	PRIMARY_COLOR, 
 	CUBIC_BEZIER_TRANSITION 
@@ -14,6 +13,7 @@ const Button = styled('button')(props => ({
 	border: `1px solid ${props.theme.borderColor}`,
 	padding: props.circular ? 16 : '16px 32px',
 	transition: CUBIC_BEZIER_TRANSITION,
+	margin: '.5rem 0rem',
 	cursor: 'pointer',
 	color: 'inherit',
 	'&:hover, &:focus': {

@@ -1,92 +1,68 @@
-import React, { useContext } from 'react'
-import ReactIcon from '../Icons/reacticon.svg'
-import GraphQLIcon from '../Icons/graphql.svg'
-import BulmaIcon from '../Icons/bulma.svg'
-import GatsbyIcon from '../Icons/gatsby.svg'
-import MySQLIcon from '../Icons/sql.svg'
-import MongoIcon from '../Icons/mongoicon.svg'
-import HandlebarsIcon from '../Icons/handlebars.svg'
-import NodeIcon from '../Icons/node.svg'
-import BootstrapIcon from '../Icons/bootstrap.svg'
-import MaterialUiIcon from '../Icons/materialui.svg'
-import ReduxIcon from '../Icons/redux.svg'
-import { graphql, useStaticQuery } from 'gatsby'
+import React, { useContext } from 'react';
+import ReactIcon from '../Icons/reacticon.svg';
+import GraphQLIcon from '../Icons/graphql.svg';
+import BulmaIcon from '../Icons/bulma.svg';
+import GatsbyIcon from '../Icons/gatsby.svg';
+import MySQLIcon from '../Icons/sql.svg';
+import MongoIcon from '../Icons/mongoicon.svg';
+import HandlebarsIcon from '../Icons/handlebars.svg';
+import NodeIcon from '../Icons/node.svg';
+import BootstrapIcon from '../Icons/bootstrap.svg';
+import MaterialUiIcon from '../Icons/materialui.svg';
+import ReduxIcon from '../Icons/redux.svg';
+import { graphql, useStaticQuery } from 'gatsby';
 import { CUBIC_BEZIER_TRANSITION, getTheme } from '../utils/theme';
 import ThemeContext from '../context/ThemeContext';
+import ProjectPill from '../components/ProjectPill';
 
 const Card = ({ name, img, desc, stack, github, site }) => {
   const { theme } = useContext(ThemeContext);
   const {
     color, 
     secondary,
-    muted
+    primary
   } = getTheme(theme);
 
   return (
-    <div 
-      css={{
-        margin: `1rem 0rem`,
-        maxWidth: `670px`,
-        transition: CUBIC_BEZIER_TRANSITION,
-        '@media (max-width: 576px)': {
-          padding: '1rem',
-          backgroundColor: muted,
-        }
-      }}
-    >
+    <>
+    {/* <ProjectPill tech={'Gatsby'} url='https://gatsbyjs.org' /> */}
+      <div name="container">
       <div 
+        name="card"
         css={{ 
-          display: `flex`, 
-          alignItems: `center`,
+          display: 'flex',
+          flexDirection: 'row',
+          paddingBottom: '1rem',
           '@media (max-width: 576px)': {
-            display: `flex`,
-            margin: `0rem 0rem`,
-            textAlign: 'center',
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-            flexDirection: `column-reverse`
-        }}}
+            flexWrap: 'wrap'
+          }
+        }}
       >
       <img 
         css={{ 
-          maxWidth: 190,
-          borderRadius: `10pt`,
-          marginRight: `1rem`,
-          '@media (max-width: 576px)': {
-            zIndex: 10000,
-            minWidth: '100%',
-            borderRadius: '0',
-            margin: '0',
-            padding: '0',
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`
-        }} }
-        src={ img } 
-      />
-      <div>
+          maxWidth: '25%', 
+          marginBottom: '.5rem' 
+        }} 
+        src={ img }/>
+      <div 
+        name="body"
+        css={{
+          padding: '0rem 1rem'
+        }}
+      >
       <div 
         css={{ 
-          display: `inline-flex`,
+          display: `flex`,
           alignItems: `flex-start`,
-          '@media (max-width: 576px)': {
-            display: `block`,
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-            textAlign: `center`,
-            margin: `auto auto`,
-        }}}
+          flexWrap: 'wrap',
+        }}
       >
-      <h3 css={{ fontSize: `1.15rem`, marginBottom: `0rem`,}}>
+      <h3 css={{ fontSize: `1.15rem`, margin: 0 }}>
         <a 
           href={site}
           css={{
-            color: secondary,
-            textDecoration: `none`,
-            fontFamily: `fira mono`,
-            fontSize: `1.15rem`,
-            fontWeight: `10`,
-            transition: CUBIC_BEZIER_TRANSITION,
-            margin: `0rem 0rem`,
-            '@media (max-width: 576px)': {
-              fontSize: `2rem`,
-          }
+            color: primary,
+            fontFamily: `Trocchi`,
           }}
         >
           { name }
@@ -96,44 +72,36 @@ const Card = ({ name, img, desc, stack, github, site }) => {
       </div>
         <div 
           css={{ 
-            color: color,
-            fontSize: `smaller`,
-            transition: CUBIC_BEZIER_TRANSITION,            
-            margin: `0`,
-            '@media (max-width: 576px)': {
-              transition: CUBIC_BEZIER_TRANSITION,
-              textAlign: `center`,
-              margin: `auto auto`,
-              padding: `0rem 3rem`,
-          }
+            color,
+            width: '75%'
           }}
         >
           { desc }
         </div>
-        <div css={{ display: `block`}}>
           <a 
             href={github}
             css={{
-              color: muted,
-              fontSize: 'smaller',
+              color: secondary,
               textDecoration: `none`,
-              '&:hover': { color: secondary },
-              '@media (max-width: 576px)': {
-                textAlign: `center`,
-                fontSize: 'larger'
-              }
+              '&:hover': { color: primary }
             }}
           >
-            {`</view-code>`}
+            {`</code>`}
           </a>
           </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </>
   )
 }
 
 const ProjectCard = () => {
+  const { theme } = useContext(ThemeContext);
+  const {
+    color, 
+    secondary,
+  } = getTheme(theme);
+
   const data = useStaticQuery(graphql`
     query Projects {
       allProjectsJson {
@@ -156,15 +124,20 @@ const ProjectCard = () => {
 
   return (
     <>
-    <div 
+      <h3 
       css={{ 
-        display: `block`,
-        width: `100%`,
-        '@media (max-width: 576px)': {
-          margin: '0 auto'
-        }
+        fontFamily: 'lora',
+        fontStyle: 'italic',
+        fontSize: '2rem',
+        color: color,
       }}
     >
+      "love what you do and do what you love."<span css={{ color: secondary }}>- Ray Bradbury.</span> 
+    </h3>
+    <div css={{
+      display: `flex`,
+      flexDirection: 'column',
+    }}>
       { data.allProjectsJson.edges.map((project, i) => (
         <Card
           key={project.node.id} 
@@ -187,6 +160,7 @@ const ProjectCard = () => {
               case 'react': return <a href="https://reactjs.org" css={{ margin: `0rem .5rem`}}><ReactIcon width="1.25rem" height="1.25rem" css={{ '@media (max-width: 576px)': { width: `1.85rem`, height: `1.85rem`, marginTop: `.75rem`, transition: `${CUBIC_BEZIER_TRANSITION}` }}} key={i} /></a>
               case 'material-ui': return <a href="https://material-ui.com" css={{ margin: `0rem .5rem`}}><MaterialUiIcon width="1.25rem" css={{ '@media (max-width: 576px)': { width: `1.85rem`, height: `1.85rem`, marginTop: `.75rem`, transition: `${CUBIC_BEZIER_TRANSITION}` }}} height="1.25rem" key={i} /></a>
               case 'redux': return <a href="https://redux.js.org" css={{ margin: `0rem .5rem`}}><ReduxIcon width="1.25rem" height="1.25rem" css={{ '@media (max-width: 576px)': { width: `1.85rem`, height: `1.85rem`, marginTop: `.75rem`, transition: `${CUBIC_BEZIER_TRANSITION}` }}} key={i} /></a>
+              default: return null;
             }
           })}
         /> 

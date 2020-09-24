@@ -1,6 +1,8 @@
-import React from 'react';
-import { FiBookOpen } from 'react-icons/fi';
+import React, { useContext } from 'react';
+import ThemeContext from '../context/ThemeContext';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { getTheme } from '../utils/theme';
+import { FaArrowRight } from 'react-icons/fa';
 
 const blogData = graphql`
     {
@@ -23,74 +25,53 @@ const blogData = graphql`
 
 const Blog = () => {
   const gqlBlogData = useStaticQuery(blogData);
- 
+  const { theme } = useContext(ThemeContext);
+  const { background, secondary, color, primary, muted } = getTheme(theme);
+  
   return (
     <>
-    <div 
+    <h3 
       css={{ 
-        display: `flex`,
-        alignItems: `center`,
-        '@media (max-width: 576px)': {
-          justifyContent: `center`,
-          display: `flex`,
-          width: '100%',
-          transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-        }
+        fontFamily: 'lora',
+        fontStyle: 'italic',
+        fontSize: '2rem',
       }}
     >
-  <h2 
-    css={{ 
-      fontFamily: `Trocchi`,
-      fontWeight: `bolder`,
-      marginBottom: `.5rem`,
-      marginLeft: `2.5rem`,
-      textDecoration: 'underline',
-      textDecorationColor: 'slateblue',
-      textUnderlinePosition: 'under',
-      '@media (max-width: 576px)': {
-        marginBottom: `.25rem`,
-      }
-    }}
-  >
-    My Blog
-  </h2> 
-  <FiBookOpen
-    css={{ 
-      marginLeft: `.5rem`, 
-      fill: 'slateblue' 
-    }} 
-    size="1.5rem"
-  />
-</div>
-<div 
-  css={{ 
-    margin: '2.5rem', 
-    paddingRight: '10rem',
-    '@media (max-width: 576px)': {
-      width: '100%',
-      transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-    }
-  }}>
-  {gqlBlogData.allMarkdownRemark.edges.map(post => (
-  <div key={post.node.id}>
-    <h2 
+      ...and now for something <span css={{ fontWeight: 'bold', color: secondary }}>completely different!</span>
+    </h3>
+    <div 
       css={{ 
+        marginTop: '2rem', 
+        width: '75%'
+      }}
+    >
+    {gqlBlogData.allMarkdownRemark.edges.map(post => (
+  <div css={{ margin: '1rem 0rem' }} key={post.node.id}>
+  <Link to={post.node.frontmatter.path}>
+    <h2 
+      css={{
+        color: secondary,
         fontFamily: 'Trocchi',
         marginBottom: '.5rem',
-        backgroundColor: 'slateblue',
-        padding: '.5rem .5rem'
+        fontSize: '1.75rem',
+        textDecoration: 'underline',
+        textDecorationStyle: 'dotted',
+        textDecorationThickness: '1px',
+        textDecorationSkipInk: 'auto',
+        textUnderlinePosition: 'under',
       }}
     >
       {post.node.frontmatter.title}
     </h2>
-    <small css={{ color: 'slateblue'}}>
+  </Link>
+    <small css={{ color: primary}}>
       Posted by: {post.node.frontmatter.author} on {post.node.frontmatter.date}
     </small>
-    <p css={{ margin: '.75rem .1rem'}}>{post.node.excerpt}</p>
+    <p css={{ color }}>{post.node.excerpt}</p>
     <Link 
       css={{
         display: 'flex',
-        color: 'slateblue',
+        color: primary,
         textDecorationStyle: 'dashed',
         textDecorationSkipInk: 'auto',
         textUnderlinePosition: 'under',
@@ -98,14 +79,12 @@ const Blog = () => {
       to={post.node.frontmatter.path}>
       <p 
         css={{
-          color: 'slateblue',
-          marginBottom: '.5rem',
+          color: primary,
         }}
       >
-        read more
+        ...read more!
       </p>
     </Link>
-    <br/>
 </div>
 ))}
 </div>

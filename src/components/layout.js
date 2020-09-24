@@ -1,16 +1,24 @@
-import React from 'react'
-import { node } from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header/header"
-import ThemeProvider from '../context/ThemeProvider'
+import React from 'react';
+import { node } from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import Header from './header/header';
+import ThemeProvider from '../context/ThemeProvider';
+import Sidebar from '../components/Sidebar';
 
 const Layout = ({ children }) => {
-
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          social {
+            email
+            github
+            linkedin
+            resume
+            stackoverflow
+            twitter
+          }
         }
       }
     }
@@ -20,20 +28,34 @@ const Layout = ({ children }) => {
     <>
     <ThemeProvider>
       <div 
-        css={{ 
-          height: `100%`, 
-          maxWidth: 960, 
-          margin: `0 auto`,
-          padding: `0rem 1rem`,
+        id="layout-container"
+        css={{
+          minHeight: '100vh',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          maxWidth: 860,
+          margin: '1rem auto',
           '@media (max-width: 576px)': {
-            width: '100%',
-            marginBottom: `.25rem`,
-            transition: `0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`,
-          }
+            margin: '0rem 1rem',
+        }
         }}
       >
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{ children }</main>
+      <div 
+        css={{
+          display: 'flex',
+          width: '100%',
+          flexWrap: 'nowrap',
+          alignItems: 'flex-start',
+          justifyContent: 'space-evenly'
+        }}
+      >
+        <main css={{ marginTop: '1rem' }}>
+          { children }
+        </main>
+        <Sidebar data={data} />
+      </div>
       </div>
       </ThemeProvider>
     </>

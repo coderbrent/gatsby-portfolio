@@ -6,8 +6,14 @@ author: "Brent Abruzese"
 img: ../images/brentphoto.png
 ---
 
-So after going back and forth trying to decide whether to host and maintain my own blog on my portfolio or simply just blog on my DEV.to, I decided on the former.
+So after going back and forth trying to decide whether to build, host and maintain my own blog, or simply just use my DEV.to page, I decided on the former.
 
-Why? For one, Gatsby has an interesting way of handling blogs (JAMstack style) and I was curious about building one that uses it.
+What's funny is I ***just*** read a tweet from someone (can't remember who, sorry) that said something along the lines of, ***"Don't worry about building out a blogging engine for your portfolio page - it's the content that counts".*** And I'm sitting there nodding, going "yep, yep, that's right".
 
-Second, it's hip and trendy. I mean, like, everyone's tots raging on this markdown stuff. Hell, I'm wearing a wool ski hat in 100 degree weather right now while I look up ways to get a simple frigging image on this thing. Just kidding, it's like 60 degrees in New Jersey right now. Maybe I'll do a seasonal fall pumpkin theme on here.. hmm....
+Buuuuttttt I really wanted to use a static site generator and I'd been meaning to deploy something to Netlify, so here we are!
+
+```js
+
+const someArray = [1,2,3,4,4,5].flatten();
+
+```

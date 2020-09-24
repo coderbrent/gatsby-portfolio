@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming'
-import { Global, css } from '@emotion/core'
-import ThemeContext from './ThemeContext'
-import { node } from 'prop-types'
+import React, { useEffect, useState } from 'react';
+import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
+import { Global, css } from '@emotion/core';
+import ThemeContext from './ThemeContext';
+import { node } from 'prop-types';
 import {
   useTheme,
   getTheme,
   CUBIC_BEZIER_TRANSITION,
   BACKGROUND_TRANSITION_TIME,
-} from '../utils/theme'
-import PRISM_THEME_LIGHT from '../styles/prism-theme-light'
-import PRISM_THEME_DARK from '../styles/prism-theme-dark'
+} from '../utils/theme';
+import PRISM_THEME_LIGHT from '../styles/prism-theme-light';
+import PRISM_THEME_DARK from '../styles/prism-theme-dark';
 
 const ThemeProvider = ({ children }) => {
-  const [theme, toggleTheme] = useTheme()
-  const [key, forceUpdate] = useState(0)
-  const currentTheme = getTheme(theme)
-  const darkTheme = getTheme('dark')
-  const { color } = currentTheme
+  const [theme, toggleTheme] = useTheme();
+  const [key, forceUpdate] = useState(0);
+  const currentTheme = getTheme(theme);
+  const darkTheme = getTheme('dark');
+  const { color } = currentTheme;
 
   useEffect(() => {
     forceUpdate(1);
@@ -70,11 +70,11 @@ const ThemeProvider = ({ children }) => {
             transition: CUBIC_BEZIER_TRANSITION,
             zIndex: 1,
             position: 'relative',
-            overflow: 'hidden'
+            overflow: 'hidden',
           }}
           key={key}
         >
-          { children }  
+          { children }
         </div>
       </EmotionThemeProvider>
     </ThemeContext.Provider>
