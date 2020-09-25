@@ -15,7 +15,7 @@ export default `
 		font-family: 'Fira Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 		font-size: 16px;
 		text-align: left;
-		white-space: pre;
+		white-space: pre-wrap;
 		word-spacing: normal;
 		word-break: normal;
 		word-wrap: normal;

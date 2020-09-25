@@ -16,7 +16,7 @@ export default `
 		font-family: 'Fira Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 		font-size: 16px;
 		text-align: left;
-		white-space: pre;
+		white-space: pre-wrap;
 		word-spacing: normal;
 		word-break: normal;
 		word-wrap: normal;
@@ -46,6 +46,7 @@ export default `
 	pre[class*='language-'] {
 		padding: 1em;
 		margin: 0.5em 0 1.5em 0;
+		overflow: auto;
 		border-radius: 0.3em;
 	}
 	:not(pre) > code[class*='language-'],
@@ -57,7 +58,6 @@ export default `
 		color: #84ffff;
 		padding: 0.1em;
 		border-radius: 0.3em;
-		overflow: auto;
 	}
 	.token.comment,
 	.token.prolog,
@@ -153,11 +153,10 @@ export default `
 	 * 3. Adjust the position of the line numbers
 	 */
 	.gatsby-highlight pre[class*="language-"] {
-		max-height: none !important;
 		background-color: transparent;
 		margin: 0;
 		padding: 0;
-		overflow: initial;
+		overflow: auto;
 		float: left; /* 1 */
 		min-width: 100%; /* 2 */
 	}

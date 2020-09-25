@@ -4,22 +4,16 @@ import Layout from '../components/layout';
 import { 
   PRIMARY_COLOR,
 } from '../utils/theme';
-import ThemeProvider from '../context/ThemeProvider';
-import ThemeContext from '../context/ThemeContext';
 
 export default function Template({ data }) {
   const post = data.markdownRemark
   
   return(
-    <ThemeProvider>
-      <ThemeContext.Consumer>
-        {({ theme }) => (
       <Layout>
       <div 
         css={{ 
           display: 'flex',
           flexDirection: 'column',
-          flexWrap: 'wrap'
         }}
       >
         <h1 css={{ fontFamily: 'Trocchi' }}>{post.frontmatter.title}</h1>
@@ -42,9 +36,7 @@ export default function Template({ data }) {
             </Link>
         </div>
       </Layout>
-        )}
-      </ThemeContext.Consumer>
-      </ThemeProvider>
+
   )
 }
 
