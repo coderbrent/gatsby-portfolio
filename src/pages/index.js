@@ -27,6 +27,7 @@ const IndexPage = () => {
         <div 
           css={{ 
             order: 1,
+            flex: '10 1 auto',
              margin: '0rem 1rem', 
              alignSelf: 'baseline' 
           }}
