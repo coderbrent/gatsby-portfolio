@@ -13,7 +13,12 @@ What's funny is I ***just*** read a tweet from someone (can't remember who, sorr
 Buuuuttttt I really wanted to use a static site generator and I'd been meaning to deploy something to Netlify, so here we are!
 
 ```js
+//I'm just messing around here to see what the prism theme looks like!
 
-const someArray = [1,2,3,4,4,5].flatten();
+const someArray = [1,2,[3,4],5];
+
+console.log(someArray.flat());
+
+//logs => [1, 2, 3, 4, 5]
 
 ```

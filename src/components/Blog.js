@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import ThemeContext from '../context/ThemeContext';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { getTheme } from '../utils/theme';
-import { FaArrowRight } from 'react-icons/fa';
 
 const blogData = graphql`
     {
@@ -41,12 +40,14 @@ const Blog = () => {
     </h3>
     <div 
       css={{ 
-        marginTop: '2rem', 
-        width: '75%'
+        display: 'flex',
+        flexDirection: 'column',
+        marginTop: '1rem', 
+        width: '100%'
       }}
     >
     {gqlBlogData.allMarkdownRemark.edges.map(post => (
-  <div css={{ margin: '1rem 0rem' }} key={post.node.id}>
+  <div css={{ margin: '1.5rem 0rem' }} key={post.node.id}>
   <Link to={post.node.frontmatter.path}>
     <h2 
       css={{

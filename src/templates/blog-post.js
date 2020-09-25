@@ -17,10 +17,9 @@ export default function Template({ data }) {
       <Layout>
       <div 
         css={{ 
-          margin: '0rem 0rem',
           display: 'flex',
           flexDirection: 'column',
-          width: '90%'
+          flexWrap: 'wrap'
         }}
       >
         <h1 css={{ fontFamily: 'Trocchi' }}>{post.frontmatter.title}</h1>

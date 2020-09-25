@@ -34,14 +34,15 @@ const Card = ({ name, img, desc, stack, github, site }) => {
           flexDirection: 'row',
           paddingBottom: '1rem',
           '@media (max-width: 576px)': {
-            flexWrap: 'wrap'
+            display: 'block',
           }
         }}
       >
       <img 
         css={{ 
-          maxWidth: '25%', 
-          marginBottom: '.5rem' 
+          maxWidth: '250px',
+          height: 'auto',
+          marginBottom: '.5rem',
         }} 
         src={ img }/>
       <div 
@@ -54,7 +55,10 @@ const Card = ({ name, img, desc, stack, github, site }) => {
         css={{ 
           display: `flex`,
           alignItems: `flex-start`,
-          flexWrap: 'wrap',
+          flexWrap: 'nowrap',
+          '@media (max-width: 576px)': {
+            display: 'block'
+          }
         }}
       >
       <h3 css={{ fontSize: `1.15rem`, margin: 0 }}>
@@ -73,7 +77,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
         <div 
           css={{ 
             color,
-            width: '75%'
+            width: '100%'
           }}
         >
           { desc }
