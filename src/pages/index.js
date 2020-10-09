@@ -34,11 +34,11 @@ const IndexPage = () => {
         >
         <BrentImage />
         </div>
-        <p css={{ flex: '1 1 460px', marginRight: '1rem' }}>
-          Hello! My name is Brent - I'm a former business owner turned full stack JavaScript developer!
+        <p css={{ flex: '1 1 460px', flexWrap: 'nowrap', fontWeight: 'lighter' }}>
+          Hello! My name is Brent - I'm a former business owner turned front end JavaScript developer!
           I enjoy building things with React, GraphQL, Node and Mongo, but I'm always open and eager to
           jump into new stacks and expand my knowledge in new directions. In my free time I love spending time with my family, watching TV (I love paranormal <span role="img" aria-label="ghost">👻</span> shows!), 
-          reading and playing hockey.
+          reading and playing hockey. <span css={{ fontStyle: 'italic' }}>Special thanks to <a href="https://divyanshu013.dev" css={{ color: 'violet' }}>Divyanshu Maithani</a> for this awesome Gatsby dark theme template!</span>
         </p>
         </div>
       </Layout>
