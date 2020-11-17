@@ -5,7 +5,7 @@
     "name": "date-night",
     "date": "10/15/2020",
     "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
-    "site": "https://github.com/somramnani/Date-Night-V2",
+    "site": "https://date-night-v2.herokuapp.com/",
     "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
     "github": "https://github.com/somramnani/Date-Night-V2",
     "stack": ["handlebars", "mysql", "node", "bootstrap"]
