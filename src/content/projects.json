@@ -2,6 +2,28 @@
   {
     "id": 1,
     "status": true,
+    "name": "fleetio-demo",
+    "date": "01/20/21",
+    "desc": "A vendor report card addon for use with Fleetio fleet management software. Built with Rails, React and Tailwind.",
+    "img": "https://repository-images.githubusercontent.com/322461563/81ac9780-662f-11eb-8448-fa40a92bee13",
+    "site": "https://fleetio-ruby-demo.herokuapp.com",
+    "github": "https://github.com/coderbrent/fleetio-demo-rails",
+    "stack": ["rails", "react", "tailwind"]
+  },
+  {
+    "id": 2,
+    "status": true,
+    "name": "date-night",
+    "date": "10/15/2020",
+    "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
+    "site": "https://date-night-v2.herokuapp.com/",
+    "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
+    "github": "https://github.com/somramnani/Date-Night-V2",
+    "stack": ["handlebars", "mysql", "node", "bootstrap"]
+  },
+  {
+    "id": 3,
+    "status": true,
     "name": "vanilla-schedule",
     "date": "09/18/2020",
     "desc": "An employee scheduling web app built on vanilla JavaScript, CSS and HTML.",
@@ -10,18 +32,18 @@
     "stack": ["javascript", "mongo", "node"]
   },
   {
-    "id": 2,
+    "id": 4,
     "status": false,
     "name": "dna-trans",
     "date": "01/10/2020",
-    "desc": "This website is being built for a private, small business. The client expressed interest in increasing their search engine ranking to bring in more business online.",
+    "desc": "This website was built for a private, small business. The client expressed interest in increasing their search engine ranking to bring in more business online.",
     "img": "https://repository-images.githubusercontent.com/231612306/74afd280-37a6-11ea-8667-d140b5ed5492",
     "site": "https://www.dnatransporthq.com",
     "github": "https://github.com/coderbrent/dna-trans",
     "stack": ["gatsby", "graphql", "bulma", "node"]
   },
   {
-    "id": 3,
+    "id": 5,
     "status": true,
     "name": "burger-eater",
     "date": "07/07/19",
@@ -32,7 +54,7 @@
     "stack": ["react", "handlebars", "mysql", "node", "bootstrap"]
   },
   {
-    "id": 4,
+    "id": 6,
     "status": false,
     "name": "reserve-a-car",
     "date": "01/19/20",
@@ -43,7 +65,7 @@
     "stack": ["react", "mongo", "node", "material-ui", "redux"]
   },
   {
-    "id": 5,
+    "id": 7,
     "status": true,
     "name": "chrono-cards",
     "date": "06/11/2019",

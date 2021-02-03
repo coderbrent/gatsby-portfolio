@@ -6,8 +6,10 @@
   "author": "Brent Abruzese",
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "@emotion/react": "^11.1.4",
     "@emotion/styled": "^10.0.22",
     "emotion-theming": "^10.0.27",
+    "facepaint": "^1.2.1",
     "gatsby": "^2.15.28",
     "gatsby-cli": "^2.8.1",
     "gatsby-image": "^2.2.23",

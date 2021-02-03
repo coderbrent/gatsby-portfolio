@@ -13,10 +13,12 @@ export default function Template({ data }) {
       <div 
         css={{ 
           display: 'flex',
-          flexDirection: 'column',
+          flexFlow: 'column nowrap',
+          maxWidth: '90%',
+          textAlign: 'justify'
         }}
       >
-        <h1 css={{ fontFamily: 'Trocchi' }}>{post.frontmatter.title}</h1>
+        <h2 css={{ fontFamily: 'lora', fontWeight: 400 }}>{post.frontmatter.title}</h2>
           <h4 css={{ fontFamily: 'lora', textDecoration: 'underline' }}>
             Posted on {post.frontmatter.date}&nbsp;
           </h4>

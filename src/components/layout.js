@@ -35,7 +35,8 @@ const Layout = ({ children }) => {
           display: 'flex',
           flexDirection: 'column',
           maxWidth: 860,
-          margin: '1rem auto',
+          flexWrap: 'wrap',
+          margin: '5rem auto',
           '@media (max-width: 576px)': {
             margin: '0rem 1rem',
         }
@@ -48,15 +49,19 @@ const Layout = ({ children }) => {
           width: '100%',
           flexWrap: 'nowrap',
           alignItems: 'flex-start',
-          justifyContent: 'space-evenly'
+          justifyContent: 'space-evenly',
+          '@media (max-width: 720px)': {
+            flexWrap: 'wrap',
+        }
         }}
       >
-        <main css={{ marginTop: '1rem' }}>
+        <main css={{ margin: '1rem auto' }}>
           { children }
         </main>
         <Sidebar data={data} />
       </div>
       </div>
+      
       </ThemeProvider>
     </>
   )
