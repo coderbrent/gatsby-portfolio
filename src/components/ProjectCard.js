@@ -30,6 +30,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
             display: "flex",
             flexDirection: "row",
             paddingBottom: "1rem",
+            margin: '1.75rem 0rem',
             "@media (max-width: 576px)": {
               display: "block",
               flexDirection: "column",
@@ -42,6 +43,9 @@ const Card = ({ name, img, desc, stack, github, site }) => {
               maxWidth: "250px",
               height: "auto",
               marginBottom: ".5rem",
+              "@media (max-width: 576px)": {
+                maxWidth: '100%'
+              },
             }}
             src={img}
           />
@@ -57,14 +61,19 @@ const Card = ({ name, img, desc, stack, github, site }) => {
             <div
               css={{
                 display: `flex`,
-                alignItems: `flex-start`,
+                alignItems: `center`,
                 flexWrap: "nowrap",
                 "@media (max-width: 576px)": {
                   display: "block",
                 },
               }}
             >
-              <h3 css={{ fontSize: `1.15rem`, margin: 0 }}>
+              <h3 css={{ 
+                  backgroundColor: 'purple',
+                  fontSize: `1.5rem`, 
+                  marginBottom: '.5rem',
+                  padding: '.5rem'
+                }}>
                 <a
                   href={site}
                   css={{
@@ -75,7 +84,9 @@ const Card = ({ name, img, desc, stack, github, site }) => {
                   {name}
                 </a>
               </h3>
-              {stack}
+              <div>
+                {stack}
+              </div>
             </div>
             <div
               css={{
@@ -83,7 +94,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
                 width: "90%",
               }}
             >
-              <div css={{ textAlign: 'justify'}}>
+              <div css={{ textAlign: 'justify' }}>
                 {desc}
               </div>
             </div>
@@ -132,13 +143,11 @@ const ProjectCard = () => {
     <>
       <h3
         css={{
+          paddingTop: '1rem',
           fontFamily: "lora",
           fontStyle: "italic",
-          fontSize: "2rem",
-          color: color,
-          "@media (max-width: 576px)": {
-            fontSize: "1.5rem",
-          },
+          fontSize: "1.5rem",
+          color: color
         }}
       >
         "love what you do and do what you love."
@@ -175,7 +184,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -196,7 +204,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -214,7 +221,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -232,7 +238,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -250,7 +255,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -271,7 +275,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -291,7 +294,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         height="1.25rem"
@@ -312,7 +314,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         height="1.25rem"
@@ -334,7 +335,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -354,7 +354,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         height="1.25rem"
@@ -376,7 +375,6 @@ const ProjectCard = () => {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -393,11 +391,11 @@ const ProjectCard = () => {
                         width="1.25rem"
                         height="1.25rem"
                         css={{
+                          color: 'red',
                           "@media (max-width: 576px)": {
                             width: `1.85rem`,
                             height: `1.85rem`,
                             marginTop: `.75rem`,
-                            transition: `${CUBIC_BEZIER_TRANSITION}`,
                           },
                         }}
                         key={i}
@@ -418,7 +416,6 @@ const ProjectCard = () => {
                               width: `1.85rem`,
                               height: `1.85rem`,
                               marginTop: `.75rem`,
-                              transition: `${CUBIC_BEZIER_TRANSITION}`,
                             },
                           }}
                           key={i}

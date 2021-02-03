@@ -23,6 +23,7 @@ const Sidebar = props => {
           flexDirection: 'column',
           '@media (max-width: 720px)': {
             flexDirection: 'row',
+            flexWrap: 'wrap',
             gap: '.5rem',
             order: -1,
         }, 
@@ -35,10 +36,6 @@ const Sidebar = props => {
           as="a"
           circular
           href={social.github}
-          css={{'@media (max-width: 720px)': {
-            
-            }}
-          }
         >
           <FiGithub />
         </Button>
