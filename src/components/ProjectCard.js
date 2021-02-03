@@ -13,13 +13,12 @@ import ReduxIcon from "../Icons/redux.svg"
 import RailsIcon from "../Icons/rails.svg"
 import TailwindIcon from '../Icons/tailwind.svg'
 import { graphql, useStaticQuery } from "gatsby"
-import { CUBIC_BEZIER_TRANSITION, getTheme } from "../utils/theme"
+import { getTheme } from "../utils/theme"
 import ThemeContext from "../context/ThemeContext"
-// import ProjectPill from '../components/ProjectPill';
 
 const Card = ({ name, img, desc, stack, github, site }) => {
   const { theme } = useContext(ThemeContext)
-  const { color, secondary, primary } = getTheme(theme)
+  const { color, secondary, primary, other, highlight } = getTheme(theme)
 
   return (
     <>
@@ -39,6 +38,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
           }}
         >
           <img
+            loading="lazy"
             css={{
               maxWidth: "250px",
               height: "auto",
@@ -69,7 +69,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
               }}
             >
               <h3 css={{ 
-                  backgroundColor: 'purple',
+                  backgroundColor: highlight,
                   fontSize: `1.5rem`, 
                   marginBottom: '.5rem',
                   padding: '.5rem'
@@ -77,7 +77,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
                 <a
                   href={site}
                   css={{
-                    color: primary,
+                    color: other,
                     fontFamily: `Trocchi`,
                   }}
                 >
@@ -103,7 +103,7 @@ const Card = ({ name, img, desc, stack, github, site }) => {
               css={{
                 color: secondary,
                 textDecoration: `none`,
-                "&:hover": { color: primary },
+                "&:hover": { color: other },
               }}
             >
               {`</code>`}

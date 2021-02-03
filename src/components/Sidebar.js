@@ -1,16 +1,7 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/react'
 import React from "react"
 import Button from "../components/Button"
 import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi"
 import { FaStackOverflow, FaFilePdf } from "react-icons/fa"
-import facepaint from 'facepaint';
-
-const breakpoints = [576, 768, 992, 1200];
-
-const mq = facepaint(
-  breakpoints.map(bp => `@media (min-width: ${bp}px)`)
-)
 
 const Sidebar = props => {
   const { social } = props.data.site.siteMetadata

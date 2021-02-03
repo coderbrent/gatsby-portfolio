@@ -23,14 +23,15 @@ export const useTheme = () => {
 export const getTheme = theme => 
   theme === 'light'
     ? { 
-        background: 'snow',
+        background: 'aliceblue',
         color: '#333',
         secondary: 'black',
         muted: 'hsla(0, 0%, 0%, 0.6)',
         borderColor: 'black',
         borderHoverColor: 'transparent',
         primary: 'black',
-        formBackground: 'lightgreen'
+        other: '#444',
+        highlight: 'antiquewhite'
       } 
     : {
         background: '#222',
@@ -40,6 +41,7 @@ export const getTheme = theme =>
         borderColor: 'hsla(0, 0%, 100%, 0.80)',
         borderHoverColor: 'rgba(127,0,255,1)',
         primary: 'white',
-        formBackground: '#4C495D'
+        highlight: 'purple',
+        other: 'white'
       };
     
