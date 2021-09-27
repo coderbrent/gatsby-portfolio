@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brent Abruzese`,
-    description: `My developer portfolio built on Gatsby!`,
+    description: `My developer portfolio built with Gatsby!`,
     author: `@brenta1283`,
     social: {
       twitter: 'https://twitter.com/BrentA1283',

@@ -17,13 +17,20 @@ const IndexPage = () => {
       >
         <h3
           css={{
-            fontFamily: "lora",
-            fontStyle: "italic",
-            fontSize: "2rem",
+            fontFamily: "Roboto",
+            fontSize: "1.5rem",
           }}
         >
-          i make things for people with{" "}
-          <span css={{ fontWeight: "bold", color: "violet" }}>javascript</span>!
+          I make things for people with{" "}
+          <span
+            css={{
+              fontWeight: "bold",
+              color: "violet",
+            }}
+          >
+            javascript
+          </span>
+          !
         </h3>
         <div
           css={{

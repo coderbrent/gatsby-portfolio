@@ -31,9 +31,9 @@ const Blog = () => {
     <>
       <h3
         css={{
-          fontFamily: "lora",
-          fontStyle: "italic",
-          fontSize: "2rem",
+          fontFamily: "Roboto slab",
+          fontSize: "1.33rem",
+          color: color,
         }}
       >
         ...and now for something{" "}
@@ -55,7 +55,7 @@ const Blog = () => {
               <h2
                 css={{
                   color: secondary,
-                  fontFamily: "Trocchi",
+                  fontFamily: "Roboto Slab",
                   marginBottom: ".5rem",
                   fontSize: "1.75rem",
                 }}

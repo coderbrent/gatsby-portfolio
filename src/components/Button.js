@@ -8,7 +8,7 @@ const Button = styled("button")(props => ({
   borderRadius: props.circular ? "50%" : 4,
   background: "transparent",
   border: `1px solid ${props.theme.borderColor}`,
-  padding: props.circular ? 16 : "16px 32px",
+  padding: props.circular ? 16 : "16px 24px",
   transition: CUBIC_BEZIER_TRANSITION,
   margin: ".5rem 0rem",
   cursor: "pointer",
