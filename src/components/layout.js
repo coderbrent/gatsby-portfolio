@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
             height: "100%",
             display: "flex",
             flexDirection: "column",
-            maxWidth: 860,
+            maxWidth: 760,
             flexWrap: "wrap",
             margin: "10rem auto",
             rowGap: "1rem",

@@ -48,9 +48,7 @@ const ProjectList = () => {
     <>
       <h3
         css={{
-          paddingTop: "1rem",
           fontFamily: "Roboto Slab",
-          fontSize: "1.25rem",
           color: color,
         }}
       >

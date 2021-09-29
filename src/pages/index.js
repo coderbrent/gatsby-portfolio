@@ -67,6 +67,8 @@ const IndexPage = () => {
           css={{
             "@media (max-width: 576px)": {
               order: 2,
+              minWidth: "auto",
+              justifySelf: "center",
             },
           }}
         >
