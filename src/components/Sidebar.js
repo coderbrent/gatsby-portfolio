@@ -126,19 +126,6 @@ const Sidebar = props => {
         >
           <FaFilePdf />
         </Button>
-        <Button
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="link to my stackoverflow page"
-          circular
-          as="a"
-          css={{
-            marginTop: "1rem",
-          }}
-          href={social.stackoverflow}
-        >
-          <FaStackOverflow />
-        </Button>
       </aside>
     </>
   )
