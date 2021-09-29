@@ -1,51 +1,103 @@
-import React from "react"
+import React, { useContext } from "react"
 import Button from "../components/Button"
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi"
+import {
+  FiGithub,
+  FiLinkedin,
+  FiTwitter,
+  FiMail,
+  FiSun,
+  FiMoon,
+} from "react-icons/fi"
 import { FaStackOverflow, FaFilePdf } from "react-icons/fa"
+import { BACKGROUND_TRANSITION_TIME, getTheme } from "../utils/theme"
+import ThemeContext from "../context/ThemeContext"
 
 const Sidebar = props => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { background } = getTheme(theme)
+  const darkTheme = getTheme("dark")
   const { social } = props.data.site.siteMetadata
 
   return (
     <>
       <aside
         css={{
-          display: 'flex',
-          flexDirection: 'column',
-          '@media (max-width: 720px)': {
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            gap: '.5rem',
-            order: -1,
-        }, 
+          display: "flex",
+          flexDirection: "column",
+          "@media (max-width: 726px)": {
+            flexDirection: "row",
+            columnGap: ".5rem",
+            flexWrap: "wrap",
+          },
         }}
       >
         <Button
+          aria-label="toggle dark mode"
+          circular
+          className="container"
+          onClick={toggleTheme}
+          css={{
+            marginTop: "1rem",
+            background,
+            transitionDuration: "0s",
+            transitionProperty: "background-color, color",
+            transitionDelay:
+              theme === "dark" ? "0s" : BACKGROUND_TRANSITION_TIME,
+          }}
+        >
+          {theme === "light" ? <FiSun /> : <FiMoon />}
+          <div
+            className={theme}
+            css={{
+              position: "absolute",
+              background: darkTheme.background,
+              borderRadius: "50%",
+              width: 32,
+              height: 32,
+              zIndex: -1,
+              transition: `transform ${BACKGROUND_TRANSITION_TIME} ease`,
+              "&.dark": { transform: "scale(150)" },
+            }}
+          />
+        </Button>
+        <Button
+          className="container"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="link to my github page"
           as="a"
           circular
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.github}
         >
           <FiGithub />
         </Button>
         <Button
+          className="container"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="my linkedin page"
           circular
           as="a"
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.linkedin}
         >
           <FiLinkedin />
         </Button>
         <Button
+          className="container"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="my twitter page"
           circular
           as="a"
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.twitter}
         >
           <FiTwitter />
@@ -54,6 +106,9 @@ const Sidebar = props => {
           aria-label="send me an email"
           circular
           as="a"
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.email}
         >
           <FiMail />
@@ -64,6 +119,9 @@ const Sidebar = props => {
           aria-label="link to my resume"
           circular
           as="a"
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.resume}
         >
           <FaFilePdf />
@@ -74,6 +132,9 @@ const Sidebar = props => {
           aria-label="link to my stackoverflow page"
           circular
           as="a"
+          css={{
+            marginTop: "1rem",
+          }}
           href={social.stackoverflow}
         >
           <FaStackOverflow />

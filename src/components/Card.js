@@ -4,7 +4,7 @@ import { getTheme } from "../utils/theme"
 
 export const Card = ({ name, img, desc, stack, github, site }) => {
   const { theme } = useContext(ThemeContext)
-  const { color, secondary, primary, other, highlight } = getTheme(theme)
+  const { color, primary, other } = getTheme(theme)
 
   return (
     <>
@@ -56,7 +56,6 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
             >
               <h3
                 css={{
-                  backgroundColor: highlight,
                   fontSize: `1.5rem`,
                   marginBottom: ".5rem",
                   padding: ".5rem",
@@ -65,8 +64,8 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
                 <a
                   href={site}
                   css={{
-                    color: other,
-                    fontFamily: `Trocchi`,
+                    color: primary,
+                    fontFamily: `Roboto Slab`,
                   }}
                 >
                   {name}
@@ -77,7 +76,7 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
             <div
               css={{
                 color,
-                width: "90%",
+                width: "75%",
               }}
             >
               <div css={{ textAlign: "justify" }}>{desc}</div>
@@ -85,7 +84,7 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
             <a
               href={github}
               css={{
-                color: secondary,
+                color: other,
                 textDecoration: `none`,
                 "&:hover": { color: other },
               }}

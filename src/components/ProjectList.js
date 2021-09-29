@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { Card } from "../components/Card"
+import { Card } from "./Card"
 import ReactIcon from "../Icons/reacticon.svg"
 import GraphQLIcon from "../Icons/graphql.svg"
 import BulmaIcon from "../Icons/bulma.svg"
@@ -17,7 +17,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { getTheme } from "../utils/theme"
 import ThemeContext from "../context/ThemeContext"
 
-const ProjectCard = () => {
+const ProjectList = () => {
   const { theme } = useContext(ThemeContext)
   const { color, secondary } = getTheme(theme)
 
@@ -46,7 +46,7 @@ const ProjectCard = () => {
       <h3
         css={{
           paddingTop: "1rem",
-          fontFamily: "varela round",
+          fontFamily: "Roboto Slab",
           fontSize: "1.25rem",
           color: color,
         }}
@@ -334,4 +334,4 @@ const ProjectCard = () => {
   )
 }
 
-export default ProjectCard
+export default ProjectList

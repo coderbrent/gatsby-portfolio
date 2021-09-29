@@ -15,7 +15,7 @@ const SYSTEM_FONT_STACK = [
 const typography = new Typography({
   title: "typography-theme-brent-portfolio",
   headerFontFamily: ["Roboto Slab", ...SYSTEM_FONT_STACK],
-  bodyFontFamily: ["Lato", ...SYSTEM_FONT_STACK],
+  bodyFontFamily: ["Varela Round", ...SYSTEM_FONT_STACK],
   baseLineHeight: 1.65,
   scaleRatio: 3,
   headerWeight: 500,

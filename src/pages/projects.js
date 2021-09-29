@@ -1,15 +1,15 @@
-import React from 'react'
-import ProjectCard from '../components/ProjectCard';
-import Layout from "../components/layout";
+import React from "react"
+import ProjectList from "../components/ProjectList"
+import Layout from "../components/layout"
 
 const Projects = () => {
   return (
     <>
-    <Layout>
-      <ProjectCard />
-    </Layout>
-  </>
+      <Layout>
+        <ProjectList />
+      </Layout>
+    </>
   )
-};
+}
 
-export default Projects;
+export default Projects

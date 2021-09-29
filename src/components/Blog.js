@@ -25,13 +25,12 @@ const blogData = graphql`
 const Blog = () => {
   const gqlBlogData = useStaticQuery(blogData)
   const { theme } = useContext(ThemeContext)
-  const { secondary, color, primary } = getTheme(theme)
+  const { secondary, color, primary, other } = getTheme(theme)
 
   return (
     <>
-      <h3
+      <h2
         css={{
-          fontFamily: "Roboto slab",
           fontSize: "1.33rem",
           color: color,
         }}
@@ -40,13 +39,13 @@ const Blog = () => {
         <span css={{ fontWeight: "bold", color: secondary }}>
           completely different!
         </span>
-      </h3>
+      </h2>
       <div
         css={{
           display: "flex",
           flexDirection: "column",
           marginTop: "1rem",
-          width: "80%",
+          width: "75%",
         }}
       >
         {gqlBlogData.allMarkdownRemark.edges.map(post => (
@@ -54,7 +53,7 @@ const Blog = () => {
             <Link to={post.node.frontmatter.path}>
               <h2
                 css={{
-                  color: secondary,
+                  color: primary,
                   fontFamily: "Roboto Slab",
                   marginBottom: ".5rem",
                   fontSize: "1.75rem",
@@ -63,24 +62,20 @@ const Blog = () => {
                 {post.node.frontmatter.title}
               </h2>
             </Link>
-            <small css={{ color: primary }}>
+            <small css={{ color: secondary }}>
               Posted by: {post.node.frontmatter.author} on{" "}
               {post.node.frontmatter.date}
             </small>
             <p css={{ color, textAlign: "justify" }}>{post.node.excerpt}</p>
             <Link
               css={{
-                display: "flex",
-                color: primary,
-                textDecorationStyle: "dashed",
-                textDecorationSkipInk: "auto",
-                textUnderlinePosition: "under",
+                display: "inline-block",
               }}
               to={post.node.frontmatter.path}
             >
               <p
                 css={{
-                  color: primary,
+                  color: other,
                 }}
               >
                 ...read more!
