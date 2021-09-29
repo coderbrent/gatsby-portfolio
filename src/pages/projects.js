@@ -1,6 +1,6 @@
 import React from "react"
 import ProjectList from "../components/ProjectList"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const Projects = () => {
   return (
