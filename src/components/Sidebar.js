@@ -8,7 +8,7 @@ import {
   FiSun,
   FiMoon,
 } from "react-icons/fi"
-import { FaStackOverflow, FaFilePdf } from "react-icons/fa"
+import { FaFilePdf } from "react-icons/fa"
 import { BACKGROUND_TRANSITION_TIME, getTheme } from "../utils/theme"
 import ThemeContext from "../context/ThemeContext"
 
@@ -23,7 +23,8 @@ const Sidebar = props => {
       <aside
         css={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
+          columnGap: "2.5rem",
           "@media (max-width: 726px)": {
             flexDirection: "row",
             columnGap: ".5rem",

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { PRIMARY_COLOR, CUBIC_BEZIER_TRANSITION } from "../utils/theme"
+import { CUBIC_BEZIER_TRANSITION } from "../utils/theme"
 
 const Button = styled("button")(props => ({
   display: "flex",

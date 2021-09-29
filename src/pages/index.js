@@ -29,7 +29,7 @@ const IndexPage = () => {
         >
           <h3
             css={{
-              fontFamily: "Roboto",
+              fontFamily: "Roboto Slab",
             }}
           >
             I make things for people with{" "}

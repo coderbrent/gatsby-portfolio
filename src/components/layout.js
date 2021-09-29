@@ -44,21 +44,21 @@ const Layout = ({ children }) => {
           }}
         >
           <Header siteTitle={data.site.siteMetadata.title} />
+          <main css={{ margin: "0rem auto" }}>{children}</main>
           <div
             css={{
               display: "flex",
-              width: "auto",
+              width: "100%",
               flexWrap: "nowrap",
               flexDirection: "row",
               columnGap: "3rem",
-              alignItems: "baseline",
+              justifyContent: "left",
               "@media (max-width: 720px)": {
                 width: "100%",
                 flexWrap: "wrap",
               },
             }}
           >
-            <main css={{ margin: "0rem auto" }}>{children}</main>
             <Sidebar data={data} />
           </div>
         </div>
