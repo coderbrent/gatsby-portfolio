@@ -13,13 +13,13 @@
   {
     "id": 2,
     "status": true,
-    "name": "date-night",
+    "name": "auto-trader-clone",
     "date": "10/15/2020",
-    "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
-    "site": "https://date-night-v2.herokuapp.com/",
-    "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
-    "github": "https://github.com/somramnani/Date-Night-V2",
-    "stack": ["handlebars", "mysql", "node", "bootstrap"]
+    "desc": "An e-commerce style site modeled after auto-trader with NextJS, TypeScript, PostgresSQL.",
+    "site": "https://exotic-car-buyer-coderbrent.vercel.app/cars",
+    "img": "https://repository-images.githubusercontent.com/329731157/a1457ec9-1995-4fda-856c-0f704d3828aa",
+    "github": "https://github.com/coderbrent/autotrader-clone",
+    "stack": ["typescript", "nextjs", "material-ui", "postgres"]
   },
   {
     "id": 3,
@@ -74,5 +74,16 @@
     "site": "https://chrono-cards.herokuapp.com/",
     "github": "https://github.com/coderbrent/chrono-cards",
     "stack": ["react", "node", "bootstrap"]
+  },
+  {
+    "id": 8,
+    "status": true,
+    "name": "date-night",
+    "date": "10/15/2020",
+    "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
+    "site": "https://date-night-v2.herokuapp.com/",
+    "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
+    "github": "https://github.com/somramnani/Date-Night-V2",
+    "stack": ["handlebars", "mysql", "node", "bootstrap"]
   }
 ]

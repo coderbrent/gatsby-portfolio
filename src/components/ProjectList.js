@@ -11,6 +11,9 @@ import NodeIcon from "../Icons/node.svg"
 import BootstrapIcon from "../Icons/bootstrap.svg"
 import MaterialUiIcon from "../Icons/materialui.svg"
 import ReduxIcon from "../Icons/redux.svg"
+import NextIcon from "../Icons/nextjs.svg"
+import PostGresIcon from "../Icons/postgres.svg"
+import TypescriptIcon from "../Icons/typescript.svg"
 import RailsIcon from "../Icons/rails.svg"
 import TailwindIcon from "../Icons/tailwind.svg"
 import { graphql, useStaticQuery } from "gatsby"
@@ -78,6 +81,66 @@ const ProjectList = () => {
                       css={{ margin: `0rem 0.5rem` }}
                     >
                       <GatsbyIcon
+                        width="1.25rem"
+                        height="1.25rem"
+                        css={{
+                          "@media (max-width: 576px)": {
+                            width: `1.85rem`,
+                            height: `1.85rem`,
+                            marginTop: `.75rem`,
+                          },
+                        }}
+                        key={i}
+                      />
+                    </a>
+                  )
+                case "typescript":
+                  return (
+                    <a
+                      href="https://typescriptlang.org"
+                      css={{ margin: `0rem 0.5rem` }}
+                    >
+                      <TypescriptIcon
+                        width="1.25rem"
+                        height="1.25rem"
+                        css={{
+                          "@media (max-width: 576px)": {
+                            width: `1.85rem`,
+                            height: `1.85rem`,
+                            marginTop: `.75rem`,
+                          },
+                        }}
+                        key={i}
+                      />
+                    </a>
+                  )
+                case "postgres":
+                  return (
+                    <a
+                      href="https://postgressql.org"
+                      css={{ margin: `0rem 0.5rem` }}
+                    >
+                      <PostGresIcon
+                        width="1.25rem"
+                        height="1.25rem"
+                        css={{
+                          "@media (max-width: 576px)": {
+                            width: `1.85rem`,
+                            height: `1.85rem`,
+                            marginTop: `.75rem`,
+                          },
+                        }}
+                        key={i}
+                      />
+                    </a>
+                  )
+                case "nextjs":
+                  return (
+                    <a
+                      href="https://nextjs.com"
+                      css={{ margin: `0rem 0.5rem` }}
+                    >
+                      <NextIcon
                         width="1.25rem"
                         height="1.25rem"
                         css={{
