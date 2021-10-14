@@ -1,10 +1,12 @@
 import React, { useContext } from "react"
+import { FaGithub, FaGlobe } from "react-icons/fa"
 import ThemeContext from "../context/ThemeContext"
 import { getTheme } from "../utils/theme"
+import Button from "./Button"
 
-export const Card = ({ name, img, desc, stack, github, site }) => {
+export const Card = ({ name, desc, stack, github, site }) => {
   const { theme } = useContext(ThemeContext)
-  const { color, primary, other } = getTheme(theme)
+  const { color, primary } = getTheme(theme)
 
   return (
     <>
@@ -15,26 +17,13 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
             display: "flex",
             flexDirection: "row",
             paddingBottom: "1rem",
-            margin: "1.75rem 0rem",
+            margin: "1rem 0rem",
             "@media (max-width: 576px)": {
               display: "block",
               flexDirection: "column",
-              margin: "2rem 0rem",
             },
           }}
         >
-          <img
-            loading="lazy"
-            css={{
-              maxWidth: "250px",
-              height: "auto",
-              marginBottom: ".5rem",
-              "@media (max-width: 576px)": {
-                maxWidth: "100%",
-              },
-            }}
-            src={img}
-          />
           <div
             name="body"
             css={{
@@ -49,9 +38,6 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
                 display: `flex`,
                 alignItems: `center`,
                 flexWrap: "nowrap",
-                "@media (max-width: 576px)": {
-                  display: "block",
-                },
               }}
             >
               <h3
@@ -76,21 +62,57 @@ export const Card = ({ name, img, desc, stack, github, site }) => {
             <div
               css={{
                 color,
-                width: "75%",
+                // margin: "0 auto",
+                // width: "100%",
               }}
             >
-              <div css={{ textAlign: "justify" }}>{desc}</div>
+              <div css={{ textAlign: "justify", padding: "0rem .5rem" }}>
+                {desc}
+              </div>
             </div>
-            <a
-              href={github}
+            <div
               css={{
-                color: other,
-                textDecoration: `none`,
-                "&:hover": { color: other },
+                display: "flex",
+                margin: "0rem 0.5rem",
+                padding: "1rem 0rem",
+                gap: "1rem",
               }}
             >
-              {`</code>`}
-            </a>
+              <a
+                css={{
+                  textDecoration: "none",
+                  color: primary,
+                  fontSize: "smaller",
+                }}
+                href={github}
+              >
+                <Button>
+                  <div
+                    css={{
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <FaGithub color={primary} />
+                    See it on GitHub
+                  </div>
+                </Button>
+              </a>
+              <a
+                css={{
+                  textDecoration: "none",
+                  color: primary,
+                  fontSize: "smaller",
+                }}
+                href={site}
+              >
+                <Button>
+                  <FaGlobe color={primary} />
+                  See it in action
+                </Button>
+                {/* {`</code>`} */}
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -43,19 +43,18 @@ const Layout = ({ children }) => {
             },
           }}
         >
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <main css={{ margin: "0rem auto" }}>{children}</main>
+          <Header css={{ order: 0 }} siteTitle={data.site.siteMetadata.title} />
+          <main css={{ order: 1, margin: "0rem auto" }}>{children}</main>
           <div
             css={{
+              order: 2,
               display: "flex",
-              width: "100%",
               flexWrap: "nowrap",
-              flexDirection: "row",
               columnGap: "3rem",
-              justifyContent: "left",
               "@media (max-width: 720px)": {
                 width: "100%",
                 flexWrap: "wrap",
+                order: 1,
               },
             }}
           >

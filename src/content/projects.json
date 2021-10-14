@@ -4,11 +4,11 @@
     "status": true,
     "name": "fleetio-demo",
     "date": "01/20/21",
-    "desc": "A vendor report card addon for use with Fleetio fleet management software. Built with Rails, React and Tailwind.",
+    "desc": "This feature gathers information on a Fleetio user's repair shop vendors, determines on average how long a shop has had a vehicle in service for a given repair and compares that against the standard book time repair data for the vehicles make and manufacturer. It even takes into account whether the shop was open or not, so as not to penalize a shop for not working in their off hours (it does this by fetching the shops hours from their Google My Business page). Built with Rails, React and Tailwind.",
     "img": "https://repository-images.githubusercontent.com/322461563/81ac9780-662f-11eb-8448-fa40a92bee13",
     "site": "https://fleetio-ruby-demo.herokuapp.com",
     "github": "https://github.com/coderbrent/fleetio-demo-rails",
-    "stack": ["rails", "react", "tailwind"]
+    "stack": ["ruby", "react", "tailwindcss-icon"]
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "site": "https://exotic-car-buyer-coderbrent.vercel.app/cars",
     "img": "https://repository-images.githubusercontent.com/329731157/a1457ec9-1995-4fda-856c-0f704d3828aa",
     "github": "https://github.com/coderbrent/autotrader-clone",
-    "stack": ["typescript", "nextjs", "material-ui", "postgres"]
+    "stack": ["typescript-icon", "nextjs-icon", "material-ui", "mysql"]
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "desc": "An employee scheduling web app built on vanilla JavaScript, CSS and HTML.",
     "img": "https://repository-images.githubusercontent.com/291347677/ac7b8800-f815-11ea-9836-317efa104eca",
     "github": "https://github.com/coderbrent/vanilla-schedule",
-    "stack": ["javascript", "mongo", "node"]
+    "stack": ["javascript", "mongodb", "nodejs-icon"]
   },
   {
     "id": 4,
@@ -40,7 +40,7 @@
     "img": "https://repository-images.githubusercontent.com/231612306/74afd280-37a6-11ea-8667-d140b5ed5492",
     "site": "https://www.dnatransporthq.com",
     "github": "https://github.com/coderbrent/dna-trans",
-    "stack": ["gatsby", "graphql", "bulma", "node"]
+    "stack": ["gatsby", "graphql", "bulma", "nodejs-icon"]
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "img": "https://repository-images.githubusercontent.com/188906246/35ce8100-2f4b-11ea-91e8-0ec75b7c7a6d",
     "site": "https://hamburger-eater.herokuapp.com/",
     "github": "https://github.com/coderbrent/burger",
-    "stack": ["react", "handlebars", "mysql", "node", "bootstrap"]
+    "stack": ["react", "handlebars", "mysql", "nodejs-icon", "bootstrap"]
   },
   {
     "id": 6,
@@ -62,7 +62,7 @@
     "img": "https://repository-images.githubusercontent.com/229190919/c8063980-4cee-11ea-8791-6ba67110aef0",
     "site": "",
     "github": "https://github.com/coderbrent/reserve-a-car",
-    "stack": ["react", "mongo", "node", "material-ui", "redux"]
+    "stack": ["react", "mongodb", "nodejs-icon", "material-ui", "redux"]
   },
   {
     "id": 7,
@@ -73,7 +73,7 @@
     "img": "https://repository-images.githubusercontent.com/195163131/0f96db80-2e8e-11ea-9b85-a238cc880f09",
     "site": "https://chrono-cards.herokuapp.com/",
     "github": "https://github.com/coderbrent/chrono-cards",
-    "stack": ["react", "node", "bootstrap"]
+    "stack": ["react", "nodejs-icon", "bootstrap"]
   },
   {
     "id": 8,
@@ -84,6 +84,6 @@
     "site": "https://date-night-v2.herokuapp.com/",
     "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
     "github": "https://github.com/somramnani/Date-Night-V2",
-    "stack": ["handlebars", "mysql", "node", "bootstrap"]
+    "stack": ["handlebars", "mysql", "nodejs-icon", "bootstrap"]
   }
 ]

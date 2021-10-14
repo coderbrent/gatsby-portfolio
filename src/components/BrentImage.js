@@ -20,9 +20,6 @@ const BrentImage = () => {
       css={{
         opacity: ".75",
         borderRadius: "10pt",
-        "@media (max-width: 576px)": {
-          objectFit: "cover",
-        },
       }}
       fixed={data.placeholderImage.childImageSharp.fixed}
     />

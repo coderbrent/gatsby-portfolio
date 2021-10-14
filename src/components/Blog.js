@@ -31,7 +31,7 @@ const Blog = () => {
     <>
       <h2
         css={{
-          fontSize: "1.33rem",
+          fontSize: "1.5rem",
           color: color,
         }}
       >
@@ -45,18 +45,18 @@ const Blog = () => {
           display: "flex",
           flexDirection: "column",
           marginTop: "1rem",
-          width: "75%",
         }}
       >
         {gqlBlogData.allMarkdownRemark.edges.map(post => (
-          <div css={{ margin: "1.5rem 0rem" }} key={post.node.id}>
+          <div css={{ margin: "1rem 0rem", width: "100%" }} key={post.node.id}>
             <Link to={post.node.frontmatter.path}>
               <h2
                 css={{
                   color: primary,
                   fontFamily: "Roboto Slab",
                   marginBottom: ".5rem",
-                  fontSize: "1.75rem",
+                  fontSize: "1.5rem",
+                  textDecoration: "none",
                 }}
               >
                 {post.node.frontmatter.title}

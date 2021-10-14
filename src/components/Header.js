@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
             fontWeight: `bold`,
             marginRight: `.75rem`,
             "@media (max-width: 576px)": {
-              fontSize: `2.5rem`,
+              fontSize: `3.75rem`,
               transition: `${CUBIC_BEZIER_TRANSITION}`,
             },
           }}

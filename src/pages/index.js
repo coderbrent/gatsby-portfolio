@@ -10,9 +10,12 @@ const IndexPage = () => {
           display: "flex",
           flexDirection: "row",
           flexWrap: "nowrap",
-          columnGap: "50px",
+          columnGap: "1rem",
+
           "@media (max-width: 576px)": {
             flexWrap: "wrap",
+            gap: "0rem",
+            flexGrow: 1,
           },
         }}
       >
@@ -21,18 +24,22 @@ const IndexPage = () => {
             display: "flex",
             flexWrap: "nowrap",
             flexDirection: "column",
-            flexGrow: 3,
+
             "@media (max-width: 576px)": {
               order: 2,
+              flexGrow: 1,
             },
           }}
         >
           <h3
             css={{
               fontFamily: "Roboto Slab",
+              "@media (max-width: 576px)": {
+                textAlign: "center",
+              },
             }}
           >
-            I make things for people with{" "}
+            I make cool things for people with{" "}
             <span
               css={{
                 fontWeight: "bold",
@@ -49,11 +56,12 @@ const IndexPage = () => {
             css={{
               textAlign: "justify",
               fontSize: "1rem",
+              margin: "0rem auto",
             }}
           >
-            Hello! My name is Brent - I'm a full stack web developer building
+            Hello! My name is Brent - I'm a front end web developer building
             things with <span css={{ color: "orange" }}>React</span>,
-            <span css={{ color: "slateblue" }}> TypeScript</span>,{" "}
+            <span css={{ color: "dodgerblue" }}> TypeScript</span>,{" "}
             <span css={{ color: "violet" }}>GraphQL</span> and{" "}
             <span css={{ color: "lightgreen" }}>Node!</span> In my free time I
             love hanging with my family, watching TV (I love paranormal{" "}
@@ -66,9 +74,11 @@ const IndexPage = () => {
         <div
           css={{
             "@media (max-width: 576px)": {
-              order: 2,
-              minWidth: "auto",
-              justifySelf: "center",
+              order: 1,
+              width: "100%",
+              padding: 0,
+              margin: 0,
+              textAlign: "center",
             },
           }}
         >
