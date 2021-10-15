@@ -10,12 +10,10 @@ const IndexPage = () => {
           display: "flex",
           flexDirection: "row",
           flexWrap: "nowrap",
-          columnGap: "1rem",
-
+          columnGap: "3rem",
           "@media (max-width: 576px)": {
             flexWrap: "wrap",
             gap: "0rem",
-            flexGrow: 1,
           },
         }}
       >
@@ -24,10 +22,9 @@ const IndexPage = () => {
             display: "flex",
             flexWrap: "nowrap",
             flexDirection: "column",
-
+            flexGrow: 3,
             "@media (max-width: 576px)": {
               order: 2,
-              flexGrow: 1,
             },
           }}
         >
@@ -73,11 +70,9 @@ const IndexPage = () => {
         </div>
         <div
           css={{
+            flexGrow: 1,
             "@media (max-width: 576px)": {
               order: 1,
-              width: "100%",
-              padding: 0,
-              margin: 0,
               textAlign: "center",
             },
           }}

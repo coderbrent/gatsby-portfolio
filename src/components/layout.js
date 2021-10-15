@@ -41,10 +41,15 @@ const Layout = ({ children }) => {
             "@media (max-width: 576px)": {
               margin: "auto 1rem",
             },
+            "@media (max-width: 360px)": {
+              width: "100%",
+              margin: "0rem 0rem",
+              padding: "1rem",
+            },
           }}
         >
           <Header css={{ order: 0 }} siteTitle={data.site.siteMetadata.title} />
-          <main css={{ order: 1, margin: "0rem auto" }}>{children}</main>
+          <main css={{ order: 1, margin: "0rem 0rem" }}>{children}</main>
           <div
             css={{
               order: 2,
@@ -55,6 +60,9 @@ const Layout = ({ children }) => {
                 width: "100%",
                 flexWrap: "wrap",
                 order: 1,
+              },
+              "@media (max-width: 360px)": {
+                gap: "0rem",
               },
             }}
           >

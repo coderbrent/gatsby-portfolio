@@ -11,9 +11,8 @@ export default function Template({ data }) {
       <div
         css={{
           display: "flex",
-          flexFlow: "column nowrap",
-          maxWidth: "90%",
-          textAlign: "justify",
+          flexFlow: "column wrap",
+          width: "100%",
         }}
       >
         <h2 css={{ fontFamily: "Roboto Slab", fontWeight: 400 }}>
@@ -22,7 +21,10 @@ export default function Template({ data }) {
         <h4 css={{ fontFamily: "lato", textDecoration: "underline" }}>
           Posted on {post.frontmatter.date}&nbsp;
         </h4>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          css={{ textAlign: "justify" }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <Link to="/blog">
           <button
             css={{

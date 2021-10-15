@@ -18,8 +18,8 @@ const BrentImage = () => {
   return (
     <Img
       css={{
+        borderRadius: "50%/75%",
         opacity: ".75",
-        borderRadius: "10pt",
       }}
       fixed={data.placeholderImage.childImageSharp.fixed}
     />

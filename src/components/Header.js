@@ -17,6 +17,9 @@ const Header = ({ siteTitle }) => {
           width: "100%",
           flexWrap: "wrap",
           flexDirection: "column",
+          "@media (max-width: 576px)": {
+            alignContent: "center",
+          },
         }}
       >
         <h1
