@@ -78,40 +78,51 @@ export const Card = ({ name, desc, stack, github, site }) => {
                 gap: "1rem",
               }}
             >
-              <a
-                css={{
-                  textDecoration: "none",
-                  color: primary,
-                  fontSize: "smaller",
-                }}
-                href={github}
-              >
-                <Button>
-                  <div
-                    css={{
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <FaGithub color={primary} />
-                    See it on GitHub
-                  </div>
-                </Button>
-              </a>
-              <a
-                css={{
-                  textDecoration: "none",
-                  color: primary,
-                  fontSize: "smaller",
-                }}
-                href={site}
-              >
-                <Button>
-                  <FaGlobe color={primary} />
-                  See it in action
-                </Button>
-                {/* {`</code>`} */}
-              </a>
+              {github ? (
+                <a
+                  css={{
+                    textDecoration: "none",
+                    color: primary,
+                    fontSize: "smaller",
+                  }}
+                  href={github}
+                >
+                  <Button>
+                    <div
+                      css={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <FaGithub color={primary} />
+                      See it on GitHub
+                    </div>
+                  </Button>
+                </a>
+              ) : null}
+              {site ? (
+                <a
+                  css={{
+                    textDecoration: "none",
+                    color: primary,
+                    fontSize: "smaller",
+                  }}
+                  href={site}
+                >
+                  <Button>
+                    <div
+                      css={{
+                        display: "flex",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                      <FaGlobe color={primary} />
+                      See it in action
+                    </div>
+                  </Button>
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

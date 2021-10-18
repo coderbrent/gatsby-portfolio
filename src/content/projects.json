@@ -1,16 +1,5 @@
 [
   {
-    "id": 1,
-    "status": true,
-    "name": "fleetio-demo",
-    "date": "01/20/21",
-    "desc": "This feature gathers information on a Fleetio user's repair shop vendors, determines on average how long a shop has had a vehicle in service for a given repair and compares that against the standard book time repair data for the vehicles make and manufacturer. It even takes into account whether the shop was open or not, so as not to penalize a shop for not working in their off hours (it does this by fetching the shops hours from their Google My Business page). Built with Rails, React and Tailwind.",
-    "img": "https://repository-images.githubusercontent.com/322461563/81ac9780-662f-11eb-8448-fa40a92bee13",
-    "site": "https://fleetio-ruby-demo.herokuapp.com",
-    "github": "https://github.com/coderbrent/fleetio-demo-rails",
-    "stack": ["ruby", "react", "tailwindcss-icon"]
-  },
-  {
     "id": 2,
     "status": true,
     "name": "auto-trader-clone",
@@ -22,14 +11,15 @@
     "stack": ["typescript-icon", "nextjs-icon", "material-ui", "mysql"]
   },
   {
-    "id": 3,
+    "id": 8,
     "status": true,
-    "name": "vanilla-schedule",
-    "date": "09/18/2020",
-    "desc": "An employee scheduling web app built on vanilla JavaScript, CSS and HTML.",
-    "img": "https://repository-images.githubusercontent.com/291347677/ac7b8800-f815-11ea-9836-317efa104eca",
-    "github": "https://github.com/coderbrent/vanilla-schedule",
-    "stack": ["javascript", "mongodb", "nodejs-icon"]
+    "name": "date-night",
+    "date": "10/15/2020",
+    "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
+    "site": "https://date-night-v2.herokuapp.com/",
+    "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
+    "github": "https://github.com/somramnani/Date-Night-V2",
+    "stack": ["handlebars", "mysql", "nodejs-icon", "bootstrap"]
   },
   {
     "id": 4,
@@ -41,6 +31,15 @@
     "site": "https://www.dnatransporthq.com",
     "github": "https://github.com/coderbrent/dna-trans",
     "stack": ["gatsby", "graphql", "bulma", "nodejs-icon"]
+  },
+  {
+    "id": 3,
+    "status": true,
+    "name": "azuga-vehicle-locator",
+    "desc": "A chrome extension developed for Azuga Fleet Management that allows users to view their Azuga GPS tracked vehicles within the dashboard of a ServiceTrade account.",
+    "img": "https://repository-images.githubusercontent.com/291347677/ac7b8800-f815-11ea-9836-317efa104eca",
+    "site": "https://chrome.google.com/webstore/detail/servicetrade-azuga-vehicl/abidgemjnfeoljcepofgfpfpfbilfkli",
+    "stack": ["javascript"]
   },
   {
     "id": 5,
@@ -76,14 +75,14 @@
     "stack": ["react", "nodejs-icon", "bootstrap"]
   },
   {
-    "id": 8,
+    "id": 1,
     "status": true,
-    "name": "date-night",
-    "date": "10/15/2020",
-    "desc": "A full stack web app that funnels Yelp restaurant and event data. Uses Handlebars templating, Node, Sequelize/MySQL, auth0 and more!",
-    "site": "https://date-night-v2.herokuapp.com/",
-    "img": "https://github.com/somramnani/Date-Night-V2/raw/master/public/images/results.jpg",
-    "github": "https://github.com/somramnani/Date-Night-V2",
-    "stack": ["handlebars", "mysql", "nodejs-icon", "bootstrap"]
+    "name": "fleetio-demo",
+    "date": "01/20/21",
+    "desc": "This feature gathers information on a Fleetio user's repair shop vendors, determines on average how long a shop has had a vehicle in service for a given repair and compares that against the standard book time repair data for the vehicles make and manufacturer. It even takes into account whether the shop was open or not, so as not to penalize a shop for not working in their off hours (it does this by fetching the shops hours from their Google My Business page). Built with Rails, React and Tailwind.",
+    "img": "https://repository-images.githubusercontent.com/322461563/81ac9780-662f-11eb-8448-fa40a92bee13",
+    "site": "https://fleetio-ruby-demo.herokuapp.com",
+    "github": "https://github.com/coderbrent/fleetio-demo-rails",
+    "stack": ["ruby", "react", "tailwindcss-icon"]
   }
 ]
