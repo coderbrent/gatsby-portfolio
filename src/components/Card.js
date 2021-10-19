@@ -4,7 +4,7 @@ import ThemeContext from "../context/ThemeContext"
 import { getTheme } from "../utils/theme"
 import Button from "./Button"
 
-export const Card = ({ name, desc, stack, github, site, img, funFact }) => {
+export const Card = ({ name, desc, stack, github, site, img }) => {
   const { theme } = useContext(ThemeContext)
   const { color, primary } = getTheme(theme)
 
