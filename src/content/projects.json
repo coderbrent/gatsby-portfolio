@@ -42,6 +42,24 @@
     "stack": ["javascript"]
   },
   {
+    "id": 9,
+    "status": true,
+    "name": "blackrock-worldwide",
+    "desc": "Brochure style site built for my limousine service.",
+    "img": "https://static1.squarespace.com/static/screenshots/50758ee5e4b0d3c328d027e7/api/v2/screenshot-service/screenshots/websites/50758ee5e4b0d3c328d027e7/uuids/86e7c17c-2ca4-4086-9688-9ec4a4acef6c",
+    "site": "https://blackrock-worldwide.squarespace.com",
+    "stack": ["javascript"]
+  },
+  {
+    "id": 10,
+    "status": true,
+    "name": "monmouth-brew-tours",
+    "desc": "Brochure style site built for local brew tour service.",
+    "img": "https://static1.squarespace.com/static/screenshots/5b4bba455b409b250d8a8318/api/v2/screenshot-service/screenshots/websites/5b4bba455b409b250d8a8318/uuids/246d525a-5c1c-4244-a8bc-d3b03edda607",
+    "site": "https://paddlefish-gerbil-xaw8.squarespace.com",
+    "stack": ["javascript"]
+  },
+  {
     "id": 5,
     "status": true,
     "name": "burger-eater",
