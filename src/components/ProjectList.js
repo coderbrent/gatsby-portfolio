@@ -47,6 +47,7 @@ const ProjectList = () => {
         }}
       >
         {data.allProjectsJson.edges.map(project => {
+          console.log(project.node.funFact)
           return (
             <Card
               key={project.node.id}
@@ -54,7 +55,9 @@ const ProjectList = () => {
               desc={project.node.desc}
               github={project.node.github}
               site={project.node.site}
+              img={project.node.img}
               status={project.node.status}
+              funFact={project.node.funFact}
               stack={project.node.stack.map(tech => (
                 <DynamicStackIcon tech={tech} key={tech} />
               ))}

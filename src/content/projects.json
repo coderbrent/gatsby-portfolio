@@ -4,7 +4,7 @@
     "status": true,
     "name": "auto-trader-clone",
     "date": "10/15/2020",
-    "desc": "An e-commerce style site modeled after auto-trader with NextJS, TypeScript, PostgresSQL.",
+    "desc": "An e-commerce style site modeled after auto-trader with NextJS, TypeScript, MySQL and styled with Material-UI. Makes use of Vercel's nifty useSWR hook.",
     "site": "https://exotic-car-buyer-coderbrent.vercel.app/cars",
     "img": "https://repository-images.githubusercontent.com/329731157/a1457ec9-1995-4fda-856c-0f704d3828aa",
     "github": "https://github.com/coderbrent/autotrader-clone",
@@ -37,7 +37,7 @@
     "status": true,
     "name": "azuga-vehicle-locator",
     "desc": "A chrome extension developed for Azuga Fleet Management that allows users to view their Azuga GPS tracked vehicles within the dashboard of a ServiceTrade account.",
-    "img": "https://repository-images.githubusercontent.com/291347677/ac7b8800-f815-11ea-9836-317efa104eca",
+    "img": "https://repository-images.githubusercontent.com/340215637/e0ea39ab-4a3a-4f5e-87db-66c3cc265aa0",
     "site": "https://chrome.google.com/webstore/detail/servicetrade-azuga-vehicl/abidgemjnfeoljcepofgfpfpfbilfkli",
     "stack": ["javascript"]
   },

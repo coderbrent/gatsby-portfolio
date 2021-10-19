@@ -4,7 +4,7 @@ import ThemeContext from "../context/ThemeContext"
 import { getTheme } from "../utils/theme"
 import Button from "./Button"
 
-export const Card = ({ name, desc, stack, github, site }) => {
+export const Card = ({ name, desc, stack, github, site, img, funFact }) => {
   const { theme } = useContext(ThemeContext)
   const { color, primary } = getTheme(theme)
 
@@ -15,12 +15,10 @@ export const Card = ({ name, desc, stack, github, site }) => {
           name="card"
           css={{
             display: "flex",
-            flexDirection: "row",
-            paddingBottom: "1rem",
-            margin: "1rem 0rem",
+            margin: "2rem 0rem",
             "@media (max-width: 576px)": {
-              display: "block",
               flexDirection: "column",
+              padding: "2rem",
             },
           }}
         >
@@ -36,37 +34,96 @@ export const Card = ({ name, desc, stack, github, site }) => {
             <div
               css={{
                 display: `flex`,
-                alignItems: `center`,
-                flexWrap: "nowrap",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: 0,
+                marginBottom: "1rem",
+                "@media (max-width: 576px)": {
+                  flexDirection: "column",
+                },
               }}
             >
-              <h3
+              <div
+                name="project-image-container"
                 css={{
-                  fontSize: `1.5rem`,
-                  marginBottom: ".5rem",
-                  padding: ".5rem",
+                  margin: 0,
+                  padding: 0,
+                  right: 1,
+                  top: 5,
+                  position: "relative",
+                  clipPath: "circle(25px at center)",
+                  width: "10%",
+                  "@media (max-width: 576px)": {
+                    width: "100%",
+                    clipPath: "none",
+                    position: "static",
+                  },
                 }}
               >
-                <a
-                  href={site}
+                <img
+                  alt="a project thumbnail"
                   css={{
-                    color: primary,
-                    fontFamily: `Roboto Slab`,
+                    margin: "0rem",
+                  }}
+                  src={img}
+                />
+              </div>
+              <div
+                css={{
+                  display: "flex",
+                  alignItems: "center",
+                  width: "100%",
+                  "@media (max-width: 576px)": {
+                    padding: "0rem 0rem",
+                    margin: "1rem 0rem",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    order: -1,
+                  },
+                }}
+              >
+                <h3
+                  name="project-title"
+                  css={{
+                    fontSize: `1.65rem`,
+                    margin: 0,
+                    "@media (max-width: 576px)": {
+                      fontSize: "2.25rem",
+                      textAlign: "center",
+                    },
                   }}
                 >
-                  {name}
-                </a>
-              </h3>
-              <div>{stack}</div>
+                  <a
+                    href={site}
+                    css={{
+                      color: primary,
+                      fontFamily: `Roboto Slab`,
+                    }}
+                  >
+                    {name}
+                  </a>
+                </h3>
+                <div
+                  css={{ padding: 0, marginTop: "12px" }}
+                  name="project-stack"
+                >
+                  {stack}
+                </div>
+              </div>
             </div>
             <div
               css={{
                 color,
-                // margin: "0 auto",
-                // width: "100%",
+                margin: "0 auto",
               }}
             >
-              <div css={{ textAlign: "justify", padding: "0rem .5rem" }}>
+              <div
+                css={{
+                  fontSize: "1.1rem",
+                  textAlign: "justify",
+                  padding: "0rem .5rem",
+                }}
+              >
                 {desc}
               </div>
             </div>
@@ -76,52 +133,69 @@ export const Card = ({ name, desc, stack, github, site }) => {
                 margin: "0rem 0.5rem",
                 padding: "1rem 0rem",
                 gap: "1rem",
+                width: "100%",
               }}
             >
               {github ? (
-                <a
-                  css={{
-                    textDecoration: "none",
-                    color: primary,
-                    fontSize: "smaller",
-                  }}
-                  href={github}
-                >
-                  <Button>
-                    <div
-                      css={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      <FaGithub color={primary} />
-                      See it on GitHub
-                    </div>
-                  </Button>
-                </a>
+                <span css={{ flexGrow: 1, flexShrink: 1 }}>
+                  <a
+                    css={{
+                      textDecoration: "none",
+                      color: primary,
+                    }}
+                    href={github}
+                  >
+                    <Button>
+                      <div
+                        css={{
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <FaGithub color={primary} />
+                        <span
+                          css={{
+                            paddingLeft: "5px",
+                            fontVariantCaps: "all-petite-caps",
+                          }}
+                        >
+                          See it on GitHub
+                        </span>
+                      </div>
+                    </Button>
+                  </a>
+                </span>
               ) : null}
               {site ? (
-                <a
-                  css={{
-                    textDecoration: "none",
-                    color: primary,
-                    fontSize: "smaller",
-                  }}
-                  href={site}
-                >
-                  <Button>
-                    <div
-                      css={{
-                        display: "flex",
-                        justifyContent: "space-evenly",
-                        alignItems: "center",
-                      }}
-                    >
-                      <FaGlobe color={primary} />
-                      See it in action
-                    </div>
-                  </Button>
-                </a>
+                <span css={{ flexGrow: 10, flexShrink: 5 }}>
+                  <a
+                    css={{
+                      textDecoration: "none",
+                      color: primary,
+                    }}
+                    href={site}
+                  >
+                    <Button>
+                      <div
+                        css={{
+                          display: "flex",
+                          alignItems: "center",
+                          width: "100%",
+                        }}
+                      >
+                        <FaGlobe color={primary} />
+                        <span
+                          css={{
+                            fontVariantCaps: "all-small-caps",
+                            paddingLeft: "5px",
+                          }}
+                        >
+                          See it in action
+                        </span>
+                      </div>
+                    </Button>
+                  </a>
+                </span>
               ) : null}
             </div>
           </div>
