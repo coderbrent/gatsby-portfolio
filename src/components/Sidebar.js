@@ -18,6 +18,10 @@ const Sidebar = props => {
   const darkTheme = getTheme("dark")
   const { social } = props.data.site.siteMetadata
 
+  const notifyMeOfResumeDownload = () => {
+    console.log("wasabi")
+  }
+
   return (
     <>
       <aside
@@ -122,6 +126,7 @@ const Sidebar = props => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="link to my resume"
+          onClick={() => notifyMeOfResumeDownload()}
           circular
           as="a"
           css={{
