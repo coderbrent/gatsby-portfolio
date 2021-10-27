@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PRIMARY_COLOR } from "../utils/theme"
+// import TestComponent from "../components/TestComponent"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -18,7 +19,7 @@ export default function Template({ data }) {
         <h2 css={{ fontFamily: "Roboto Slab", fontWeight: 400 }}>
           {post.frontmatter.title}
         </h2>
-        <h4 css={{ fontFamily: "lato", textDecoration: "underline" }}>
+        <h4 css={{ fontFamily: "lato" }}>
           Posted on {post.frontmatter.date}&nbsp;
         </h4>
         <div

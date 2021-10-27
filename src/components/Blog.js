@@ -55,7 +55,6 @@ const Blog = () => {
                   color: primary,
                   fontFamily: "Roboto Slab",
                   marginBottom: ".5rem",
-                  fontSize: "1.5rem",
                   textDecoration: "none",
                 }}
               >

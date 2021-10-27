@@ -160,4 +160,4 @@ export default `
 		float: left; /* 1 */
 		min-width: 100%; /* 2 */
 	}
-`;
+`
