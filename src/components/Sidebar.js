@@ -30,9 +30,10 @@ const Sidebar = props => {
           flexDirection: "row",
           columnGap: "1.25rem",
           width: "100%",
-          "@media (max-width: 726px)": {
+          "@media (max-width: 576px)": {
             columnGap: "1rem",
             justifyContent: "center",
+            justifySelf: "center",
           },
           "@media (max-width: 370px)": {
             columnGap: ".5rem",

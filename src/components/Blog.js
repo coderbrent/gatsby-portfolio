@@ -29,26 +29,16 @@ const Blog = () => {
 
   return (
     <>
-      <h2
-        css={{
-          fontSize: "1.5rem",
-          color: color,
-        }}
-      >
-        ...and now for something{" "}
-        <span css={{ fontWeight: "bold", color: secondary }}>
-          completely different!
-        </span>
-      </h2>
       <div
         css={{
           display: "flex",
           flexDirection: "column",
+          gap: "3rem",
           marginTop: "1rem",
         }}
       >
         {gqlBlogData.allMarkdownRemark.edges.map(post => (
-          <div css={{ margin: "1rem 0rem", width: "100%" }} key={post.node.id}>
+          <div css={{ width: "100%" }} key={post.node.id}>
             <Link to={post.node.frontmatter.path}>
               <h2
                 css={{
@@ -74,6 +64,7 @@ const Blog = () => {
             >
               <p
                 css={{
+                  margin: 0,
                   color: other,
                 }}
               >

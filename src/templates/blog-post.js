@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PRIMARY_COLOR } from "../utils/theme"
-// import TestComponent from "../components/TestComponent"
+import TestComponent from "../components/TestComponent"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -16,6 +16,7 @@ export default function Template({ data }) {
           width: "100%",
         }}
       >
+        <TestComponent />
         <h2 css={{ fontFamily: "Roboto Slab", fontWeight: 400 }}>
           {post.frontmatter.title}
         </h2>

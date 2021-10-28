@@ -188,6 +188,12 @@ Next we have the function we're telling `useEffect` to run, which is an asynchro
 })()
 ```
 
-We wrap this in an IIFE (Immediately Invoked Function Expression) so the fetch is immediately run upon `useEffect` triggering. We also set the `{ signal: controller.signal }` option on our fetch request. This again, will come into play when we are cleaning up our `useEffect` call.
+We wrap this in an IIFE (Immediately Invoked Function Expression) so the fetch is immediately run upon `useEffect` triggering. We also set the `{ signal: controller.signal }` flag on our fetch request. This again, will come into play when we are cleaning up our `useEffect` call.
+
+You'll notice here that we are calling `setData` on the JSON response we are getting back from the request. So we're actually using the `useState` hook inside our custom hook to hold the response we receive from the server!
+
+Finally, we finish out our try/catch block by handling any errors.
+
+Last up in our useEffect call, you'll see we are returning an anonymous function that executes `controller?.abort()`. Any function returned by useEffect will be called when the component unmounts - this is where we abort our fetch to avoid any memory leaks.
 
 One nice bonus you get from storing this fetch logic in a custom hook is only having to set up the request configuration once! So all your header configuration for these requests lives here while you interface with just the resulting data in whatever component you'd like!

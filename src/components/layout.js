@@ -36,8 +36,7 @@ const Layout = ({ children }) => {
             flexDirection: "column",
             maxWidth: 760,
             flexWrap: "wrap",
-            margin: "10rem auto",
-            rowGap: "1rem",
+            margin: "2rem auto",
             "@media (max-width: 576px)": {
               margin: "auto 1rem",
             },
