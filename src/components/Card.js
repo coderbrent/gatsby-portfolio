@@ -52,8 +52,8 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                   right: 1,
                   top: 5,
                   position: "relative",
-                  clipPath: "circle(25px at center)",
-                  width: "10%",
+                  clipPath: "circle(35px at center)",
+                  width: "15%",
                   "@media (max-width: 576px)": {
                     order: -1,
                     width: "40%",
