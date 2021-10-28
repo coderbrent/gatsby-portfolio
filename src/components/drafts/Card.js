@@ -1,14 +1,17 @@
 import React from "react"
+import { css } from "@emotion/react"
 
-export default function Card({ width }) {
+export default function Card({ username, email, catchPhrase, name }) {
   return (
     <div>
       <div
         css={css`
+          display: flex;
+          flex-direction: column;
           text-align: center;
           background-color: black;
           font-family: Helvetica;
-          width: ${width}px;
+          width: 260px;
           padding: 2rem;
           border-radius: 1rem;
           box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -17,17 +20,28 @@ export default function Card({ width }) {
             0 16px 16px hsl(0deg 0% 0% / 0.075);
         `}
       >
-        <h1
+        <div
           css={css`
-            color: #ca3e47;
-            font-size: 4rem;
-            font-weight: bolder;
-            margin: 0;
-            padding: 0rem 0rem;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ca3e47;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
           `}
         >
-          WG
-        </h1>
+          <h1
+            css={css`
+              color: white;
+              font-size: 4rem;
+              font-weight: bolder;
+            `}
+          >
+            {username.split("").pop()}
+          </h1>
+        </div>
 
         <div
           css={css`
@@ -37,18 +51,16 @@ export default function Card({ width }) {
             padding: 0.5rem 0.25rem;
           `}
         >
-          Lets get physical
+          {email}
         </div>
         <p
           css={css`
             font-family: cochin;
-            font-size: 1.15rem;
-            padding: 0rem 0.25rem;
             color: white;
             text-align: center;
           `}
         >
-          In west philadeplphia born and raised.
+          "{catchPhrase}"
         </p>
         <button
           css={css`
@@ -57,7 +69,7 @@ export default function Card({ width }) {
             color: white;
             border: none;
             border-radius: 5pt;
-            padding: 0.25rem 1rem;
+            padding: 0.5rem 1.5rem;
           `}
         >
           Learn more

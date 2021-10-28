@@ -192,8 +192,60 @@ We wrap this in an IIFE (Immediately Invoked Function Expression) so the fetch i
 
 You'll notice here that we are calling `setData` on the JSON response we are getting back from the request. So we're actually using the `useState` hook inside our custom hook to hold the response we receive from the server!
 
-Finally, we finish out our try/catch block by handling any errors.
+We close out our try/catch block by handling any errors.
 
-Last up in our useEffect call, you'll see we are returning an anonymous function that executes `controller?.abort()`. Any function returned by useEffect will be called when the component unmounts - this is where we abort our fetch to avoid any memory leaks.
+Last up in our useEffect call, you'll see we are returning an anonymous function that executes `controller?.abort()`. Any function returned by useEffect will be called when the component unmounts - this is where we abort our fetch to avoid any memory leaks. You can learn more about `AbortController` <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController
+">here</a>.
 
-One nice bonus you get from storing this fetch logic in a custom hook is only having to set up the request configuration once! So all your header configuration for these requests lives here while you interface with just the resulting data in whatever component you'd like!
+That takes care of our hook logic. Now we'll head to the component we will try it out in!
+
+I've gone ahead and created a simple `Card` and `Container` component for use within this tutorial.
+
+```js
+import React from "react"
+import useMockApi from "../hooks/useMockApi"
+import Card from "./Card"
+
+export default function Container() {
+  const [apiData] = useMockApi("users", 4)
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        gap: "1rem",
+        flexWrap: "wrap",
+        padding: "1rem",
+      }}
+    >
+      {apiData
+        ? apiData.map(user => (
+            <Card
+              key={user.id}
+              email={user.email}
+              name={user.name}
+              username={user.username}
+              catchPhrase={user.company.catchPhrase}
+            />
+          ))
+        : null}
+    </div>
+  )
+}
+```
+
+Now when we want to grab some quick data from our mock data provider, we simply pass the type of data we want (I chose users in this case) and the amount we want back (4 here). The fetch logic is tucked away in our custom hook so all we have to do is call it within our component:
+
+```js
+const [apiData] = useMockApi("users", 4)
+```
+
+The above code yields this result:
+
+![Image of UI Cards](./ui_card.png)
+
+<h3>And that's it!</h3>
+
+If you've followed along to this point, thank you! Hooks are a great way to abstract common use patterns you find yourself repeating in your React codebase. In my opinion they're the best part of functional React. 
+
+I hope you found this somewhat useful on your path to becoming a better React developer! 
