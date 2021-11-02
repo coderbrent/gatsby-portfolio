@@ -34,15 +34,11 @@ const Layout = ({ children }) => {
             display: "flex",
             flexDirection: "column",
             maxWidth: 760,
-            flexWrap: "wrap",
+            flexWrap: "nowrap",
             margin: "10rem auto",
             "@media (max-width: 576px)": {
-              margin: "auto 1rem",
-            },
-            "@media (max-width: 360px)": {
+              margin: "auto",
               width: "100%",
-              margin: "0rem 0rem",
-              padding: "1rem",
             },
           }}
         >
@@ -53,15 +49,7 @@ const Layout = ({ children }) => {
               gap: "0rem",
             }}
           >
-            <Header
-              css={{
-                "@media (max-width: 360px)": {
-                  margin: "0rem 0rem",
-                  order: 2,
-                },
-              }}
-              siteTitle={data.site.siteMetadata.title}
-            />
+            <Header siteTitle={data.site.siteMetadata.title} />
             <div css={{ display: "flex", flexWrap: "wrap" }}>
               <main
                 css={{
@@ -69,9 +57,10 @@ const Layout = ({ children }) => {
                   flexGrow: 2,
                   flexShrink: 1,
                   flexBasis: "300px",
-                  "@media (max-width: 360px)": {
-                    margin: "0rem 0rem",
+                  "@media (max-width: 576px)": {
+                    margin: "0rem auto",
                     order: 0,
+                    textAlign: "justify",
                   },
                 }}
               >
@@ -79,7 +68,6 @@ const Layout = ({ children }) => {
               </main>
               <div
                 css={{
-                  width: "75%",
                   flexGrow: 0,
                   flexShrink: 0,
                   flexBasis: "50px",
@@ -87,8 +75,6 @@ const Layout = ({ children }) => {
                   "@media (max-width: 576px)": {
                     margin: "auto",
                     order: -1,
-                    width: "100%",
-                    alignSelf: "center",
                   },
                 }}
               >

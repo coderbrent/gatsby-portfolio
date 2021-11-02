@@ -26,7 +26,7 @@ const IndexPage = () => {
             css={{
               fontFamily: "Roboto Slab",
               "@media (max-width: 576px)": {
-                textAlign: "center",
+                textAlign: "left",
               },
             }}
           >

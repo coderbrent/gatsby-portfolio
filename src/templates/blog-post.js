@@ -24,7 +24,6 @@ export default function Template({ data }) {
         <div
           css={{
             display: "flex",
-            justifyContent: "flex-start",
           }}
         >
           {post.frontmatter.tags
@@ -32,7 +31,7 @@ export default function Template({ data }) {
                 <div
                   css={{
                     color: "white",
-                    marginRight: "1rem",
+                    margin: "1rem .25rem",
                     backgroundColor:
                       tag === "interviewing" ? "darkred" : "slategrey",
                     padding: ".25rem 1rem",
