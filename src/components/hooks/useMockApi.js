@@ -18,7 +18,6 @@ export default function useMockApi(type, limit) {
       }
     })()
     return () => controller?.abort()
-  }, [type, limit, baseURL])
-
+  }, [limit, type, baseURL])
   return [data]
 }

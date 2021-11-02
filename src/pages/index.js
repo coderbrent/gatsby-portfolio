@@ -10,8 +10,7 @@ const IndexPage = () => {
           flexWrap: "nowrap",
           columnGap: "1rem",
           "@media (max-width: 576px)": {
-            flexWrap: "wrap",
-            gap: "0rem",
+            order: 2,
           },
         }}
       >
@@ -46,9 +45,9 @@ const IndexPage = () => {
           </h2>
           <p
             css={{
-              textAlign: "justify",
-              fontSize: "1rem",
-              margin: "0rem auto",
+              fontWeight: "bold",
+              margin: 0,
+              padding: 0,
             }}
           >
             Hello! My name is Brent - I'm a front end web developer building

@@ -36,7 +36,6 @@ const Layout = ({ children }) => {
             maxWidth: 760,
             flexWrap: "wrap",
             margin: "10rem auto",
-            rowGap: "1rem",
             "@media (max-width: 576px)": {
               margin: "auto 1rem",
             },

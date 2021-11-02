@@ -25,7 +25,6 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
           <div
             name="body"
             css={{
-              padding: "0rem .5rem",
               "@media (max-width: 576px)": {
                 padding: "0rem 0rem",
               },
@@ -38,7 +37,8 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                 padding: 0,
                 marginBottom: "1rem",
                 "@media (max-width: 576px)": {
-                  flexDirection: "column",
+                  padding: ".5rem",
+                  order: 0,
                 },
               }}
             >
@@ -50,10 +50,11 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                   right: 1,
                   top: 5,
                   position: "relative",
-                  clipPath: "circle(25px at center)",
-                  width: "10%",
+                  clipPath: "circle(35px at center)",
+                  width: "15%",
                   "@media (max-width: 576px)": {
-                    width: "100%",
+                    order: -1,
+                    width: "40%",
                     clipPath: "none",
                     position: "static",
                   },
@@ -70,24 +71,23 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
               <div
                 css={{
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "flex-start",
                   width: "100%",
+                  flexDirection: "column",
+                  gap: ".5rem",
                   "@media (max-width: 576px)": {
                     padding: "0rem 0rem",
-                    margin: "1rem 0rem",
                     flexDirection: "column",
                     alignItems: "center",
-                    order: -1,
                   },
                 }}
               >
                 <h3
                   name="project-title"
                   css={{
-                    fontSize: `1.65rem`,
                     margin: 0,
                     "@media (max-width: 576px)": {
-                      fontSize: "2.25rem",
+                      marginBottom: "1rem",
                       textAlign: "center",
                     },
                   }}
@@ -103,7 +103,10 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                   </a>
                 </h3>
                 <div
-                  css={{ padding: 0, marginTop: "12px" }}
+                  css={{
+                    display: "flex",
+                    padding: 0,
+                  }}
                   name="project-stack"
                 >
                   {stack}
@@ -118,7 +121,7 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
             >
               <div
                 css={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   textAlign: "justify",
                   padding: "0rem .5rem",
                 }}

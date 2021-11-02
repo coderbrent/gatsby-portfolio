@@ -23,13 +23,13 @@ const Sidebar = props => {
       <aside
         css={{
           display: "flex",
-          columnGap: "1.25rem",
           columnGap: "1rem",
           flexDirection: "column",
           "@media (max-width: 726px)": {
             flexDirection: "row",
             columnGap: "1.25rem",
             justifyContent: "center",
+            justifySelf: "center",
           },
           "@media (max-width: 370px)": {
             flexDirection: "row",

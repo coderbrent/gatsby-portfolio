@@ -67,6 +67,7 @@ const Blog = () => {
             >
               <p
                 css={{
+                  margin: 0,
                   color: other,
                   "&:hover": {
                     transition: `${CUBIC_BEZIER_TRANSITION}`,
