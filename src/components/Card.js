@@ -15,7 +15,7 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
           name="card"
           css={{
             display: "flex",
-            margin: "2rem 0rem",
+            marginBottom: "2rem 0rem",
             "@media (max-width: 576px)": {
               flexDirection: "column",
               padding: "2rem",
@@ -35,7 +35,6 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
               css={{
                 display: `flex`,
                 alignItems: "center",
-                justifyContent: "center",
                 padding: 0,
                 marginBottom: "1rem",
                 "@media (max-width: 576px)": {

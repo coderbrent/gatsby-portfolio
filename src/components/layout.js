@@ -31,7 +31,6 @@ const Layout = ({ children }) => {
           id="layout-container"
           css={{
             minHeight: "100vh",
-            height: "100%",
             display: "flex",
             flexDirection: "column",
             maxWidth: 760,
@@ -48,25 +47,55 @@ const Layout = ({ children }) => {
             },
           }}
         >
-          <Header css={{ order: 0 }} siteTitle={data.site.siteMetadata.title} />
-          <main css={{ order: 1, margin: "0rem 0rem" }}>{children}</main>
           <div
             css={{
-              order: 2,
               display: "flex",
-              flexWrap: "nowrap",
-              columnGap: "3rem",
-              "@media (max-width: 720px)": {
-                width: "100%",
-                flexWrap: "wrap",
-                order: 1,
-              },
-              "@media (max-width: 360px)": {
-                gap: "0rem",
-              },
+              flexDirection: "column",
+              gap: "0rem",
             }}
           >
-            <Sidebar data={data} />
+            <Header
+              css={{
+                "@media (max-width: 360px)": {
+                  margin: "0rem 0rem",
+                  order: 2,
+                },
+              }}
+              siteTitle={data.site.siteMetadata.title}
+            />
+            <div css={{ display: "flex", flexWrap: "wrap" }}>
+              <main
+                css={{
+                  margin: "1rem 0rem",
+                  flexGrow: 2,
+                  flexShrink: 1,
+                  flexBasis: "300px",
+                  "@media (max-width: 360px)": {
+                    margin: "0rem 0rem",
+                    order: 0,
+                  },
+                }}
+              >
+                {children}
+              </main>
+              <div
+                css={{
+                  width: "75%",
+                  flexGrow: 0,
+                  flexShrink: 0,
+                  flexBasis: "50px",
+                  margin: "0rem 3rem",
+                  "@media (max-width: 576px)": {
+                    margin: "auto",
+                    order: -1,
+                    width: "100%",
+                    alignSelf: "center",
+                  },
+                }}
+              >
+                <Sidebar data={data} />
+              </div>
+            </div>
           </div>
         </div>
       </ThemeProvider>

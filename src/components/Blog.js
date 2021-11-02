@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import ThemeContext from "../context/ThemeContext"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import { getTheme } from "../utils/theme"
+import { CUBIC_BEZIER_TRANSITION, getTheme } from "../utils/theme"
 
 const blogData = graphql`
   {
@@ -29,45 +29,38 @@ const Blog = () => {
 
   return (
     <>
-      <h2
-        css={{
-          fontSize: "1.5rem",
-          color: color,
-        }}
-      >
-        ...and now for something{" "}
-        <span css={{ fontWeight: "bold", color: secondary }}>
-          completely different!
-        </span>
-      </h2>
       <div
         css={{
           display: "flex",
           flexDirection: "column",
-          marginTop: "1rem",
         }}
       >
         {gqlBlogData.allMarkdownRemark.edges.map(post => (
           <div css={{ margin: "1rem 0rem", width: "100%" }} key={post.node.id}>
-            <Link to={post.node.frontmatter.path}>
-              <h2
-                css={{
-                  color: primary,
-                  fontFamily: "Roboto Slab",
-                  marginBottom: ".5rem",
-                  textDecoration: "none",
-                }}
-              >
-                {post.node.frontmatter.title}
-              </h2>
-            </Link>
+            <h2
+              css={{
+                color: primary,
+                fontFamily: "Roboto Slab",
+                marginBottom: "1rem",
+              }}
+            >
+              {post.node.frontmatter.title}
+            </h2>
             <small css={{ color: secondary }}>
               Posted by: {post.node.frontmatter.author} on{" "}
               {post.node.frontmatter.date}
             </small>
-            <p css={{ color, textAlign: "justify" }}>{post.node.excerpt}</p>
+            <p
+              css={{
+                color,
+                textAlign: "justify",
+              }}
+            >
+              {post.node.excerpt}
+            </p>
             <Link
               css={{
+                textDecoration: "none",
                 display: "inline-block",
               }}
               to={post.node.frontmatter.path}
@@ -75,6 +68,10 @@ const Blog = () => {
               <p
                 css={{
                   color: other,
+                  "&:hover": {
+                    transition: `${CUBIC_BEZIER_TRANSITION}`,
+                    color,
+                  },
                 }}
               >
                 ...read more!

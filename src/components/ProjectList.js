@@ -31,15 +31,6 @@ const ProjectList = () => {
 
   return (
     <>
-      <h3
-        css={{
-          fontFamily: "Roboto Slab",
-          color: color,
-        }}
-      >
-        "love what you do and do what you love."
-        <span css={{ color: secondary }}>- Ray Bradbury.</span>
-      </h3>
       <div
         css={{
           display: `flex`,

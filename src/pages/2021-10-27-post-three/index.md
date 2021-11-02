@@ -3,7 +3,7 @@ path: "/post-three"
 date: "2021-10-27"
 title: "Creating your own custom React Hooks"
 author: "Brent Abruzese"
-img: ../images/brentphoto.png
+img: "../images/IMG_8686.jpg"
 tags: ["react", "development"]
 prerequisites: ["basic react", "basic javascript"]
 ---

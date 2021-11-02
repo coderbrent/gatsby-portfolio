@@ -18,23 +18,21 @@ const Sidebar = props => {
   const darkTheme = getTheme("dark")
   const { social } = props.data.site.siteMetadata
 
-  const notifyMeOfResumeDownload = () => {
-    console.log("wasabi")
-  }
-
   return (
     <>
       <aside
         css={{
           display: "flex",
-          flexDirection: "row",
           columnGap: "1.25rem",
-          width: "100%",
+          columnGap: "1rem",
+          flexDirection: "column",
           "@media (max-width: 726px)": {
-            columnGap: "1rem",
+            flexDirection: "row",
+            columnGap: "1.25rem",
             justifyContent: "center",
           },
           "@media (max-width: 370px)": {
+            flexDirection: "row",
             columnGap: ".5rem",
             justifyContent: "center",
           },
@@ -126,7 +124,6 @@ const Sidebar = props => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="link to my resume"
-          onClick={() => notifyMeOfResumeDownload()}
           circular
           as="a"
           css={{

@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import BrentImage from "../components/BrentImage"
 
 const IndexPage = () => {
   return (
@@ -8,9 +7,8 @@ const IndexPage = () => {
       <div
         css={{
           display: "flex",
-          flexDirection: "row",
           flexWrap: "nowrap",
-          columnGap: "3rem",
+          columnGap: "1rem",
           "@media (max-width: 576px)": {
             flexWrap: "wrap",
             gap: "0rem",
@@ -23,12 +21,9 @@ const IndexPage = () => {
             flexWrap: "nowrap",
             flexDirection: "column",
             flexGrow: 3,
-            "@media (max-width: 576px)": {
-              order: 2,
-            },
           }}
         >
-          <h3
+          <h2
             css={{
               fontFamily: "Roboto Slab",
               "@media (max-width: 576px)": {
@@ -36,7 +31,7 @@ const IndexPage = () => {
               },
             }}
           >
-            I make cool things for people with{" "}
+            I make things for people with{" "}
             <span
               css={{
                 fontWeight: "bold",
@@ -45,10 +40,10 @@ const IndexPage = () => {
                 padding: 0,
               }}
             >
-              javascript
+              JavaScript
             </span>
             !
-          </h3>
+          </h2>
           <p
             css={{
               textAlign: "justify",
@@ -60,24 +55,17 @@ const IndexPage = () => {
             things with <span css={{ color: "orange" }}>React</span>,
             <span css={{ color: "dodgerblue" }}> TypeScript</span>,{" "}
             <span css={{ color: "violet" }}>GraphQL</span> and{" "}
-            <span css={{ color: "lightgreen" }}>Node!</span> In my free time I
-            love hanging with my family, watching TV (I love paranormal{" "}
+            <span css={{ color: "lightgreen" }}>Node!</span> I got my start as a
+            programmer writing .bas files for AOL progs (remember punters?) in
+            the 90's! I took a 15 year hiatus to start a limo company before
+            getting back into programming (or as the kids now call it,
+            "coding")! In my free time I love hanging with my family, watching
+            TV (I love paranormal{" "}
             <span role="img" aria-label="ghost">
               👻
             </span>{" "}
             shows!), reading and playing hockey.
           </p>
-        </div>
-        <div
-          css={{
-            flexGrow: 1,
-            "@media (max-width: 576px)": {
-              order: 1,
-              textAlign: "center",
-            },
-          }}
-        >
-          <BrentImage />
         </div>
       </div>
     </Layout>

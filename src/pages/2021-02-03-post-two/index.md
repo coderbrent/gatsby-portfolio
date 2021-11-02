@@ -3,8 +3,8 @@ path: "/post-two"
 date: "2021-10-20"
 title: "Are You A Developer In Search Of Employment?"
 author: "Brent Abruzese"
-img: ../images/brentphoto.png
-tags: ["interviewing", "hiring", "career"]
+img: "./src/images/IMG_8686.JPG"
+tags: ["interviewing", "career"]
 ---
 
 I’ve been on the job hunt recently and I wanted to share a story with a (long)bit of wisdom I’ve gained by doing things the hard way! :)
