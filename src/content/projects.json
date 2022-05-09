@@ -1,16 +1,5 @@
 [
   {
-    "id": 2,
-    "status": true,
-    "name": "auto-trader-clone",
-    "date": "10/15/2020",
-    "desc": "An e-commerce style site modeled after auto-trader with NextJS, TypeScript, MySQL and styled with Material-UI. Makes use of Vercel's nifty useSWR hook.",
-    "site": "https://exotic-car-buyer-coderbrent.vercel.app/cars",
-    "img": "https://repository-images.githubusercontent.com/329731157/a1457ec9-1995-4fda-856c-0f704d3828aa",
-    "github": "https://github.com/coderbrent/autotrader-clone",
-    "stack": ["typescript-icon", "nextjs-icon", "material-ui", "mysql"]
-  },
-  {
     "id": 8,
     "status": true,
     "name": "date-night",
