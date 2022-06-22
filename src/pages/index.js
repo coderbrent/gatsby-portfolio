@@ -30,18 +30,8 @@ const IndexPage = () => {
               },
             }}
           >
-            I make things for people with{" "}
-            <span
-              css={{
-                fontWeight: "bold",
-                color: "violet",
-                margin: 0,
-                padding: 0,
-              }}
-            >
-              JavaScript
-            </span>
-            !
+            Hello! My name is Brent <span></span> - I'm a front end web developer building
+            things with React, TypeScript, GraphQL and Node!
           </h2>
           <p
             css={{
@@ -50,11 +40,7 @@ const IndexPage = () => {
               padding: 0,
             }}
           >
-            Hello! My name is Brent - I'm a front end web developer building
-            things with <span css={{ color: "orange" }}>React</span>,
-            <span css={{ color: "dodgerblue" }}> TypeScript</span>,{" "}
-            <span css={{ color: "violet" }}>GraphQL</span> and{" "}
-            <span css={{ color: "lightgreen" }}>Node!</span> I got my start as a
+            I got my start as a
             programmer writing .bas files for AOL progs (remember punters?) in
             the 90's! I took a 15 year hiatus to start a limo company before
             getting back into software development! I currently work at Medscape/WebMD doing front end development with React, JavaScript, HTML and CSS.

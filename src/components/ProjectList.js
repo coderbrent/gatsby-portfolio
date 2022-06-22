@@ -28,8 +28,9 @@ const ProjectList = () => {
     <>
       <div
         css={{
-          display: `flex`,
-          flexDirection: "column",
+          display: `grid`,
+          gridTemplateColumns: '1fr 1fr',
+          gap: '3.5rem',
         }}
       >
         {data.allProjectsJson.edges.map(project => {

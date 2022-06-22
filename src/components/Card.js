@@ -16,10 +16,12 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
           css={{
             display: "flex",
             marginBottom: "2rem 0rem",
-            "@media (max-width: 576px)": {
-              flexDirection: "column",
-              padding: "2rem",
-            },
+            width: '450px',
+            border: `solid 1px ${color}`,
+            borderRadius: '9pt',
+            // "@media (max-width: 576px)": {
+            //   flexDirection: "column",
+            // },
           }}
         >
           <div
@@ -32,12 +34,10 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
           >
             <div
               css={{
-                display: `flex`,
                 alignItems: "center",
                 padding: 0,
                 marginBottom: "1rem",
                 "@media (max-width: 576px)": {
-                  padding: ".5rem",
                   order: 0,
                 },
               }}
@@ -47,23 +47,14 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                 css={{
                   margin: 0,
                   padding: 0,
-                  right: 1,
-                  top: 5,
-                  position: "relative",
-                  clipPath: "circle(35px at center)",
-                  width: "15%",
-                  "@media (max-width: 576px)": {
-                    order: -1,
-                    width: "40%",
-                    clipPath: "none",
-                    position: "static",
-                  },
+                  width: "100%",
                 }}
               >
                 <img
                   alt="a project thumbnail"
                   css={{
-                    margin: "0rem",
+                    borderTopRightRadius: '9pt',
+                    borderTopLeftRadius: '9pt',
                   }}
                   src={img}
                 />
@@ -74,7 +65,8 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                   alignItems: "flex-start",
                   width: "100%",
                   flexDirection: "column",
-                  gap: ".5rem",
+                  gap: ".3rem",
+                  paddingLeft: '1.2rem',
                   "@media (max-width: 576px)": {
                     padding: "0rem 0rem",
                     flexDirection: "column",
@@ -96,7 +88,7 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                     href={site}
                     css={{
                       color: primary,
-                      fontFamily: `Roboto Slab`,
+                      fontFamily: `varela round`,
                     }}
                   >
                     {name}
@@ -105,7 +97,6 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
                 <div
                   css={{
                     display: "flex",
-                    padding: 0,
                   }}
                   name="project-stack"
                 >
@@ -116,14 +107,14 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
             <div
               css={{
                 color,
-                margin: "0 auto",
+                margin: "0 10px",
               }}
             >
               <div
                 css={{
                   fontSize: "1rem",
                   textAlign: "justify",
-                  padding: "0rem .5rem",
+                  padding: "1rem .5rem",
                 }}
               >
                 {desc}
@@ -132,72 +123,66 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
             <div
               css={{
                 display: "flex",
-                margin: "0rem 0.5rem",
                 padding: "1rem 0rem",
-                gap: "1rem",
-                width: "100%",
+                justifyContent: 'space-around'
               }}
             >
               {github ? (
-                <span css={{ flexGrow: 1, flexShrink: 1 }}>
-                  <a
-                    css={{
-                      textDecoration: "none",
-                      color: primary,
-                    }}
-                    href={github}
-                  >
-                    <Button>
-                      <div
+                <a
+                  css={{
+                    textDecoration: "none",
+                    color: primary,
+                  }}
+                  href={github}
+                >
+                  <Button>
+                    <div
+                      css={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <FaGithub color={primary} />
+                      <span
                         css={{
-                          display: "flex",
-                          alignItems: "center",
+                          paddingLeft: "5px",
+                          fontVariantCaps: "all-petite-caps",
                         }}
                       >
-                        <FaGithub color={primary} />
-                        <span
-                          css={{
-                            paddingLeft: "5px",
-                            fontVariantCaps: "all-petite-caps",
-                          }}
-                        >
-                          See it on GitHub
-                        </span>
-                      </div>
-                    </Button>
-                  </a>
-                </span>
+                        See it on GitHub
+                      </span>
+                    </div>
+                  </Button>
+                </a>
               ) : null}
               {site ? (
-                <span css={{ flexGrow: 10, flexShrink: 5 }}>
-                  <a
-                    css={{
-                      textDecoration: "none",
-                      color: primary,
-                    }}
-                    href={site}
-                  >
-                    <Button>
-                      <div
+                <a
+                  css={{
+                    textDecoration: "none",
+                    color: primary,
+                  }}
+                  href={site}
+                >
+                  <Button>
+                    <div
+                      css={{
+                        display: "flex",
+                        alignItems: "center",
+                        width: "100%",
+                      }}
+                    >
+                      <FaGlobe color={primary} />
+                      <span
                         css={{
-                          display: "flex",
-                          alignItems: "center",
-                          width: "100%",
+                          fontVariantCaps: "all-small-caps",
+                          paddingLeft: "5px",
                         }}
                       >
-                        <FaGlobe color={primary} />
-                        <span
-                          css={{
-                            fontVariantCaps: "all-small-caps",
-                            paddingLeft: "5px",
-                          }}
-                        >
-                          See it in action
-                        </span>
-                      </div>
-                    </Button>
-                  </a>
-                </span>
+                        See it in action
+                      </span>
+                    </div>
+                  </Button>
+                </a>
               ) : null}
             </div>
           </div>

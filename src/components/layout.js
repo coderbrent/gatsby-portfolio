@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
             minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
-            maxWidth: 760,
+            maxWidth: 1200,
             flexWrap: "nowrap",
             margin: "10rem auto",
             "@media (max-width: 576px)": {
@@ -46,7 +46,6 @@ const Layout = ({ children }) => {
             css={{
               display: "flex",
               flexDirection: "column",
-              gap: "0rem",
             }}
           >
             <Header siteTitle={data.site.siteMetadata.title} />

@@ -24,24 +24,25 @@ export const useTheme = () => {
 export const getTheme = theme =>
   theme === "light"
     ? {
-        background: "#FBFBFB",
-        color: "#333",
-        secondary: "violet",
-        muted: "hsla(0, 0%, 0%, 0.6)",
-        borderColor: "black",
-        borderHoverColor: "transparent",
-        primary: "black",
-        other: "violet",
-        highlight: "#C18CFF",
-      }
+      background: "#FBFBFB",
+      color: "#333",
+      secondary: "violet",
+      muted: "hsla(0, 0%, 0%, 0.6)",
+      borderColor: "black",
+      borderHoverColor: "transparent",
+      primary: "black",
+      other: "violet",
+      highlight: "#C18CFF",
+    }
     : {
-        background: "#222",
-        color: "#D1D7E0",
-        secondary: "hsl(146, 68%, 66%)",
-        muted: "#564F6F",
-        borderColor: "#FFFFFF",
-        borderHoverColor: "#C18CFF",
-        primary: "#C18CFF",
-        highlight: "#C18CFF",
-        other: "#FFD98C",
-      }
+      background: "#002e32",
+      color: "#fff",
+      secondary: "hsl(146, 68%, 66%)",
+      muted: "hsla(0,0%,84.7%,.06)",
+      mutedBackground: "hsla(0,0%,84.7%,.06)",
+      borderColor: "#FFFFFF",
+      borderHoverColor: "#fcae79",
+      primary: "#fcae79",
+      highlight: "#fcae79",
+      other: "#fcae79",
+    }

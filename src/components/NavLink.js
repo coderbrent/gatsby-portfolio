@@ -9,10 +9,10 @@ const NavLink = ({ text, dest, theme }) => {
         marginRight: "1rem",
         marginTop: ".25rem",
         textDecoration: "none",
-        color: theme.secondary,
-        transition: ".3s all",
+        color: theme.primary,
+        transition: ".5s color",
         ":hover&": {
-          color: theme.primary,
+          color: theme.color,
         },
       }}
     >
