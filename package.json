@@ -11,6 +11,7 @@
     "@iconify/iconify": "^2.0.4",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "downloadjs": "^1.4.7",
     "emotion-theming": "^10.0.27",
     "facepaint": "^1.2.1",
     "false": "^0.0.4",

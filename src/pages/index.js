@@ -57,8 +57,9 @@ const IndexPage = () => {
             <span css={{ color: "lightgreen" }}>Node!</span> I got my start as a
             programmer writing .bas files for AOL progs (remember punters?) in
             the 90's! I took a 15 year hiatus to start a limo company before
-            getting back into programming (or as the kids now call it,
-            "coding")! In my free time I love hanging with my family, watching
+            getting back into software development! I currently work at Medscape/WebMD doing front end development with React, JavaScript, HTML and CSS.
+
+            In my free time I love hanging with my family, watching
             TV (I love paranormal{" "}
             <span role="img" aria-label="ghost">
               👻
