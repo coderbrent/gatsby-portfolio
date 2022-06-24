@@ -17,18 +17,9 @@ const Header = ({ siteTitle }) => {
           alignItems: "center",
         }}
       >
-        <div
-          css={{
-            "@media (max-width: 576px)": {
-              // position: 'relative',
-              // top: 0,
-              // left: 0,
-            },
-          }}
-        >
+        <div>
           <h1
             css={{
-              // width: "auto",
               margin: 0,
               padding: 0,
               fontFamily: "Roboto Slab",

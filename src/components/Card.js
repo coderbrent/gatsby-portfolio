@@ -17,12 +17,8 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
             display: "flex",
             marginBottom: "2rem 0rem",
             minWidth: '360px',
-            // border: `solid 1px ${color}`,
             backgroundColor: mutedBackground,
             borderRadius: '9pt',
-            // "@media (max-width: 576px)": {
-            //   flexDirection: "column",
-            // },
           }}
         >
           <div

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 const NavLink = ({ text, dest, theme }) => {
   return (
     <Link
+      state={{ theme }}
       to={dest}
       css={{
         marginRight: "1rem",

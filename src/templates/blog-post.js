@@ -50,7 +50,7 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <Link css={{ color: 'white', textDecoration: 'none' }} to="/blog">
-          <Button>
+          <Button >
             go back
           </Button>
         </Link>
