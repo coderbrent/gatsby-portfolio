@@ -25,7 +25,7 @@ const blogData = graphql`
 const Blog = () => {
   const gqlBlogData = useStaticQuery(blogData)
   const { theme } = useContext(ThemeContext)
-  const { color, primary, other } = getTheme(theme)
+  const { color, primary, other, mutedBackground } = getTheme(theme)
 
   return (
     <>
@@ -33,12 +33,21 @@ const Blog = () => {
         css={{
           display: "flex",
           flexDirection: "column",
-          gap: '3.5rem',
-          width: '80%'
+          gap: "2rem",
+          // width: '80%'
         }}
       >
         {gqlBlogData.allMarkdownRemark.edges.map(post => (
-          <div css={{ margin: "1rem 0rem", width: "100%" }} key={post.node.id}>
+          <div
+            css={{
+              margin: "1rem 0rem",
+              width: "100%",
+              backgroundColor: mutedBackground,
+              padding: "1rem",
+              borderRadius: '9pt'
+            }}
+            key={post.node.id}
+          >
             <h2
               css={{
                 color: primary,
@@ -48,7 +57,7 @@ const Blog = () => {
             >
               {post.node.frontmatter.title}
             </h2>
-            <small css={{ color: color, fontWeight: 'bold' }}>
+            <small css={{ color: color, fontWeight: "bold" }}>
               Posted by: {post.node.frontmatter.author} on{" "}
               {post.node.frontmatter.date}
             </small>
@@ -72,8 +81,8 @@ const Blog = () => {
                   margin: 0,
                   color: other,
                   border: `solid 1px ${color}`,
-                  borderRadius: '30pt',
-                  padding: '0.75rem 2rem',
+                  borderRadius: "30pt",
+                  padding: "0.75rem 2rem",
                   "&:hover": {
                     transition: `${CUBIC_BEZIER_TRANSITION}`,
                     color,

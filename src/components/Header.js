@@ -20,36 +20,33 @@ const Header = ({ siteTitle }) => {
         <div
           css={{
             "@media (max-width: 576px)": {
-              alignContent: "center",
+              // position: 'relative',
+              // top: 0,
+              // left: 0,
             },
           }}
         >
           <h1
             css={{
-              width: "100%",
+              // width: "auto",
               margin: 0,
               padding: 0,
               fontFamily: "Roboto Slab",
-              fontSize: `4.25rem`,
-              color,
+              fontSize: `4.25em`,
+              color: color,
               fontWeight: `bold`,
               marginRight: `.75rem`,
+              "@media (max-width: 815px)": {
+                fontSize: `3.75em`,
+                transition: `${CUBIC_BEZIER_TRANSITION}`,
+              },
               "@media (max-width: 576px)": {
-                fontSize: `3.75rem`,
+                fontSize: `2em`,
                 transition: `${CUBIC_BEZIER_TRANSITION}`,
               },
             }}
           >
-            <Link
-              to="/"
-              style={{
-                boxShadow: `none`,
-                color: `inherit`,
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
+            {siteTitle}
           </h1>
           <nav>
             <NavLink dest="/" text="home" theme={getTheme(theme)} />
@@ -61,13 +58,11 @@ const Header = ({ siteTitle }) => {
           css={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
           }}
         >
           <div
             css={{
-              flexGrow: 1,
-              "@media (max-width: 576px)": {
+              "@media (max-width: 600px)": {
                 display: "none",
               },
             }}

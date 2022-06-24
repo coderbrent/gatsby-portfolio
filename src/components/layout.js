@@ -31,55 +31,25 @@ const Layout = ({ children }) => {
           id="layout-container"
           css={{
             minHeight: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: 1200,
-            flexWrap: "nowrap",
-            margin: "10rem auto",
+            margin: '1.5rem auto',
+            maxWidth: '760px',
             "@media (max-width: 576px)": {
-              margin: "auto",
-              width: "100%",
+              margin: '1.5rem 1rem'
             },
           }}
         >
-          <div
-            css={{
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div css={{ display: "flex", flexWrap: "wrap" }}>
-              <main
-                css={{
-                  margin: "1rem 0rem",
-                  flexGrow: 2,
-                  flexShrink: 1,
-                  flexBasis: "300px",
-                  "@media (max-width: 576px)": {
-                    margin: "0rem auto",
-                    order: 0,
-                    textAlign: "justify",
-                  },
-                }}
-              >
-                {children}
-              </main>
-              <div
-                css={{
-                  flexGrow: 0,
-                  flexShrink: 0,
-                  flexBasis: "50px",
-                  margin: "0rem 3rem",
-                  "@media (max-width: 576px)": {
-                    margin: "auto",
-                    order: -1,
-                  },
-                }}
-              >
-                <Sidebar data={data} />
-              </div>
-            </div>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <Sidebar data={data} />
+          <div>
+            <main
+              css={{
+                marginTop: '2rem',
+              }}
+            >
+              <h2 css={{ fontFamily: 'varela round' }}></h2>
+              {children}
+            </main>
+
           </div>
         </div>
       </ThemeProvider>

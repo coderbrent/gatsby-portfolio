@@ -22,11 +22,11 @@ const Sidebar = props => {
     <>
       <aside
         css={{
-          display: "flex",
-          columnGap: ".75rem",
-          flexDirection: "column",
-          "@media (max-width: 726px)": {
-            flexDirection: "row",
+          alignSelf: 'flex-start',
+          display: 'flex',
+          gap: '1rem',
+          "@media (max-width: 420px)": {
+            gap: '.5rem'
           },
         }}
       >
@@ -67,6 +67,7 @@ const Sidebar = props => {
           as="a"
           circular
           css={{
+            flexShrink: 1,
             marginTop: "1rem",
           }}
           href={social.github}

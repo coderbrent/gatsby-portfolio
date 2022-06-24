@@ -26,11 +26,26 @@ const ProjectList = () => {
 
   return (
     <>
+      <aside
+        css={{
+          backgroundColor: "hsla(0,0%,84.7%,.06)",
+          padding: "1.5rem",
+          margin: "1rem auto",
+          borderRadius: '9pt'
+        }}
+      >
+
+        Below is a (very much non-exhaustive!) list of some projects I've
+        worked on. There's a couple freelance jobs in there plus a few
+        embarassing bootcamp hobby projects. 😿
+
+      </aside>
       <div
         css={{
-          display: `grid`,
-          gridTemplateColumns: '1fr 1fr',
-          gap: '3.5rem',
+          display: `flex`,
+          flexDirection: 'column',
+          // gridTemplateColumns: `repeat(auto-fit, minmax(400px, 1fr)`,
+          gap: "2rem",
         }}
       >
         {data.allProjectsJson.edges.map(project => {

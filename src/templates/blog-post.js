@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PRIMARY_COLOR } from "../utils/theme"
+import Button from "../components/Button"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -28,38 +29,30 @@ export default function Template({ data }) {
         >
           {post.frontmatter.tags
             ? post.frontmatter.tags.map(tag => (
-                <div
-                  css={{
-                    color: "white",
-                    margin: "1rem .25rem",
-                    backgroundColor:
-                      tag === "interviewing" ? "darkred" : "slategrey",
-                    padding: ".25rem 1rem",
-                    borderRadius: "8pt",
-                  }}
-                  key={tag}
-                >
-                  {tag}
-                </div>
-              ))
+              <div
+                css={{
+                  color: "white",
+                  margin: "1rem .25rem",
+                  backgroundColor:
+                    tag === "interviewing" ? "darkred" : "slategrey",
+                  padding: ".25rem 1rem",
+                  borderRadius: "8pt",
+                }}
+                key={tag}
+              >
+                {tag}
+              </div>
+            ))
             : null}
         </div>
         <div
           css={{ textAlign: "justify" }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <Link to="/blog">
-          <button
-            css={{
-              border: "none",
-              background: PRIMARY_COLOR,
-              color: "white",
-              padding: ".5rem 1rem",
-              width: "100%",
-            }}
-          >
+        <Link css={{ color: 'white', textDecoration: 'none' }} to="/blog">
+          <Button>
             go back
-          </button>
+          </Button>
         </Link>
       </div>
     </Layout>

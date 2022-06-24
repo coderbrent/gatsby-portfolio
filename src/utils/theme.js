@@ -40,6 +40,7 @@ export const getTheme = theme =>
       secondary: "hsl(146, 68%, 66%)",
       muted: "hsla(0,0%,84.7%,.06)",
       mutedBackground: "hsla(0,0%,84.7%,.06)",
+      mutedHeading: "#9eacad",
       borderColor: "#FFFFFF",
       borderHoverColor: "#fcae79",
       primary: "#fcae79",

@@ -6,7 +6,7 @@ import Button from "./Button"
 
 export const Card = ({ name, desc, stack, github, site, img }) => {
   const { theme } = useContext(ThemeContext)
-  const { color, primary } = getTheme(theme)
+  const { color, primary, mutedBackground } = getTheme(theme)
 
   return (
     <>
@@ -16,8 +16,9 @@ export const Card = ({ name, desc, stack, github, site, img }) => {
           css={{
             display: "flex",
             marginBottom: "2rem 0rem",
-            width: '450px',
-            border: `solid 1px ${color}`,
+            minWidth: '360px',
+            // border: `solid 1px ${color}`,
+            backgroundColor: mutedBackground,
             borderRadius: '9pt',
             // "@media (max-width: 576px)": {
             //   flexDirection: "column",
