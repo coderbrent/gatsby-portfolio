@@ -4,11 +4,9 @@ import {
   FiGithub,
   FiLinkedin,
   FiTwitter,
-  FiMail,
   FiSun,
   FiMoon,
 } from "react-icons/fi"
-import { FaFilePdf } from "react-icons/fa"
 import { BACKGROUND_TRANSITION_TIME, getTheme } from "../utils/theme"
 import ThemeContext from "../context/ThemeContext"
 
@@ -22,11 +20,13 @@ const Sidebar = props => {
     <>
       <aside
         css={{
-          alignSelf: 'flex-start',
+          alignSelf: 'space-evenly',
+          width: 'auto',
           display: 'flex',
           gap: '1rem',
           "@media (max-width: 420px)": {
-            gap: '.5rem'
+            gap: '.5rem',
+            flexWrap: 'wrap',
           },
         }}
       >
@@ -101,30 +101,6 @@ const Sidebar = props => {
           href={social.twitter}
         >
           <FiTwitter />
-        </Button>
-        <Button
-          aria-label="send me an email"
-          circular
-          as="a"
-          css={{
-            marginTop: "1rem",
-          }}
-          href={social.email}
-        >
-          <FiMail />
-        </Button>
-        <Button
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="link to my resume"
-          circular
-          as="a"
-          css={{
-            marginTop: "1rem",
-          }}
-          href={social.resume}
-        >
-          <FaFilePdf />
         </Button>
       </aside>
     </>

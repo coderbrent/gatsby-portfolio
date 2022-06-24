@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import ThemeContext from "../context/ThemeContext"
 import NavLink from "./NavLink"
