@@ -10,7 +10,7 @@ module.exports = {
       stackoverflow: "https://stackoverflow.com/users/10956869/brent-abruzese",
       linkedin: "https://linkedin.com/in/brent-abruzese",
       resume:
-        "https://drive.google.com/file/d/195Vls5adIKWC1E05f3Rgn6AjdKLTcQ3d/view?usp=sharing",
+        "https://drive.google.com/file/d/1okM5JbbE5oB_eiWQ72jn9pS-F8h6FfWV/view?usp=sharing",
     },
   },
   plugins: [
