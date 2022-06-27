@@ -56,8 +56,7 @@ const IndexPage = () => {
             </a>
 
             <a
-              href={"resume.pdf"}
-              download
+              href={"https://drive.google.com/file/d/1okM5JbbE5oB_eiWQ72jn9pS-F8h6FfWV/view?usp=sharing"}
               type="application/pdf"
               css={{ textDecoration: "none", color: "inherit" }}
             >
