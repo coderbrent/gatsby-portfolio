@@ -56,11 +56,11 @@ const IndexPage = () => {
             </a>
 
             <a
-              href={"https://drive.google.com/file/d/1okM5JbbE5oB_eiWQ72jn9pS-F8h6FfWV/view?usp=sharing"}
+              href={"https://drive.google.com/file/d/1-v3nQwgQgmdfLxOa5dl0uoBa7A8BC0_5/view?usp=sharing"}
               type="application/pdf"
               css={{ textDecoration: "none", color: "inherit" }}
             >
-              <Button>Download my Resume!</Button>
+              <Button>View my Resume!</Button>
             </a>
           </div>
         </div>
